@@ -1,0 +1,169 @@
+/* Languages Dropdown Styles */
+/*---------------------------*/
+.langsDropdown {
+  position: relative;
+
+  @media #{$min_992} {
+    z-index: 1;
+
+    &:hover,
+    &:focus-within {
+      .langsDropdown__menu {
+        @include showElement();
+
+        @include appDir() {
+          transform: dirs(translate(-50%, 0), translate(50%, 0));
+        }
+      }
+    }
+  }
+
+  @media #{$max_991} {
+    z-index: 0;
+
+    &:hover,
+    &:focus-within {
+      .langsDropdown__menu {
+        @include showElement();
+
+        @include appDir() {
+          transform: dirs(translate(0, 0), translate(0, 0));
+        }
+      }
+    }
+  }
+
+  &__toggle {
+    font-weight: bold;
+
+    &::after {
+      content: "\f107";
+      font-family: "Font Awesome 6 Free";
+      font-size: 0.875rem;
+
+      @include appDir() {
+        margin-#{dirs(left, right)}: 0.5rem;
+      }
+    }
+
+    &:focus {
+      @include focusStyle();
+    }
+  }
+
+  &__menu {
+    background-color: hsl(var(--bg-color-two));
+    z-index: -1;
+
+    @media #{$min_992} {
+      position: absolute;
+      top: calc(100% + 0.4375rem);
+      width: fit-content;
+      text-align: center;
+      padding: 0.375rem 0;
+      border-radius: var(--radius-size);
+      filter: drop-shadow(0rem 0.125rem 0.375rem rgba(0, 0, 0, 0.3));
+      @include hideElement();
+
+      @include appDir() {
+        #{dirs(left, right)}: 50%;
+        transform: dirs(translate(-50%, 1.25rem), translate(50%, 1.25rem));
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+
+        @include appDir() {
+          #{dirs(left, right)}: 50%;
+        }
+      }
+
+      &::before {
+        top: -1.5rem;
+        height: 2.25rem;
+        width: 100%;
+
+        @include appDir() {
+          transform: dirs(translateX(-50%), translateX(50%));
+        }
+      }
+
+      &::after {
+        top: -0.3125rem;
+        height: 0.375rem;
+        width: 0.75rem;
+        background-color: inherit;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+        @include appDir() {
+          transform: dirs(translateX(-50%), translateX(50%));
+        }
+      }
+    }
+
+    @media #{$max_991} {
+      position: fixed;
+      top: var(--header-height-small);
+      left: 0;
+      right: 0;
+      width: 100%;
+      border-top: 0.125rem solid hsl(var(--main-color-one));
+      @include hideElement();
+
+      @include appDir() {
+        transform: dirs(translate(0, 1.25rem), translate(0, 1.25rem));
+      }
+    }
+
+    &__item {
+      @media #{$min_992} {
+        &:first-of-type:not(:only-of-type) {
+          border-radius: var(--radius-size) var(--radius-size) 0 0;
+        }
+
+        &:last-of-type:not(:only-of-type) {
+          border-radius: 0 0 var(--radius-size) var(--radius-size);
+        }
+
+        &:only-of-type {
+          border-radius: var(--radius-size);
+        }
+      }
+
+      @media #{$max_991} {
+        &:not(:last-of-type) {
+          border-bottom: 0.0625rem solid hsl(var(--bg-color-one));
+        }
+      }
+
+      &:focus-within {
+        @include focusStyle();
+      }
+    }
+
+    &__link {
+      display: block;
+      font-weight: bold;
+      padding: 0 0.875rem;
+
+      @media #{$min_992} {
+        height: 2rem;
+        line-height: 2rem;
+        white-space: nowrap;
+      }
+
+      @media #{$max_991} {
+        height: 2.5rem;
+        line-height: 2.5rem;
+      }
+
+      &:hover {
+        color: hsl(var(--main-color-one));
+      }
+    }
+  }
+}

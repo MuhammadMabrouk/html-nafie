@@ -1,0 +1,34 @@
+/* 3. Brand Logo */
+/*---------------*/
+.brandLogo {
+  &__title {
+    @include flexbox(flex, "", baseline, "", "", "");
+    width: fit-content;
+    color: hsl(var(--bg-color-reverse));
+    font-family: var(--logo-font-family);
+    font-size: 2rem;
+    margin: 0;
+
+    @include appDir() {
+      font-weight: dirs(normal, null);
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 0.17em;
+      width: 0.2em;
+      background-color: hsl(var(--main-color-one));
+
+      @include appDir() {
+        margin-#{dirs(left, right)}: 0.08em;
+      }
+    }
+  }
+
+  &__link {
+    &:focus {
+      @include focusStyle();
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "html-nafie",
+  "version": "1.0.0",
+  "description": "HTML Template for Portfolio Websites",
+  "author": "Webrouk",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuhammadMabrouk/html-nafie.git"
+  },
+  "homepage": "https://github.com/MuhammadMabrouk/html-nafie#readme",
+  "main": "main.js",
+  "scripts": {
+    "serve": "gulp",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-change": "^1.0.2",
+    "gulp-changed": "^4.0.3",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-dependents": "^1.2.5",
+    "gulp-file-include": "^2.3.0",
+    "gulp-html-i18n": "^0.16.0",
+    "gulp-image": "^6.2.1",
+    "gulp-jsbeautifier": "^3.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-zip": "^5.1.0",
+    "merge-stream": "^2.0.0",
+    "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
+    "@popperjs/core": "^2.11.6",
+    "glightbox": "^3.2.0",
+    "gsap": "^3.9.1",
+    "normalize.css": "^8.0.1",
+    "vanilla-tilt": "^1.8.0"
+  }
+}

@@ -1,0 +1,9 @@
+// overrides font-awesome fonts path
+$fa-font-path: "../assets/webfonts";
+
+// main font-awesome file
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+
+// our project needs Solid + Brands
+@import "node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/brands.scss";

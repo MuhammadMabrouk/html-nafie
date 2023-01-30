@@ -1,0 +1,104 @@
+/* 7. Testimonials Section Styles */
+/*--------------------------------*/
+.testimonials-section {
+  .section-content {
+    .testimonials-items {
+      display: grid;
+      grid-auto-rows: 13.75rem;
+
+      @media #{$min_992} {
+        grid-template-columns: repeat(6, 1fr);
+      }
+
+      @media #{$max_991} {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      @media #{$max_767} {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @media #{$max_576} {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      li {
+        position: relative;
+        border-radius: 50%;
+        animation: floating 20s linear infinite alternate-reverse both;
+
+        .testimonials-item {
+          cursor: help;
+          visibility: hidden;
+
+          img {
+            display: block;
+            width: 8.125rem;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: var(--card-shadow);
+            filter: var(--drop-shadow);
+          }
+        }
+
+        @media #{$max_767} {
+          &:nth-of-type(1n + 7) {
+            display: none;
+          }
+        }
+
+        &:nth-of-type(odd) {
+          align-self: flex-end;
+        }
+
+        &:nth-of-type(even) {
+          align-self: flex-start;
+        }
+
+        &:nth-of-type(5n + 2) {
+          justify-self: flex-end;
+
+          img {
+            width: 12.5rem;
+          }
+        }
+
+        &:nth-of-type(5n + 1) {
+          justify-self: center;
+
+          img {
+            width: 5.625rem;
+          }
+        }
+
+        &:nth-of-type(5n + 3) {
+          justify-self: flex-end;
+
+          img {
+            width: 4.375rem;
+          }
+        }
+
+        &:nth-of-type(5n + 4) {
+          justify-self: flex-start;
+
+          img {
+            width: 7.5rem;
+          }
+        }
+
+        &:nth-of-type(5n + 5) {
+          justify-self: center;
+
+          img {
+            width: 9.375rem;
+          }
+        }
+
+        &:focus {
+          @include focusStyle();
+        }
+      }
+    }
+  }
+}

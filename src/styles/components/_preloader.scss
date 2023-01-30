@@ -1,0 +1,50 @@
+/* 2. Preloader Styles */
+/*---------------------*/
+.preloader {
+  @include flexbox(flex, "", "", "", "", "");
+  position: fixed;
+  z-index: 4000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(var(--bg-color-two));
+
+  &__content {
+    margin: auto;
+  }
+
+  &__logo {
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+    svg {
+      width: 2.25rem;
+
+      path {
+        fill: hsl(var(--bg-color-reverse));
+      }
+    }
+  }
+
+  &__loadingBar {
+    height: 0.25rem;
+    width: 11.25rem;
+    background-color: hsl(var(--bg-color-one));
+    border-radius: 0.25rem;
+    overflow: hidden;
+  }
+
+  &__loadingProgress {
+    display: block;
+    height: 100%;
+    width: var(--loading-percentage, 0%);
+    background-color: hsl(var(--bg-color-reverse));
+  }
+
+  & ~ .hide-in-preloading {
+    visibility: hidden;
+  }
+}

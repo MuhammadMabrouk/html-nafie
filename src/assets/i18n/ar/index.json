@@ -1,0 +1,167 @@
+{
+  "prefix": "ar-",
+  "languages": "اللغات",
+  "i18n": {
+    "lang": {
+      "code": "ar",
+      "short": "ع",
+      "medium": "عربي",
+      "full": "العربية"
+    },
+    "dir": "rtl",
+    "startDir": "right",
+    "endDir": "left",
+    "fonts": "https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap",
+    "otherLang": {
+      "prefix": "",
+      "code": "en",
+      "short": "EN",
+      "medium": "ENG",
+      "full": "English"
+    }
+  },
+
+  "browserTitle": "نافع - قالب بورتفوليو HTML",
+
+  "header": {
+    "navbar": {
+      "links": {
+        "home": "الرئيسية",
+        "about": "من أنا",
+        "skills": "مهاراتي",
+        "portfolio": "أعمالي",
+        "contact": "اتصل بي"
+      },
+      "offCanvasMenu": {
+        "about": {
+          "subTitle": "أحب جعل الأشياء بسيطة وبديهية ومصممة بخبرة!",
+          "mainTitle": "المنتج هو الجوهر الحيوي لما أفعله ، المنتج الرائع حقًا يولد من التخطيط الدقيق. هذا هو المكان والأمر الذي تخصصت فيه!"
+        },
+        "contact": {
+          "email": {
+            "title": "البريد الإلكتروني"
+          },
+          "address": {
+            "title": "العنوان",
+            "part1": "941 طريق صقر قريش ، الأندلس ،",
+            "part2": "غرناطة ، WA 47122-4194"
+          },
+          "phone": {
+            "title": "الهاتف"
+          }
+        }
+      }
+    },
+    "modeSwitcherBtn": "تبديل المظهر",
+    "hamburgerBtn": "فتح/غلق القائمة الجانبية"
+  },
+
+  "footer": {
+    "copyright": "2023 مدعوم بكل بفخر من",
+    "webrouk": "ويبروك"
+  },
+
+  "scrollToTop": "عودة الى الأعلى",
+
+  "components": {
+    "brandLogo": "نافع"
+  },
+
+  "toastNotifications": {
+    "formsValidation": {
+      "isRequired": "مطلوب",
+      "mustBeAtLeast": "يجب أن يكون على الأقل",
+      "mustBeAtMost": "يجب أن يكون على الأكثر",
+      "characters": "أحرف",
+      "minimum": "يجب أن يكون الحد الأدنى",
+      "maximum": "يجب أن يكون الحد الأقصى",
+      "enterValidEmail": "يرجى إدخال عنوان بريد إلكتروني صالح",
+      "enterValidPhone": "يرجى إدخال رقم هاتف صالح",
+      "enterValidUrl": "يرجى إدخال رابط صالح",
+      "enterValidDate": "يرجى إدخال تاريخ صالح",
+      "cannotContainSpaces": "لا يمكن أن يحتوي على مسافات",
+      "passwordsMustMatch": "يجب مطابقة كلمة المرور",
+      "equalsOldPassword": "لا يمكن أن تكون كلمة المرور الجديدة مماثلة لكلمة المرور القديمة",
+      "enterPasswordFirst": "يرجى إدخال كلمة المرور أولاً",
+      "confirmYourPassword": "يرجى تأكيد كلمة المرور",
+      "enterOldPassword": "الرجاء إدخال كلمة المرور القديمة",
+      "notValidFileFormat": "تنسيق الملف غير صالح ، نحن ندعم فقط",
+      "for": "من أجل"
+    },
+    "changesSaved": "تم حفظ التغييرات بنجاح!",
+    "oopsSomethingWrong": "عفوا! حدث خطأ ما، حاول مرة اخرى.",
+    "messageSent": "تم إرسال الرسالة بنجاح!",
+    "requestSent": "تم إرسال طلبك بنجاح!",
+    "successfullyRegistered": "رائع! تم التسجيل بنجاح!",
+    "successfullyLoggedIn": "تم تسجيل الدخول بنجاح!",
+    "successfullyReviewPosted": "تم نشر مراجعتك!",
+    "successfullyCommentPosted": "تم نشر تعليقك!"
+  },
+  "numbers": {
+    "0": "٠",
+    "1": "١",
+    "2": "٢",
+    "3": "٣",
+    "4": "٤",
+    "5": "٥",
+    "6": "٦",
+    "7": "٧",
+    "8": "٨",
+    "9": "٩"
+  },
+  "global": {
+    "social": {
+      "title": "الشبكات الاجتماعية",
+      "google": "جوجل",
+      "facebook": "فيسبوك",
+      "twitter": "تويتر",
+      "linkedin": "لينكد إن",
+      "instagram": "إنستغرام",
+      "whatsapp": "واتساب",
+      "youtube": "يوتيوب",
+      "snapchat": "سناب شات",
+      "tiktok": "تيك توك",
+      "behance": "بيهانس",
+      "dribbble": "دريبل",
+      "pinterest": "بنترست",
+      "github": "جيت هب",
+      "codepen": "كود بن",
+      "envato": "انفاتو",
+      "email": "البريد الإلكتروني"
+    },
+    "loading": "جاري التحميل",
+    "star": "نجمة",
+    "stars": "نجوم",
+    "yes": "نعم",
+    "no": "لا",
+    "optional": "(اختياري)",
+    "readMore": "اقرأ المزيد",
+    "prev": "السابقة",
+    "next": "التالية",
+    "curPage": "الصفحة الحالية",
+    "postedBy": "نشر بواسطة",
+    "johnDoe": "فلان الفلاني",
+    "comments": "تعليقات",
+    "views": "زيارة",
+    "reviews": "المراجعات",
+    "monthsAgoTime": "أشهر سابقا",
+    "tags": "الوسوم",
+    "share": "مشاركة",
+    "pct": "٪",
+    "download": "تنزيل",
+    "chooseFile": "اختر ملف",
+    "browse": "اختر",
+    "dropFiles": "أفلت الملفات هنا",
+    "select": "اختر...",
+    "search": "بحث...",
+    "noResults": "لا توجد نتائج...",
+    "default": "الإفتراضي",
+    "addNew": "أضف جديد",
+    "restart": "إبدأ من جديد",
+    "reset": "إعادة تعيين",
+    "remove": "إزالة",
+    "close": "إغلاق",
+    "dismiss": "إخفاء",
+    "saveChanges": "حفظ التغييرات"
+  }
+}

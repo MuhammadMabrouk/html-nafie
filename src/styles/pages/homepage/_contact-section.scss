@@ -1,0 +1,110 @@
+/* 8. Contact Section Styles */
+/*---------------------------*/
+.contact-section {
+  .section-content {
+    align-items: center;
+    margin-bottom: -3.125rem;
+
+    > * {
+      margin-bottom: 3.125rem;
+    }
+
+    .contact-text {
+      .contact-info {
+        margin-top: 3.125rem;
+
+        > li {
+          @include flexbox(flex, "", start, "", "", "");
+          visibility: hidden;
+
+          &:not(:last-of-type) {
+            margin-bottom: 1.25rem;
+          }
+
+          img {
+            width: 1.5rem;
+            filter: var(--filter-invert-false);
+
+            @include appDir() {
+              margin-#{dirs(right, left)}: 1.125rem;
+            }
+          }
+
+          div {
+            strong {
+              display: block;
+              margin-bottom: 0.3125rem;
+            }
+
+            a {
+              &:hover {
+                text-decoration: underline;
+              }
+
+              &:focus {
+                @include focusStyle();
+              }
+            }
+          }
+        }
+      }
+
+      .social {
+        @include flexbox(flex, "", center, "", "", wrap);
+        margin: 2rem -0.3125rem -0.625rem;
+
+        @include appDir() {
+          padding-#{dirs(left, right)}: 2.625rem;
+        }
+
+        li {
+          visibility: hidden;
+
+          a {
+            @include flexbox(flex, "", center, center, "", "");
+            height: 2.25rem;
+            width: 2.25rem;
+            background-color: hsl(var(--bg-color-reverse));
+            color: hsl(var(--bg-color-one));
+            margin: 0 0.3125rem 0.625rem;
+            border-radius: 50%;
+
+            &:hover {
+              background-color: hsl(var(--main-color-one));
+              color: hsl(var(--light-color));
+            }
+
+            &:focus {
+              @include focusStyle();
+            }
+          }
+        }
+      }
+    }
+
+    .contact-form {
+      background-color: hsl(var(--bg-color-two));
+      padding: 1.5rem;
+      margin: auto;
+      border-radius: var(--radius-size);
+      box-shadow: var(--card-shadow);
+      visibility: hidden;
+
+      @media #{$min_768} {
+        max-width: 28.125rem;
+      }
+
+      .phone-number {
+        .fa {
+          @include appDir() {
+            transform: dirs(null, rotateY(180deg) translateY(-50%));
+          }
+        }
+      }
+
+      .submit-btn {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "gsap": "node_modules/gsap/dist/gsap.min.js",
+  "ScrollTrigger": "node_modules/gsap/dist/ScrollTrigger.min.js",
+  "popperjs": "node_modules/@popperjs/core/dist/umd/popper.min.js",
+  "tilt": "node_modules/vanilla-tilt/dist/vanilla-tilt.min.js",
+  "glightbox": "node_modules/glightbox/dist/js/glightbox.min.js"
+}

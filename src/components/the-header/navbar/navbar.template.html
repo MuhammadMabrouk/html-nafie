@@ -1,0 +1,61 @@
+<nav class="navbar">
+
+  <!-- navbar links -->
+  <ul class="navbar__links">
+    <li class="navbar__links__item">
+      <a class="navbar__links__link" href="#hero" onclick="window._offCanvasMenuClose(this)">${{ index.header.navbar.links.home }}$</a>
+    </li>
+    <li class="navbar__links__item">
+      <a class="navbar__links__link" href="#about" onclick="window._offCanvasMenuClose(this)">${{ index.header.navbar.links.about }}$</a>
+    </li>
+    <li class="navbar__links__item">
+      <a class="navbar__links__link" href="#skills" onclick="window._offCanvasMenuClose(this)">${{ index.header.navbar.links.skills }}$</a>
+    </li>
+    <li class="navbar__links__item">
+      <a class="navbar__links__link" href="#portfolio" onclick="window._offCanvasMenuClose(this)">${{ index.header.navbar.links.portfolio }}$</a>
+    </li>
+    <li class="navbar__links__item">
+      <a class="navbar__links__link" href="#contact" onclick="window._offCanvasMenuClose(this)">${{ index.header.navbar.links.contact }}$</a>
+    </li>
+  </ul>
+
+  <!-- menu content in big devices (hidden in mobile/tablet) -->
+  <div class="offCanvasMenu" tabindex="-1">
+    <div class="container">
+
+      <!-- about me -->
+      <div class="offCanvasMenu__about">
+        <p class="block-subTitle">${{ index.header.navbar.offCanvasMenu.about.subTitle }}$</p>
+        <h4 class="block-title">${{ index.header.navbar.offCanvasMenu.about.mainTitle }}$</h4>
+      </div>
+
+      <!-- contact info -->
+      <ul class="offCanvasMenu__contact">
+        <li class="offCanvasMenu__contact__block">
+          <h4 class="block-title">${{ index.header.navbar.offCanvasMenu.contact.email.title }}$</h4>
+          <ul>
+            <li><a href="mailto:info@nafie.com">info@nafie.com</a></li>
+            <li><a href="mailto:support@nafie.com">support@nafie.com</a></li>
+          </ul>
+        </li>
+        <li class="offCanvasMenu__contact__block">
+          <h4 class="block-title">${{ index.header.navbar.offCanvasMenu.contact.address.title }}$</h4>
+          <ul>
+            <li>
+              ${{ index.header.navbar.offCanvasMenu.contact.address.part1 }}$
+              <br>
+              ${{ index.header.navbar.offCanvasMenu.contact.address.part2 }}$
+            </li>
+          </ul>
+        </li>
+        <li class="offCanvasMenu__contact__block">
+          <h4 class="block-title">${{ index.header.navbar.offCanvasMenu.contact.phone.title }}$</h4>
+          <ul>
+            <li><a href="tel:02966202290">(02) 966 202 290</a></li>
+            <li><a href="tel:02966202291">(02) 966 202 291</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

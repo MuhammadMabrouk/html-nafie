@@ -1,0 +1,56 @@
+/* 6. Scroll to Top Button Styles */
+/*--------------------------------*/
+.scroll-to-top {
+  $btn_size: 2.875rem;
+
+  position: fixed;
+  z-index: 1990;
+  bottom: 1.5rem;
+  height: $btn_size;
+  width: $btn_size;
+  color: hsl(var(--primary-color));
+  font-size: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 0 0.125rem hsla(var(--primary-color), 25%) inset;
+  transition: none;
+  visibility: hidden;
+
+  @include appDir() {
+    #{dirs(right, left)}: 1.5rem;
+  }
+
+  svg {
+    path {
+      fill: none;
+      stroke: hsl(var(--primary-color));
+      stroke-width: 5;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40%;
+    width: 25%;
+    background-color: hsl(var(--primary-color));
+    clip-path: polygon(
+      0 30%,
+      50% 0,
+      100% 30%,
+      94% 39%,
+      58% 17%,
+      58% 100%,
+      42% 100%,
+      42% 17%,
+      6% 39%
+    );
+  }
+
+  &:focus {
+    @include focusStyle();
+  }
+}

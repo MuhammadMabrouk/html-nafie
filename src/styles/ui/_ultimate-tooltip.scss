@@ -1,0 +1,91 @@
+/* 4. Ultimate Tooltip Styles */
+/*----------------------------*/
+.has-ultimate-tooltip {
+  .ultimate-tooltip {
+    background-color: hsl(var(--bg-color-two));
+    text-align: center;
+    padding: 0.8rem 1rem;
+    border-radius: var(--radius-size);
+    filter: var(--drop-shadow);
+
+    @media #{$min_577} {
+      width: 18.75rem;
+    }
+
+    @media #{$max_576} {
+      width: 85vw;
+    }
+
+    p {
+      color: hsl(var(--t-color-two));
+      line-height: 1.7rem;
+      font-size: 1.1rem;
+
+      &:first-child {
+        margin: 0 0 1.25rem;
+      }
+
+      &:last-child {
+        margin: 1.25rem 0 0;
+      }
+    }
+
+    .ultimate-tooltip-title {
+      color: hsl(var(--main-color-one));
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .ultimate-tooltip-subtitle {
+      font-size: 0.95rem;
+      margin: 0;
+    }
+
+    &[data-popper-placement="top"] + .ultimate-tooltip-arrow {
+      top: -1.3125rem;
+      clip-path: polygon(50% 100%, 0 0, 100% 0);
+
+      @include appDir() {
+        transform: dirs(translate(-50%, -100%), translate(50%, -100%));
+      }
+    }
+
+    &[data-popper-placement="bottom"] + .ultimate-tooltip-arrow {
+      bottom: -1.3125rem;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+      @include appDir() {
+        transform: dirs(translate(-50%, 100%), translate(50%, 100%));
+      }
+    }
+  }
+
+  .ultimate-tooltip-arrow {
+    position: absolute;
+    height: 0.625rem;
+    width: 0.9375rem;
+    background-color: hsl(var(--bg-color-two));
+
+    @include appDir() {
+      #{dirs(left, right)}: 50%;
+    }
+  }
+
+  .ultimate-tooltip,
+  .ultimate-tooltip-arrow {
+    transition: all 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &:hover,
+  .enable-focus-style &:focus {
+    z-index: 1;
+
+    .ultimate-tooltip,
+    .ultimate-tooltip-arrow {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

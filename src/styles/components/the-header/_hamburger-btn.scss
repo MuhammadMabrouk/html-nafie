@@ -1,0 +1,84 @@
+/* Hamburger Button Styles */
+/*-------------------------*/
+.hamburgerBtn {
+  position: relative;
+  height: 1.25rem;
+  width: 1rem;
+  margin-bottom: 0.25rem;
+
+  span {
+    display: block;
+    position: absolute;
+    width: 0.125rem;
+    background-color: hsl(var(--bg-color-reverse));
+    border-radius: 0.3125rem;
+    transition: all var(--off-canvas-menu-transition);
+
+    &:nth-of-type(1) {
+      bottom: 50%;
+      height: 50%;
+      transform-origin: bottom center;
+
+      @include appDir() {
+        #{dirs(left, right)}: 0;
+      }
+    }
+
+    &:nth-of-type(2) {
+      top: 0;
+      height: 100%;
+      transform-origin: 0% 100%;
+
+      @include appDir() {
+        #{dirs(left, right)}: 50%;
+        transform: dirs(translateX(-50%), translateX(50%));
+      }
+    }
+
+    &:nth-of-type(3) {
+      top: 50%;
+      height: 50%;
+      transform-origin: top center;
+
+      @include appDir() {
+        #{dirs(right, left)}: 0;
+      }
+    }
+  }
+
+  &:not(.open) {
+    @include appDir() {
+      transform: dirs(rotate(35deg), rotate(-35deg));
+    }
+  }
+
+  &.open {
+    @include appDir() {
+      transform: dirs(rotate(45deg), rotate(-45deg));
+    }
+
+    span {
+      &:nth-of-type(1) {
+        @include appDir() {
+          transform: dirs(
+            rotate(90deg) translateY(0.1875rem),
+            rotate(-90deg) translateY(0.1875rem)
+          );
+        }
+      }
+
+      &:nth-of-type(3) {
+        @include appDir() {
+          transform: dirs(
+            rotate(90deg) translateY(-0.1875rem),
+            rotate(-90deg) translateY(-0.1875rem)
+          );
+        }
+      }
+    }
+  }
+
+  &:focus {
+    @include focusStyle();
+  }
+}

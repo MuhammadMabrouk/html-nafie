@@ -1,0 +1,77 @@
+/* 2. Toggle Switch Button Styles */
+/*--------------------------------*/
+.toggle-switch-btn {
+  $switcher_height: 2.875rem;
+  $space_around: 0.25rem;
+
+  position: relative;
+  display: flex;
+  height: $switcher_height;
+  width: fit-content;
+  background-color: hsl(var(--bg-color-two));
+  padding: $space_around;
+  border: 0.0625rem solid hsl(var(--border-color));
+  border-radius: 2rem;
+  box-shadow: var(--card-shadow);
+
+  label {
+    position: relative;
+    z-index: 1;
+    @include flexbox(flex, "", center, center, "", "");
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    color: hsl(var(--t-color-one));
+    font-weight: bold;
+    white-space: nowrap;
+    padding: {
+      left: 1.5rem;
+      right: 1.5rem;
+    }
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .switcher-toggle {
+    position: absolute;
+    z-index: 0;
+    top: $space_around;
+    height: calc(#{$switcher_height} - (#{$space_around} * 2) - 0.125rem);
+    background-color: hsl(var(--main-color-one));
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include appDir() {
+      #{dirs(left, right)}: $space_around;
+    }
+  }
+
+  input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+
+    &:checked + label {
+      color: hsl(var(--light-color));
+    }
+
+    &:nth-of-type(2):checked ~ .switcher-toggle {
+      @include appDir() {
+        transform: dirs(translateX(100%), translateX(-100%));
+      }
+    }
+
+    &:nth-of-type(3):checked ~ .switcher-toggle {
+      @include appDir() {
+        transform: dirs(translateX(200%), translateX(-200%));
+      }
+    }
+
+    &:focus + label {
+      @include focusStyle("reverse");
+    }
+  }
+}

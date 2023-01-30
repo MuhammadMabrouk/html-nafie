@@ -1,0 +1,54 @@
+/* 5. Footer */
+/*-----------*/
+.footer {
+  background-color: hsl(var(--bg-color-two));
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+  padding: {
+    top: 1.35rem;
+    bottom: 1.25rem;
+  }
+  box-shadow: var(--card-shadow);
+
+  &__content {
+    gap: 0.875rem;
+
+    @media #{$min_992} {
+      @include flexbox(flex, "", center, between, "", wrap);
+    }
+
+    @media #{$max_991} {
+      @include flexbox(flex, "", "", "", column, "");
+      text-align: center;
+    }
+
+    a {
+      &:focus {
+        @include focusStyle();
+      }
+    }
+  }
+
+  .brandLogo__title {
+    @media #{$max_991} {
+      margin: {
+        left: auto;
+        right: auto;
+      }
+    }
+  }
+
+  &__copyright {
+    @media #{$min_992} {
+      text-align: end;
+    }
+
+    a {
+      color: hsl(var(--main-color-one));
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

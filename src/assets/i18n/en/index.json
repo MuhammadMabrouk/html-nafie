@@ -1,0 +1,167 @@
+{
+  "prefix": "",
+  "languages": "Languages",
+  "i18n": {
+    "lang": {
+      "code": "en",
+      "short": "EN",
+      "medium": "ENG",
+      "full": "English"
+    },
+    "dir": "ltr",
+    "startDir": "left",
+    "endDir": "right",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Saira+Stencil+One&text=Nafie&display=swap",
+    "otherLang": {
+      "prefix": "ar-",
+      "code": "ar",
+      "short": "ع",
+      "medium": "عربي",
+      "full": "العربية"
+    }
+  },
+
+  "browserTitle": "Nafie - HTML Portfolio Template",
+
+  "header": {
+    "navbar": {
+      "links": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "portfolio": "Portfolio",
+        "contact": "Contact"
+      },
+      "offCanvasMenu": {
+        "about": {
+          "subTitle": "I love making things simple, intuitive and expertly crafted!",
+          "mainTitle": "Product is the vital essence of what i do, truly great product is born of meticulous planning and process. This is where i specialized!"
+        },
+        "contact": {
+          "email": {
+            "title": "Email"
+          },
+          "address": {
+            "title": "Address",
+            "part1": "941 saqrqorish Road, alandalos,",
+            "part2": "grnata, wa 47122-4194"
+          },
+          "phone": {
+            "title": "Phone"
+          }
+        }
+      }
+    },
+    "modeSwitcherBtn": "Change Mode",
+    "hamburgerBtn": "Toggle Side Menu"
+  },
+
+  "footer": {
+    "copyright": "2023 Proudly Powered by",
+    "webrouk": "Webrouk"
+  },
+
+  "scrollToTop": "Back To Top",
+
+  "components": {
+    "brandLogo": "Nafie"
+  },
+
+  "toastNotifications": {
+    "formsValidation": {
+      "isRequired": "is required",
+      "mustBeAtLeast": "must be at least",
+      "mustBeAtMost": "must be at most",
+      "characters": "characters",
+      "minimum": "should be minimum",
+      "maximum": "should be maximum",
+      "enterValidEmail": "Please enter a valid email address",
+      "enterValidPhone": "Please enter a valid Phone Number",
+      "enterValidUrl": "Please enter a valid URL",
+      "enterValidDate": "Please enter a valid Date",
+      "cannotContainSpaces": "cannot contain spaces",
+      "passwordsMustMatch": "Passwords must match",
+      "equalsOldPassword": "New password cannot be the same as your old password",
+      "enterPasswordFirst": "Please enter your password first",
+      "confirmYourPassword": "Please confirm your password",
+      "enterOldPassword": "Please enter your old password",
+      "notValidFileFormat": "Not a valid file format, we only support",
+      "for": "for"
+    },
+    "changesSaved": "Changes saved successfully!",
+    "oopsSomethingWrong": "Oops! something went wrong, please try again.",
+    "messageSent": "Message sent successfully!",
+    "requestSent": "Your request has been sent successfully!",
+    "successfullyRegistered": "Great! successfully registered!",
+    "successfullyLoggedIn": "Successfully logged in!",
+    "successfullyReviewPosted": "Your review has been posted!",
+    "successfullyCommentPosted": "Your comment has been posted!"
+  },
+  "numbers": {
+    "0": "0",
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6",
+    "7": "7",
+    "8": "8",
+    "9": "9"
+  },
+  "global": {
+    "social": {
+      "title": "Social Networks",
+      "google": "Google",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram",
+      "whatsapp": "WhatsApp",
+      "youtube": "YouTube",
+      "snapchat": "Snapchat",
+      "tiktok": "TikTok",
+      "behance": "Behance",
+      "dribbble": "Dribbble",
+      "pinterest": "Pinterest",
+      "github": "Github",
+      "codepen": "CodePen",
+      "envato": "Envato",
+      "email": "Email"
+    },
+    "loading": "Loading",
+    "star": "Star",
+    "stars": "Stars",
+    "yes": "Yes",
+    "no": "No",
+    "optional": "(Optional)",
+    "readMore": "Read More",
+    "prev": "Previous",
+    "next": "Next",
+    "curPage": "Current Page",
+    "postedBy": "Posted by",
+    "johnDoe": "John Doe",
+    "comments": "Comments",
+    "views": "Views",
+    "reviews": "Reviews",
+    "monthsAgoTime": "Months ago",
+    "tags": "Tags",
+    "share": "Share",
+    "pct": "%",
+    "download": "Download",
+    "chooseFile": "Choose File",
+    "browse": "Browse",
+    "dropFiles": "Drop files here",
+    "select": "Select...",
+    "search": "Search...",
+    "noResults": "No results found...",
+    "default": "Default",
+    "addNew": "Add New",
+    "restart": "Restart",
+    "reset": "Reset",
+    "remove": "Remove",
+    "close": "Close",
+    "dismiss": "Dismiss",
+    "saveChanges": "Save Changes"
+  }
+}

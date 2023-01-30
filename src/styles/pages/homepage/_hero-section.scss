@@ -1,0 +1,308 @@
+/* 1. Hero Section Styles */
+/*------------------------*/
+.hero-section {
+  $section_height: calc(100vh - #{var(--space-above-hero)});
+
+  .hero-img {
+    @media #{$max_991} {
+      position: relative;
+      height: 80vw;
+      width: 80vw;
+      max-height: 25rem;
+      max-width: 25rem;
+      margin: auto;
+    }
+
+    .layer {
+      position: absolute;
+      width: 100%;
+
+      @media #{$min_992} {
+        top: 0;
+        left: 0;
+        transition: transform 1s ease;
+      }
+
+      @media #{$max_991} {
+        @include appDir() {
+          #{dirs(left, right)}: 50%;
+        }
+      }
+
+      &:first-of-type {
+        height: 100%;
+        mask-image: url("../assets/images/splash.png");
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: contain;
+
+        &::before {
+          content: "";
+          position: absolute;
+        }
+
+        @media #{$min_992} {
+          &::before {
+            z-index: 1;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(
+              to right,
+              hsl(var(--main-color-one)) 0%,
+              hsl(var(--main-color-two)) 100%
+            );
+          }
+        }
+
+        @media #{$max_991} {
+          top: 50%;
+
+          @include appDir() {
+            transform: dirs(translate(-50%, -50%), translate(50%, -50%));
+          }
+
+          &::before {
+            bottom: 0;
+            height: 80%;
+            width: 80%;
+            background-color: hsl(var(--main-color-one));
+            border-radius: 50%;
+
+            @include appDir() {
+              #{dirs(left, right)}: 50%;
+              transform: dirs(translateX(-50%), translateX(50%));
+            }
+          }
+        }
+      }
+
+      &:last-of-type {
+        height: 50%;
+        overflow: hidden;
+
+        @media #{$max_991} {
+          top: 0;
+
+          @include appDir() {
+            transform: dirs(translateX(-50%), translateX(50%));
+          }
+
+          img {
+            height: 200%;
+            width: 200%;
+
+            @include appDir() {
+              transform: dirs(translateX(-25%), translateX(25%));
+            }
+          }
+        }
+      }
+
+      img {
+        display: block;
+        filter: drop-shadow(0.125rem 0.25rem 0.375rem black);
+
+        @media #{$min_992} {
+          position: relative;
+          z-index: 2;
+          height: $section_height;
+          max-width: 100%;
+          margin: auto;
+          user-select: none;
+        }
+
+        @media #{$max_991} {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+
+  .hero-text {
+    text-align: center;
+
+    @media #{$min_992} {
+      position: absolute;
+      z-index: 3;
+      top: 45%;
+      width: 90%;
+      text-shadow: 0rem 0rem 1.25rem hsl(var(--dark-color));
+
+      @include appDir() {
+        #{dirs(left, right)}: 50%;
+        transform: dirs(translateX(-50%), translateX(50%));
+      }
+    }
+
+    @media #{$max_991} {
+      width: 90vw;
+    }
+
+    h2 {
+      margin-bottom: 2rem;
+
+      @include appDir() {
+        text-transform: dirs(capitalize, null);
+      }
+
+      @media #{$min_992} {
+        color: hsl(var(--light-color)) !important;
+        font-size: 3rem;
+      }
+
+      @media #{$max_991} {
+        color: hsl(var(--bg-color-reverse));
+        font-size: 2rem;
+      }
+    }
+
+    .btn {
+      @media #{$min_992} {
+        color: hsl(var(--light-color));
+        border-color: hsl(var(--light-color));
+
+        &:hover {
+          background-color: hsl(var(--light-color));
+          color: hsl(var(--dark-color));
+          text-shadow: none;
+        }
+      }
+
+      @media #{$max_991} {
+        color: hsl(var(--bg-color-reverse));
+        border-color: hsl(var(--bg-color-reverse));
+
+        &:hover {
+          background-color: hsl(var(--bg-color-reverse));
+          color: hsl(var(--bg-color-one));
+        }
+      }
+
+      &:focus {
+        @include focusStyle();
+      }
+    }
+  }
+
+  .social,
+  .scroll-down {
+    @include flexbox(flex, "", center, "", "", "");
+    position: absolute;
+    bottom: 1.25rem;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+
+    @media #{$max_991} {
+      display: none;
+    }
+
+    &.social::before,
+    &.scroll-down::after {
+      content: "";
+      display: inline-block;
+      height: 0.125rem;
+      width: 2rem;
+      background-color: hsl(var(--t-color-two));
+      transition: all 0.3s ease-in-out;
+    }
+
+    &.social a:hover,
+    &.scroll-down:hover {
+      color: hsl(var(--t-color-one));
+
+      &::after {
+        background-color: hsl(var(--t-color-one));
+      }
+    }
+  }
+
+  .social {
+    @include appDir() {
+      #{dirs(left, right)}: 2rem;
+      transform: dirs(rotate(-90deg), rotate(90deg));
+      transform-origin: dirs(left top, right top);
+    }
+
+    &::before {
+      @include appDir() {
+        margin-#{dirs(right, left)}: 1.25rem;
+      }
+    }
+
+    ul {
+      display: flex;
+
+      @include appDir() {
+        transform: dirs(rotateY(180deg), rotateY(-180deg));
+      }
+
+      li {
+        @include appDir() {
+          transform: dirs(
+            rotateX(0deg) rotateY(180deg) rotateZ(90deg),
+            rotateX(0deg) rotateY(-180deg) rotateZ(-90deg)
+          );
+        }
+
+        &:not(:last-of-type) {
+          @include appDir() {
+            margin-#{dirs(right, left)}: 1.25rem;
+          }
+        }
+
+        a {
+          &:focus {
+            @include focusStyle();
+          }
+        }
+      }
+    }
+  }
+
+  .scroll-down {
+    @include appDir() {
+      #{dirs(right, left)}: 2rem;
+      transform: dirs(rotate(90deg), rotate(-90deg));
+      transform-origin: dirs(right top, left top);
+    }
+
+    a {
+      text-transform: inherit;
+
+      &:focus {
+        @include focusStyle();
+      }
+    }
+
+    &::after {
+      @include appDir() {
+        margin-#{dirs(left, right)}: 1.25rem;
+      }
+    }
+  }
+
+  @media #{$min_992} {
+    position: relative;
+    height: $section_height;
+
+    &.parallax-animation:hover {
+      .layer {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  @media #{$max_991} {
+    min-height: $section_height;
+    display: grid;
+    place-content: center;
+    padding: {
+      top: 5rem;
+      bottom: 5rem;
+    }
+  }
+}

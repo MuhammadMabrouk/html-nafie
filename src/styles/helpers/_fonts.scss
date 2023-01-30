@@ -1,0 +1,15 @@
+/*-----------------------------------------------------------------------------------------*/
+/* 2. Fonts Family */
+/*-----------------------------------------------------------------------------------------*/
+
+html[dir="ltr"] body {
+  --logo-font-family: "Saira Stencil One", sans-serif;
+  --headings-font-family: "Poppins", sans-serif;
+  --body-font-family: "Roboto", sans-serif;
+}
+
+html[dir="rtl"] body {
+  --logo-font-family: "Tajawal", sans-serif;
+  --headings-font-family: "Tajawal", sans-serif;
+  --body-font-family: "Tajawal", sans-serif;
+}

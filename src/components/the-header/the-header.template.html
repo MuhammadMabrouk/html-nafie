@@ -1,0 +1,29 @@
+<header class="header hide-in-preloading">
+  <div class="container">
+
+    <!-- brand logo -->
+    @@include('./components/brand-logo/brand-logo.template.html')
+
+    <!-- navbar -->
+    @@include('./components/the-header/navbar/navbar.template.html')
+
+    <!-- actions icons -->
+    <ul class="header__actionsIcons">
+
+      <!-- language switcher dropdown -->
+      <li class="header__actionsIcons__item langSwitcher">
+        @@include('./components/the-header/langs-dropdown/langs-dropdown.template.html')
+      </li>
+
+      <!-- mode switcher button -->
+      <li class="header__actionsIcons__item modeSwitcher">
+        @@include('./components/the-header/mode-switcher/mode-switcher.template.html')
+      </li>
+
+      <!-- off-canvas menu toggler -->
+      <li class="header__actionsIcons__item offCanvasMenuToggler">
+        @@include('./components/the-header/hamburger-btn/hamburger-btn.template.html')
+      </li>
+    </ul>
+  </div>
+</header>

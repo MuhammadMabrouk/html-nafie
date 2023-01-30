@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="${{ index.i18n.lang.code }}$" dir="${{ index.i18n.dir }}$">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nafie develops the best quality website that serves for the long-term. Well-documented, clean, easy and elegant interface helps any non-technical clients.">
+    <meta name="keywords" content="portfolio, agency, business, clean, company, corporate, creative, gallery, rtl, modern, photography, responsive, sass">
+
+    <!-- title of the browser tab -->
+    <title>${{ index.browserTitle }}$</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="assets/favicon.ico">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="${{ index.i18n.fonts }}$">
+
+    <!-- css libraries file -->
+    <link rel="stylesheet" href="styles/libraries.min.css">
+
+    <!-- main style file -->
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <div id="app">
+      <div id="app-inner" :class="[savedTheme]">
+
+        <!-- start circle cursor -->
+        @@include('./components/circle-cursor/circle-cursor.template.html')
+        <!-- end circle cursor -->
+
+        <!-- start preloader -->
+        @@include('./components/preloader/preloader.template.html')
+        <!-- end preloader -->

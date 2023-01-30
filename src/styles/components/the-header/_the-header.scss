@@ -1,0 +1,95 @@
+/* 3. Header Styles */
+/*------------------*/
+
+// small header style mixin
+@mixin smallHeader {
+  & {
+    background-color: hsl(var(--bg-color-two));
+    box-shadow: var(--card-shadow);
+
+    .container {
+      height: var(--header-height-small);
+    }
+
+    .modeSwitcher {
+      --bg-color: hsl(var(--bg-color-one));
+    }
+  }
+}
+
+.header {
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  right: 0;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+
+  > .container {
+    @include flexbox(flex, "", center, between, "", "");
+    height: var(--header-height-big);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .brand-logo {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__actionsIcons {
+    @include flexbox(flex, "", center, "", "", "");
+
+    &__item {
+      &:not(:last-of-type) {
+        @include appDir() {
+          margin-#{dirs(right, left)}: 1rem;
+        }
+      }
+
+      &.langSwitcher {
+        transition: opacity var(--off-canvas-menu-transition);
+      }
+
+      &.offCanvasMenuToggler {
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
+
+  @media #{$min_992} {
+    &.header--expanded {
+      .modeSwitcher {
+        --bg-color: hsl(var(--bg-color-two));
+      }
+    }
+
+    &.header--semi-minimized {
+      @include smallHeader();
+    }
+  }
+
+  @media #{$max_991} {
+    @include smallHeader();
+  }
+
+  &:not(.header--minimized) {
+    top: 0;
+  }
+
+  &.header--minimized {
+    @media #{$min_992} {
+      &.header--expanded {
+        top: calc(var(--header-height-big) * -1);
+      }
+
+      &.header--semi-minimized {
+        top: calc(var(--header-height-small) * -1);
+      }
+    }
+
+    @media #{$max_991} {
+      top: calc(var(--header-height-small) * -1);
+    }
+  }
+}

@@ -1,0 +1,109 @@
+/* 8. Toast Notifications Styles */
+/*-------------------------------*/
+.notifications {
+  --notify-width: 17.5rem;
+  --icon-size: 2rem;
+
+  position: fixed;
+  z-index: 4000;
+  bottom: 1.25rem;
+  width: var(--notify-width);
+  line-height: 1.75rem;
+
+  @include appDir() {
+    #{dirs(right, left)}: 1.25rem;
+  }
+
+  &:empty {
+    display: none;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    width: 100%;
+    background-color: hsl(var(--bg-color-two));
+    color: hsl(var(--t-color-one));
+    border-radius: var(--radius-size);
+    filter: var(--drop-shadow);
+
+    @include appDir() {
+      padding: dirs(0.5rem 0.4rem 0.5rem 0.75rem, 0.5rem 0.75rem 0.5rem 0.4rem);
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 0.5rem;
+    }
+
+    &.success .notifications__icon::before {
+      content: "\f058";
+      color: hsl(var(--success-color));
+    }
+
+    &.info .notifications__icon::before {
+      content: "\f05a";
+      color: hsl(var(--info-color));
+    }
+
+    &.warning .notifications__icon::before {
+      content: "\f06a";
+      color: hsl(var(--warning-color));
+    }
+
+    &.danger .notifications__icon::before {
+      content: "\f057";
+      color: hsl(var(--danger-color));
+    }
+  }
+
+  &__icon {
+    @include flexbox(flex, "", center, center, "", "");
+    height: var(--icon-size);
+    width: var(--icon-size);
+    border-radius: 50%;
+
+    &::before {
+      font-size: var(--icon-size);
+      font-family: "Font Awesome 6 Free";
+    }
+  }
+
+  &__text {
+    @include flexbox(flex, "", center, "", "", "");
+    min-height: var(--icon-size);
+    width: calc(100% - (var(--icon-size) + 1.5rem));
+    padding: 0 0.75rem;
+  }
+
+  &__dismiss {
+    @include flexbox(flex, "", center, center, "", "");
+    height: var(--icon-size);
+    width: 1.5rem;
+
+    &::before {
+      content: "\f00d";
+      font-family: "Font Awesome 6 Free";
+    }
+
+    &:hover,
+    &:focus {
+      color: hsl(var(--danger-color));
+    }
+  }
+
+  .notify-enter {
+    animation: 0.2s ease-in-out;
+
+    @include appDir() {
+      animation-name: dirs(slideInLeft, slideInRight);
+    }
+  }
+
+  .notify-leave {
+    animation: 0.2s ease-in-out reverse forwards;
+
+    @include appDir() {
+      animation-name: dirs(slideInLeft, slideInRight);
+    }
+  }
+}

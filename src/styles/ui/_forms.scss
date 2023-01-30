@@ -1,0 +1,172 @@
+/* 1. Forms Styles */
+/*-----------------*/
+.form-styled {
+  .group {
+    &:not(:last-child) {
+      margin-bottom: 1.25rem;
+    }
+
+    label {
+      color: hsl(var(--t-color-one));
+      font-size: 0.75rem;
+
+      &.required-field {
+        &::after {
+          content: "*";
+          color: hsl(var(--danger-color));
+          font-family: monospace;
+          font-size: 1rem;
+          line-height: 1;
+
+          @include appDir() {
+            margin-#{dirs(left, right)}: 0.25rem;
+          }
+        }
+      }
+
+      .optional {
+        color: hsl(var(--t-color-two));
+        font-style: italic;
+        font-weight: normal;
+        font-family: var(--body-font-family);
+      }
+    }
+
+    .control {
+      position: relative;
+
+      &.has-prefix-icon {
+        input:not([type="radio"]):not([type="checkbox"]):not([type="file"]) {
+          @include appDir() {
+            padding-#{dirs(left, right)}: 2.5rem;
+          }
+        }
+
+        textarea {
+          text-indent: 1.625rem;
+        }
+
+        .prefix-icon {
+          @include flexbox(flex, "", center, center, "", "");
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 2.5rem;
+          font-size: 1.125rem;
+          transition: all 0.3s ease-in-out;
+
+          @include appDir() {
+            #{dirs(left, right)}: 0;
+          }
+        }
+
+        textarea + .prefix-icon {
+          top: 11px;
+          transform: translateY(0);
+        }
+      }
+
+      input:not([type="radio"]):not([type="checkbox"]):not([type="file"]),
+      textarea {
+        display: block;
+        width: 100%;
+        height: 2.5rem;
+        background-color: hsl(var(--inputs-bg-color));
+        padding: {
+          left: 0.875rem;
+          right: 0.875rem;
+        }
+        border: 0.0625rem solid;
+        outline: 0;
+        border-radius: var(--radius-size);
+        transition: all 0.3s ease-in-out;
+
+        &:not(:focus) {
+          border-color: hsl(var(--inputs-bg-color));
+        }
+
+        &:focus {
+          color: hsl(var(--main-color-one));
+          border-color: hsl(var(--main-color-one));
+          @include focusStyle();
+
+          ~ .fa {
+            color: hsl(var(--main-color-one));
+          }
+        }
+
+        &:disabled {
+          background-color: hsl(var(--bg-color-two));
+          cursor: not-allowed;
+
+          ~ .fa {
+            cursor: not-allowed;
+          }
+        }
+
+        &.invalid {
+          color: hsl(var(--danger-color)) !important;
+          border-color: hsl(var(--danger-color)) !important;
+
+          ~ .fa {
+            color: hsl(var(--danger-color)) !important;
+          }
+        }
+
+        &.valid {
+          color: hsl(var(--success-color)) !important;
+          border-color: hsl(var(--success-color)) !important;
+
+          ~ .fa {
+            color: hsl(var(--success-color)) !important;
+          }
+        }
+      }
+
+      input:not([type="radio"]):not([type="checkbox"]):not([type="file"]) {
+        line-height: 1;
+      }
+
+      input[type="tel"] {
+        direction: ltr;
+
+        &::placeholder {
+          @include appDir() {
+            text-align: dirs(null, end);
+          }
+        }
+      }
+
+      textarea {
+        min-height: 7.5rem;
+        white-space: normal;
+        padding: {
+          top: 0.625rem;
+          bottom: 0.625rem;
+        }
+        resize: vertical;
+      }
+
+      > .fa {
+        &:not(.prefix-icon) {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 1.125rem;
+
+          &.action-icon {
+            cursor: pointer;
+
+            @include appDir() {
+              #{dirs(right, left)}: 1.125rem;
+            }
+          }
+        }
+      }
+
+      .errors-msgs {
+        display: none;
+      }
+    }
+  }
+}

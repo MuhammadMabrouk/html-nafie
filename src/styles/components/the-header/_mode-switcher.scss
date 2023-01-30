@@ -1,0 +1,34 @@
+/* Mode Switcher Styles */
+/*----------------------*/
+.modeSwitcherBtn {
+  position: relative;
+  height: 1.75rem;
+  width: 3rem;
+  background-color: var(--bg-color);
+  border-radius: 0.9375rem;
+  transition: all 0.3s ease-in-out;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0.1875rem;
+    height: 1.375rem;
+    width: 1.375rem;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &[data-mode="light"]::after {
+    left: 1.4375rem;
+    box-shadow: 1.375rem -1.25rem #f9d71c inset;
+  }
+
+  &[data-mode="dark"]::after {
+    left: 0.1875rem;
+    box-shadow: 0.5625rem -0.4375rem #fff inset;
+  }
+
+  &:focus {
+    @include focusStyle();
+  }
+}
