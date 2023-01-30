@@ -12,7 +12,6 @@ const watchPath = [
   srcPath,
   "src/schema/*.html",
   "src/components/**/*.html",
-  "src/ui/**/*.html",
   "src/assets/i18n/**/*.json",
 ];
 

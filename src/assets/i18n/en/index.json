@@ -67,6 +67,16 @@
     "brandLogo": "Nafie"
   },
 
+  "heroSection": {
+    "text": {
+      "line1": "We Design & Build",
+      "line2": "Creative Products",
+      "btn": "Get In Touch"
+    },
+    "scroll": "Scroll",
+    "scrollDown": "Scroll Down"
+  },
+
   "toastNotifications": {
     "formsValidation": {
       "isRequired": "is required",

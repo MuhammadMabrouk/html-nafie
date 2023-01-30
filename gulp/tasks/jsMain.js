@@ -6,7 +6,6 @@ const connect = require("gulp-connect");
 const srcPath = [
   "src/scripts/**/*.js",
   "src/components/**/*.js",
-  "src/ui/**/*.js",
   "src/pages/**/*.js",
 ];
 const destPath = "dist/scripts";

@@ -1,9 +1,9 @@
-/* 3. Custom Tooltip Styles */
-/*--------------------------*/
+/* Simple Tooltip Styles */
+/*-----------------------*/
 .has-tooltip {
   position: relative;
 
-  .custom-tooltip {
+  .simple-tooltip {
     position: absolute;
     z-index: 1;
     min-width: max-content;
@@ -25,7 +25,7 @@
       background-color: hsl(var(--main-color-one));
     }
 
-    &.custom-tooltip-top {
+    &.tooltip-top {
       top: 0;
 
       @include appDir() {
@@ -46,7 +46,7 @@
       }
     }
 
-    &.custom-tooltip-bottom {
+    &.tooltip-bottom {
       bottom: 0;
 
       @include appDir() {
@@ -67,7 +67,7 @@
       }
     }
 
-    &.custom-tooltip-left {
+    &.tooltip-left {
       top: 50%;
       transform: translateY(-50%);
 
@@ -91,7 +91,7 @@
       }
     }
 
-    &.custom-tooltip-right {
+    &.tooltip-right {
       top: 50%;
       transform: translateY(-50%);
 
@@ -120,30 +120,30 @@
   .enable-focus-style &:focus {
     z-index: 1;
 
-    .custom-tooltip {
+    .simple-tooltip {
       visibility: visible;
       opacity: 1;
     }
 
-    .custom-tooltip-top {
+    .tooltip-top {
       @include appDir() {
         transform: dirs(translate(-50%, -150%), translate(50%, -150%));
       }
     }
 
-    .custom-tooltip-bottom {
+    .tooltip-bottom {
       @include appDir() {
         transform: dirs(translate(-50%, 150%), translate(50%, 150%));
       }
     }
 
-    .custom-tooltip-left {
+    .tooltip-left {
       @include appDir() {
         #{dirs(right, left)}: calc(100% + 2rem);
       }
     }
 
-    .custom-tooltip-right {
+    .tooltip-right {
       @include appDir() {
         #{dirs(left, right)}: calc(100% + 2rem);
       }

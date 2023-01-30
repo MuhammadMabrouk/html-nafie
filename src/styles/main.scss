@@ -2,10 +2,10 @@
 @import "table-of-contents";
 
 // Import Directions File
-@import "layouts/directions";
+@import "appearance/directions";
 
 // Import Themes File
-@import "layouts/themes";
+@import "appearance/themes";
 
 // Import Fonts File
 @import "helpers/fonts";
@@ -21,9 +21,6 @@
 
 // Import Global & Reset File
 @import "global-and-reset";
-
-// Import UI Elements Styles File
-@import "ui/ui";
 
 // Import Components Styles Files
 @import "components/components";

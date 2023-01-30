@@ -1,5 +1,5 @@
-/* 3. Brand Logo */
-/*---------------*/
+/* Brand Logo */
+/*------------*/
 .brandLogo {
   &__title {
     @include flexbox(flex, "", baseline, "", "", "");

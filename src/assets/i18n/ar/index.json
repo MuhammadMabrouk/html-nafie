@@ -67,6 +67,16 @@
     "brandLogo": "نافع"
   },
 
+  "heroSection": {
+    "text": {
+      "line1": "أنا أصمم وأبني",
+      "line2": "منتجات إبداعية",
+      "btn": "تواصل معي"
+    },
+    "scroll": "تمرير",
+    "scrollDown": "تمرير للأسفل"
+  },
+
   "toastNotifications": {
     "formsValidation": {
       "isRequired": "مطلوب",

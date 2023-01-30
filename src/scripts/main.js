@@ -5,6 +5,8 @@ import { headerScrollEffects } from "./components/the-header.js";
 import { getAppMode, toggleAppMode } from "./components/mode-switcher.js";
 import { offCanvasMenuToggle, offCanvasMenuClose, offCanvasMenuTabTrap } from "./components/navbar.js";
 import { scrollToTop } from "./components/scroll-to-top.js";
+import { initSimpleTooltips } from "./components/tooltip.js";
+import { initHeroImgPanEffect } from "./components/hero-section.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -14,6 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
   if (window.innerWidth >= 992) {
     // initialize circle cursor
     initCircleCursor();
+
+    // initialize hero image pan effect
+    initHeroImgPanEffect();
   }
 
   // manage elements focus style
@@ -45,6 +50,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // scroll to top
   window._scrollToTop = scrollToTop;
+
+  // initialize simple tooltip elements
+  initSimpleTooltips();
 });
 
 window.addEventListener("load", () => {
