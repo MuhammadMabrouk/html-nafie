@@ -101,6 +101,57 @@
     "tools": "Tools"
   },
 
+  "experienceSection": {
+    "subtitle": "experience",
+    "title1": "12+ Years of Experience",
+    "title2": "With Many Awards!",
+    "paragraph": "I have been developing sites and apps for 12 years and i know for sure the main trends and directions of modern design, I have been a visionary and a reliable software engineering partner for world-class brands. You will get a decent result as you expect.",
+    "items": {
+      "i1": {
+        "date": "2011",
+        "company": "Google Inc.",
+        "job": "Front-End Developer",
+        "desc": "Monitored technical aspects of the front-end delivery for projects."
+      },
+      "i2": {
+        "date": "2013",
+        "company": "Facebook Inc.",
+        "job": "Full Stack Developer",
+        "desc": "Collaborate with creative and development teams on the execution of ideas."
+      },
+      "i3": {
+        "date": "2015",
+        "company": "Envato Inc.",
+        "job": "UI/UX Developer",
+        "desc": "Converted Photoshop layouts to web pages using HTML, CSS, and JavaScript."
+      },
+      "i4": {
+        "date": "2017",
+        "company": "Google Inc.",
+        "job": "Front-End Developer",
+        "desc": "Monitored technical aspects of the front-end delivery for projects."
+      },
+      "i5": {
+        "date": "2019",
+        "company": "Facebook Inc.",
+        "job": "Full Stack Developer",
+        "desc": "Collaborate with creative and development teams on the execution of ideas."
+      },
+      "i6": {
+        "date": "2021",
+        "company": "Google Inc.",
+        "job": "Front-End Developer",
+        "desc": "Monitored technical aspects of the front-end delivery for projects."
+      },
+      "i7": {
+        "date": "2023",
+        "company": "Facebook Inc.",
+        "job": "Full Stack Developer",
+        "desc": "Collaborate with creative and development teams on the execution of ideas."
+      }
+    }
+  },
+
   "toastNotifications": {
     "formsValidation": {
       "isRequired": "is required",

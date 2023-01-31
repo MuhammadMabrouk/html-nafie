@@ -1,202 +1,205 @@
-@use "sass:math";
-
 /* 5. Experience Section Styles */
 /*------------------------------*/
-.experience-section {
-  .section-content {
-    align-items: center;
-    margin-bottom: -3.125rem;
+.experience {
+  &-section {
+    .section-content {
+      @include flexbox(flex, "", center, "", "", "");
+      gap: 3.125rem;
+
+      @media #{$max_991} {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  &__timeline,
+  &__text {
+    @media #{$min_992} {
+      flex: 1;
+    }
+  }
+
+  &__timeline {
+    --rows-height: 5rem;
+    --items-height: 2rem;
+    --border-size: 0.4375rem;
+
+    position: relative;
+
+    @media #{$min_992} {
+      @include appDir() {
+        padding-#{dirs(left, right)}: var(--items-height);
+        padding-#{dirs(right, left)}: calc(var(--items-height) + 0.625rem);
+      }
+    }
 
     @media #{$max_991} {
-      flex-direction: column-reverse;
+      padding: {
+        left: var(--items-height);
+        right: var(--items-height);
+      }
     }
 
-    > * {
-      margin-bottom: 3.125rem;
-    }
-
-    .experience-timeline {
-      $rows_height: 5rem;
-      $items_height: 2rem;
-      $border_size: 0.4375rem;
-
-      position: relative;
+    &__items {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-auto-rows: var(--rows-height);
+      align-items: center;
+      justify-content: space-between;
+      grid-auto-flow: dense;
+      counter-reset: items-count;
 
       @media #{$min_992} {
         @include appDir() {
-          padding-#{dirs(left, right)}: $items_height;
-          padding-#{dirs(right, left)}: calc(#{$items_height} + 0.625rem);
+          padding-#{dirs(left, right)}: var(--items-height);
+        }
+      }
+    }
+
+    &__item {
+      position: relative;
+      z-index: 1;
+      @include flexbox(flex, "", center, center, "", "");
+      height: var(--items-height);
+      cursor: help;
+      visibility: hidden;
+
+      &:nth-of-type(6n + 4) {
+        grid-column: 3;
+      }
+
+      &:nth-of-type(6n + 5) {
+        grid-column: 2;
+      }
+
+      &:nth-of-type(6n + 6) {
+        grid-column: 1;
+      }
+
+      @media #{$min_992} {
+        width: 4.375rem;
+        background-color: hsl(var(--bg-color-two));
+        color: hsl(var(--t-color-one));
+        counter-increment: items-count;
+        filter: var(--drop-shadow);
+
+        @include appDir() {
+          border-radius: dirs(
+            0 var(--radius-size) var(--radius-size) 0,
+            var(--radius-size) 0 0 var(--radius-size)
+          );
+        }
+
+        &::before {
+          content: counter(items-count);
+          @include flexbox(flex, "", center, center, "", "");
+          position: absolute;
+          top: -0.3125rem;
+          height: calc(var(--items-height) + 0.625rem);
+          width: calc(var(--items-height) + 0.625rem);
+          background-color: hsl(var(--main-color-one));
+          color: hsl(var(--light-color));
+          font-size: 1rem;
+          font-weight: bold;
+          border-radius: 50%;
+          filter: var(--drop-shadow);
+
+          @include appDir() {
+            #{dirs(left, right)}: calc(var(--items-height) * -1);
+          }
         }
       }
 
       @media #{$max_991} {
+        background-color: hsl(var(--main-color-one));
+        color: hsl(var(--light-color));
         padding: {
-          left: $items_height;
-          right: $items_height;
+          left: 0.75rem;
+          right: 0.75rem;
         }
+        border-radius: var(--radius-size);
+        box-shadow: var(--card-shadow);
       }
 
-      .timepath {
-        position: absolute;
-        top: 0;
-        height: 100%;
-        width: calc(100% - 0.625rem);
-        display: grid;
-        align-content: center;
-
-        @include appDir() {
-          #{dirs(left, right)}: 0;
-        }
-
-        span {
-          visibility: hidden;
-        }
-
-        .line {
-          display: block;
-          width: calc(100% - (#{$items_height} * 2));
-          margin: auto;
-          border-top: $border_size solid hsl(var(--border-color));
-
-          &:not(:first-of-type) {
-            margin-top: -$border_size;
-          }
-        }
-
-        .semicircle {
-          display: block;
-          height: calc($rows_height + $border_size);
-          width: $rows_height;
-          margin-top: -$border_size;
-          border-style: solid;
-          border-color: hsl(var(--border-color));
-
-          &:nth-of-type(4n + 2) {
-            @include appDir() {
-              margin-#{dirs(left, right)}: auto;
-              border-width: dirs(
-                $border_size $border_size $border_size 0,
-                $border_size 0 $border_size $border_size
-              );
-              border-radius: dirs(0 2em 2em 0, 2em 0 0 2em);
-            }
-          }
-
-          &:nth-of-type(4n + 4) {
-            @include appDir() {
-              margin-#{dirs(right, left)}: auto;
-              border-width: dirs(
-                $border_size 0 $border_size $border_size,
-                $border_size $border_size $border_size 0
-              );
-              border-radius: dirs(2em 0 0 2em, 0 2em 2em 0);
-            }
-          }
-        }
+      h3 {
+        color: inherit;
+        font-size: 1rem;
+        margin: 0;
       }
 
-      .timeline-items {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-auto-rows: $rows_height;
-        align-items: center;
-        justify-content: space-between;
-        grid-auto-flow: dense;
-        counter-reset: items-count;
-
-        @media #{$min_992} {
+      &:empty {
+        &::after {
           @include appDir() {
-            padding-#{dirs(left, right)}: $items_height;
+            content: dirs("?", "؟");
           }
         }
+      }
 
-        li {
-          position: relative;
-          z-index: 1;
-          @include flexbox(flex, "", center, center, "", "");
-          height: $items_height;
-          cursor: help;
-          visibility: hidden;
+      &:hover,
+      &:focus-within {
+        z-index: 2;
+      }
 
-          &:nth-of-type(6n + 4) {
-            grid-column: 3;
-          }
+      &:focus {
+        @include focusStyle();
+      }
+    }
+  }
 
-          &:nth-of-type(6n + 5) {
-            grid-column: 2;
-          }
+  &__timePath {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: calc(100% - 0.625rem);
+    display: grid;
+    align-content: center;
 
-          &:nth-of-type(6n + 6) {
-            grid-column: 1;
-          }
+    @include appDir() {
+      #{dirs(left, right)}: 0;
+    }
 
-          @media #{$min_992} {
-            width: 4.375rem;
-            background-color: hsl(var(--bg-color-two));
-            color: hsl(var(--t-color-one));
-            counter-increment: items-count;
-            filter: var(--drop-shadow);
+    span {
+      visibility: hidden;
+    }
 
-            @include appDir() {
-              border-radius: dirs(
-                0 var(--radius-size) var(--radius-size) 0,
-                var(--radius-size) 0 0 var(--radius-size)
-              );
-            }
+    .line {
+      display: block;
+      width: calc(100% - (var(--items-height) * 2));
+      margin: auto;
+      border-top: var(--border-size) solid hsl(var(--border-color));
 
-            &::before {
-              content: counter(items-count);
-              @include flexbox(flex, "", center, center, "", "");
-              position: absolute;
-              top: -0.3125rem;
-              height: calc(#{$items_height} + 0.625rem);
-              width: calc(#{$items_height} + 0.625rem);
-              background-color: hsl(var(--main-color-one));
-              color: hsl(var(--light-color));
-              font-size: 1rem;
-              font-weight: bold;
-              border-radius: 50%;
-              filter: var(--drop-shadow);
+      &:not(:first-of-type) {
+        margin-top: calc(var(--border-size) * -1);
+      }
+    }
 
-              @include appDir() {
-                #{dirs(left, right)}: -$items_height;
-              }
-            }
-          }
+    .semicircle {
+      display: block;
+      height: calc(var(--rows-height) + var(--border-size));
+      width: var(--rows-height);
+      margin-top: calc(var(--border-size) * -1);
+      border-style: solid;
+      border-color: hsl(var(--border-color));
 
-          @media #{$max_991} {
-            background-color: hsl(var(--main-color-one));
-            color: hsl(var(--light-color));
-            padding: {
-              left: 0.75rem;
-              right: 0.75rem;
-            }
-            border-radius: var(--radius-size);
-            box-shadow: var(--card-shadow);
-          }
+      &:nth-of-type(4n + 2) {
+        @include appDir() {
+          margin-#{dirs(left, right)}: auto;
+          border-width: dirs(
+            var(--border-size) var(--border-size) var(--border-size) 0,
+            var(--border-size) 0 var(--border-size) var(--border-size)
+          );
+          border-radius: dirs(0 2em 2em 0, 2em 0 0 2em);
+        }
+      }
 
-          h3 {
-            color: inherit;
-            font-size: 1rem;
-            margin: 0;
-          }
-
-          &:empty {
-            &::after {
-              @include appDir() {
-                content: dirs("?", "؟");
-              }
-            }
-          }
-
-          &:hover,
-          &:focus-within {
-            z-index: 2;
-          }
-
-          &:focus {
-            @include focusStyle();
-          }
+      &:nth-of-type(4n + 4) {
+        @include appDir() {
+          margin-#{dirs(right, left)}: auto;
+          border-width: dirs(
+            var(--border-size) 0 var(--border-size) var(--border-size),
+            var(--border-size) var(--border-size) var(--border-size) 0
+          );
+          border-radius: dirs(2em 0 0 2em, 0 2em 2em 0);
         }
       }
     }

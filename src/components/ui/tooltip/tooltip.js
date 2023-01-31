@@ -16,3 +16,13 @@ export function initSimpleTooltips() {
     );
   });
 }
+
+// initialize ultimate tooltip elements and popper.js plugin
+export function initUltimateTooltips() {
+  document.querySelectorAll(".has-ultimate-tooltip").forEach(el => {
+    Popper.createPopper(el, el.querySelector(".ultimate-tooltip"), {
+      placement: "top",
+      modifiers: [{ name: "offset", options: { offset: [0, 30] } }],
+    });
+  });
+}

@@ -5,7 +5,7 @@ import { headerScrollEffects } from "./components/the-header.js";
 import { getAppMode, toggleAppMode } from "./components/mode-switcher.js";
 import { offCanvasMenuToggle, offCanvasMenuClose, offCanvasMenuTabTrap } from "./components/navbar.js";
 import { scrollToTop } from "./components/scroll-to-top.js";
-import { initSimpleTooltips } from "./components/tooltip.js";
+import { initSimpleTooltips, initUltimateTooltips } from "./components/tooltip.js";
 import { initHeroImgPanEffect } from "./components/hero-section.js";
 import { switchSkillsItemsGroups } from "./components/skills-section.js";
 
@@ -54,6 +54,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // initialize simple tooltip elements
   initSimpleTooltips();
+
+  // initialize ultimate tooltip elements and popper.js plugin
+  initUltimateTooltips();
 
   // initialize stagger delay elements
   addStaggerDelay();
