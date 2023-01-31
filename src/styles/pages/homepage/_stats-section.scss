@@ -1,0 +1,117 @@
+/* 2. Statistics Section Styles */
+/*------------------------------*/
+.stats {
+  &-section {
+    --icon-size: 4rem;
+  }
+
+  &__items {
+    display: grid;
+    gap: 1.5rem;
+
+    @media #{$min_992} {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media #{$min_768} and #{$max_991} {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media #{$max_767} {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    visibility: hidden;
+
+    &:nth-of-type(1) {
+      .stats__icon {
+        background-color: hsl(var(--bg-color-reverse));
+        color: hsl(var(--bg-color-one));
+
+        &__img {
+          filter: var(--filter-invert-true);
+        }
+      }
+    }
+
+    &:nth-of-type(2) {
+      .stats__icon {
+        background-color: hsl(var(--main-color-one));
+        color: hsl(var(--light-color));
+
+        &__img {
+          filter: invert(1);
+        }
+      }
+    }
+
+    &:nth-of-type(3) {
+      .stats__icon {
+        background-color: hsl(var(--bg-color-one));
+        color: hsl(var(--bg-color-reverse));
+
+        &__img {
+          filter: var(--filter-invert-false);
+        }
+      }
+    }
+
+    &:hover {
+      .stats__link {
+        margin-top: -0.9375rem;
+
+        .stats__arrow {
+          color: hsl(var(--t-color-one));
+        }
+      }
+    }
+  }
+
+  &__link {
+    @include flexbox(flex, "", center, "", "", "");
+    height: 100%;
+    background-color: hsl(var(--bg-color-two));
+    padding: 2rem;
+    border-radius: var(--radius-size);
+    box-shadow: var(--card-shadow);
+
+    &:focus {
+      @include focusStyle();
+    }
+  }
+
+  &__icon {
+    @include flexbox(flex, "", center, center, "", "");
+    height: var(--icon-size);
+    width: var(--icon-size);
+    border-radius: 50%;
+
+    &__img {
+      width: 2.5rem;
+    }
+  }
+
+  &__text {
+    width: calc(100% - #{var(--icon-size)} - 3.75rem);
+    text-align: center;
+    margin: {
+      left: 2rem;
+      right: 2rem;
+    }
+
+    &__num {
+      color: hsl(var(--main-color-one));
+      font-size: 2rem;
+    }
+  }
+
+  &__arrow {
+    transition: all 0.3s ease-in-out;
+
+    @include appDir() {
+      transform: dirs(null, rotateY(180deg));
+    }
+  }
+}

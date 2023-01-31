@@ -76,6 +76,12 @@
     "scroll": "تمرير",
     "scrollDown": "تمرير للأسفل"
   },
+  
+  "statsSection": {
+    "stat1": "سنة من الخبرة",
+    "stat2": "مشاريع منجزة",
+    "stat3": "عميل سعيد"
+  },
 
   "toastNotifications": {
     "formsValidation": {

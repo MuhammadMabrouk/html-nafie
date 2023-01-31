@@ -76,6 +76,12 @@
     "scroll": "Scroll",
     "scrollDown": "Scroll Down"
   },
+  
+  "statsSection": {
+    "stat1": "Years of Experience",
+    "stat2": "Completed Projects",
+    "stat3": "Happy Clients"
+  },
 
   "toastNotifications": {
     "formsValidation": {
