@@ -1,92 +1,102 @@
 /* 3. About Section Styles */
 /*-------------------------*/
-.about-section {
-  .section-content {
-    align-items: center;
-    margin-bottom: -3.125rem;
-
-    > * {
-      margin-bottom: 3.125rem;
-    }
-
-    .about-img {
-      position: relative;
-      visibility: hidden;
-
-      @media #{$min_992} {
-        height: 31.25rem;
-      }
+.about {
+  &-section {
+    .section-content {
+      @include flexbox(flex, "", center, "", "", "");
+      gap: 3.125rem;
 
       @media #{$max_991} {
-        height: 25rem;
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__imgWrapper,
+  &__text {
+    @media #{$min_992} {
+      flex: 1;
+    }
+  }
+
+  &__imgWrapper {
+    position: relative;
+    visibility: hidden;
+
+    @media #{$min_992} {
+      height: 31.25rem;
+    }
+
+    @media #{$max_991} {
+      height: 25rem;
+      width: 100%;
+    }
+  }
+
+  &__imgLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    &:first-of-type {
+      height: 100%;
+      mask-image: url("../assets/images/blob-shape.png");
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: contain;
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        height: 80%;
+        width: 80%;
+        background: linear-gradient(
+          150deg,
+          hsl(var(--main-color-one)) 0%,
+          hsl(var(--main-color-two)) 100%
+        );
+        mask-image: url("../assets/images/blob-shape.png");
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: contain;
+
+        @include appDir() {
+          #{dirs(left, right)}: 50%;
+          transform: dirs(translateX(-50%), translateX(50%));
+        }
       }
 
-      .layer {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-
-        &:first-of-type {
-          height: 100%;
-          mask-image: url("../assets/images/blob-shape.png");
-          mask-repeat: no-repeat;
-          mask-position: center;
-          mask-size: contain;
-
-          &::before {
-            content: "";
-            position: absolute;
-            z-index: 1;
-            bottom: 0;
-            height: 80%;
-            width: 80%;
-            background: linear-gradient(
-              150deg,
-              hsl(var(--main-color-one)) 0%,
-              hsl(var(--main-color-two)) 100%
-            );
-            mask-image: url("../assets/images/blob-shape.png");
-            mask-repeat: no-repeat;
-            mask-position: center;
-            mask-size: contain;
-
-            @include appDir() {
-              #{dirs(left, right)}: 50%;
-              transform: dirs(translateX(-50%), translateX(50%));
-            }
-          }
-
-          img {
-            height: 100%;
-            filter: drop-shadow(0.125rem 0.25rem 0.375rem black);
-          }
-        }
-
-        &:last-of-type {
-          height: 50%;
-          overflow: hidden;
-
-          img {
-            height: 200%;
-          }
-        }
-
-        img {
-          position: relative;
-          z-index: 2;
-          display: block;
-          max-width: 100%;
-          margin: auto;
-          user-select: none;
-        }
+      .about__imgLayer__img {
+        height: 100%;
+        filter: drop-shadow(0.125rem 0.25rem 0.375rem black);
       }
     }
 
-    .about-text {
-      p {
-        margin: 0;
+    &:last-of-type {
+      height: 50%;
+      overflow: hidden;
+
+      .about__imgLayer__img {
+        height: 200%;
       }
+    }
+
+    &__img {
+      position: relative;
+      z-index: 2;
+      display: block;
+      max-width: 100%;
+      margin: auto;
+      user-select: none;
+    }
+  }
+
+  &__text {
+    p {
+      margin: 0;
     }
   }
 }

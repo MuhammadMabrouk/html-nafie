@@ -29,6 +29,7 @@
   &::after {
     content: "";
     position: absolute;
+    border-radius: inherit;
   }
 
   &::before {
