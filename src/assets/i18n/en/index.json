@@ -92,6 +92,15 @@
     "downloadBtn": "Download CV"
   },
 
+  "skillsSection": {
+    "subtitle": "my skills",
+    "title1": "What My Programming",
+    "title2": "Skills Included?",
+    "paragraph": "I develop simple, intuitive and responsive user interface that helps users get things done with less effort and time with those technologies.",
+    "skills": "Skills",
+    "tools": "Tools"
+  },
+
   "toastNotifications": {
     "formsValidation": {
       "isRequired": "is required",

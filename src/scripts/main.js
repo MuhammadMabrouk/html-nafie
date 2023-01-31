@@ -7,6 +7,7 @@ import { offCanvasMenuToggle, offCanvasMenuClose, offCanvasMenuTabTrap } from ".
 import { scrollToTop } from "./components/scroll-to-top.js";
 import { initSimpleTooltips } from "./components/tooltip.js";
 import { initHeroImgPanEffect } from "./components/hero-section.js";
+import { switchSkillsItemsGroups } from "./components/skills-section.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -53,6 +54,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // initialize simple tooltip elements
   initSimpleTooltips();
+
+  // initialize stagger delay elements
+  addStaggerDelay();
+
+  // switch between skills item groups
+  switchSkillsItemsGroups();
 });
 
 window.addEventListener("load", () => {
@@ -66,3 +73,16 @@ window.addEventListener("scroll", () => {
   // header scroll effects
   headerScrollEffects();
 });
+
+// add stagger delay to children elements
+function addStaggerDelay() {
+  const staggerDelayEls = document.querySelectorAll("[data-stagger-delay]");
+
+  staggerDelayEls.forEach(el => {
+    const value = JSON.parse(el.dataset.staggerDelay);
+
+    [...el.children].forEach((child, i) => {
+      child.style.setProperty("animation-delay", `${(i + 1) * (value || 100)}ms`);
+    });
+  });
+}

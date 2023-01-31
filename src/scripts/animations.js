@@ -1,6 +1,7 @@
 import { animBackTopScrollIndicator } from "./components/scroll-to-top.js";
 import { animStatisticsItems } from "./components/stats-section.js";
 import { animAboutImage } from "./components/about-section.js";
+import { animSkillsItems } from "./components/skills-section.js";
 
 // initialize animation effects
 export function initAnimation() {
@@ -19,7 +20,7 @@ export function initAnimation() {
   animAboutImage();
 
   /* skills items */
-  // animSkillsItems();
+  animSkillsItems();
 
   /* experience items timeline */
   // animExperienceItemsTimeline();
@@ -57,29 +58,6 @@ function animSectionTextBox() {
       .from(box.querySelectorAll("h2 ~ *"), { autoAlpha: 0, y: 50, stagger: 0.2 }, "-=0.2");
   });
 }
-
-// skills items
-// function animSkillsItems() {
-//   const skillsGroups = gsap.utils.toArray(".skills-section .skills-items ul");
-
-//   if (!skillsGroups.length) { return; }
-
-//   skillsGroups.forEach(group => {
-//     const skillsItemsTL = gsap.timeline({
-//       scrollTrigger: {
-//         trigger: ".skills-section .skills-items",
-//         start: "top 85%",
-//         end: "top 35%",
-//         scrub: 0.3,
-//       }
-//     });
-
-//     group.querySelectorAll("li").forEach((el, i) => {
-//       const pos = i === 0 ? "" : "< +=0.2";
-//       skillsItemsTL.from(el, { autoAlpha: 0 }, pos).from(el, { y: 50, }, "<");
-//     });
-//   });
-// }
 
 // experience items timeline
 // function animExperienceItemsTimeline() {
