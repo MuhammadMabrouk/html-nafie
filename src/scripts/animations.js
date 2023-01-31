@@ -1,4 +1,5 @@
 import { animBackTopScrollIndicator } from "./components/scroll-to-top.js";
+import { animStatisticsItems } from "./components/stats-section.js";
 
 // initialize animation effects
 export function initAnimation() {
@@ -8,7 +9,7 @@ export function initAnimation() {
   animBackTopScrollIndicator();
 
   /* statistics items */
-  // animStatisticsItems();
+  animStatisticsItems();
 
   /* section text box */
   // animSectionTextBox();
@@ -34,27 +35,6 @@ export function initAnimation() {
   /* contact form */
   // animContactForm();
 }
-
-// statistics items
-// function animStatisticsItems() {
-//   const statisticsItems = gsap.utils.toArray(".statistics-section .statistics-items li");
-
-//   if (!statisticsItems.length) { return; }
-
-//   const statisticsItemsTL = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: ".statistics-items",
-//       start: "top 82%",
-//       end: "top 50%",
-//       scrub: 0.3,
-//     }
-//   });
-
-//   statisticsItems.forEach((el, i) => {
-//     const pos = i === 0 ? "" : "< +=0.2";
-//     statisticsItemsTL.from(el, { autoAlpha: 0 }, pos).from(el, { y: 50, }, "<");
-//   });
-// }
 
 // section text box
 // function animSectionTextBox() {
