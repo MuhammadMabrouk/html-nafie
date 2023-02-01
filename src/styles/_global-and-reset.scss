@@ -137,6 +137,7 @@ body .page {
     }
 
     .title {
+      font-size: 2rem;
       line-height: 2.6rem;
 
       &:last-child {
@@ -215,6 +216,10 @@ body .page {
       &:not(:last-child) {
         margin-bottom: 2rem;
       }
+    }
+
+    h2 {
+      font-size: 2rem;
     }
 
     p:last-child {
@@ -316,6 +321,8 @@ h6 {
 }
 
 label {
+  display: inline-block;
+  line-height: 1.125rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }

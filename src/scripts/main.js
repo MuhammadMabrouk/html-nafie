@@ -8,6 +8,7 @@ import { scrollToTop } from "./components/scroll-to-top.js";
 import { initSimpleTooltips, initUltimateTooltips } from "./components/tooltip.js";
 import { initHeroImgPanEffect } from "./components/hero-section.js";
 import { switchSkillsItemsGroups } from "./components/skills-section.js";
+import { contactFormValidation } from "./components/contact-section.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -63,6 +64,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // switch between skills item groups
   switchSkillsItemsGroups();
+
+  // contact form validation
+  window._contactFormValidation = contactFormValidation;
 });
 
 window.addEventListener("load", () => {
