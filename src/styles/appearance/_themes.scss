@@ -69,6 +69,7 @@
   --border-color: var(--light-h), var(--light-s), calc(var(--light-l) - 4%);
 
   --card-shadow: 11px 10px 38px hsla(0, 0%, 0%, 12%);
+  --inset-shadow: inset 0 2px 4px hsla(0, 0%, 0%, 0.08);
   --drop-shadow: drop-shadow(2px 4px 6px hsla(0, 0%, 0%, 20%));
 
   --filter-invert-true: invert(1);
@@ -91,6 +92,7 @@
   --border-color: var(--dark-h), var(--dark-s), calc(var(--dark-l) + 4%);
 
   --card-shadow: 11px 10px 38px hsla(0, 0%, 0%, 38%);
+  --inset-shadow: inset 0 2px 4px hsla(0, 0%, 0%, 0.08);
   --drop-shadow: drop-shadow(2px 4px 6px hsla(0, 0%, 0%, 20%));
 
   --filter-invert-true: invert(0);

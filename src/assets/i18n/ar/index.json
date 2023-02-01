@@ -250,6 +250,32 @@
     }
   },
 
+  "contactSection": {
+    "subtitle": "اتصل بي",
+    "title1": "هل لديك اي مشروع؟",
+    "title2": "الرجاء ترك رسالة",
+    "paragraph": "تواصل معي واسمح لي أن أعرف كيف يمكنني المساعدة. املأ النموذج وسأكون على تواصل في أقرب وقت ممكن.",
+    "info": {
+      "address": {
+        "title": "العنوان:",
+        "content": "941 طريق صقر قريش ، الأندلس ، غرناطة ، WA 47122-4194"
+      },
+      "phone": "الهاتف:",
+      "email": "البريد الإلكتروني:"
+    },
+    "form": {
+      "nameLabel": "الاسم الكامل",
+      "namePlaceholder": "مثل: فلان الفلاني",
+      "emailLabel": "البريد الإلكتروني",
+      "emailPlaceholder": "مثل: john.doe@gmail.com",
+      "phoneLabel": "الهاتف",
+      "phonePlaceholder": "رقم الهاتف",
+      "messageLabel": "الرسالة",
+      "messagePlaceholder": "اكتب رسالتك...",
+      "submitBtn": "إرسال"
+    }
+  },
+
   "toastNotifications": {
     "formsValidation": {
       "isRequired": "مطلوب",

@@ -76,7 +76,7 @@
     "scroll": "Scroll",
     "scrollDown": "Scroll Down"
   },
-  
+
   "statsSection": {
     "stat1": "Years of Experience",
     "stat2": "Completed Projects",
@@ -247,6 +247,32 @@
         "author": "Dimitri Lockman",
         "job": "Motion Graphic Animator"
       }
+    }
+  },
+
+  "contactSection": {
+    "subtitle": "contact",
+    "title1": "Have You Any Project?",
+    "title2": "Please Drop a Message",
+    "paragraph": "Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.",
+    "info": {
+      "address": {
+        "title": "Address:",
+        "content": "941 Saqrqorish Road, alandalos, grnata, wa 47122-4194"
+      },
+      "phone": "Phone:",
+      "email": "Email:"
+    },
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "e.g. John Doe",
+      "emailLabel": "Email",
+      "emailPlaceholder": "e.g. john.doe@gmail.com",
+      "phoneLabel": "Phone",
+      "phonePlaceholder": "Phone Number",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Write message...",
+      "submitBtn": "Send"
     }
   },
 

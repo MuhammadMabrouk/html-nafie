@@ -28,6 +28,18 @@ export function addNotification({ id, type, msg }) {
   }
 }
 
+// dismiss toast notification
+export function dismissNotification(id) {
+  const notification = toastNotifications.querySelector(`#${id}`);
+
+  if (!notification) { return; }
+
+  notification.classList.remove("notify-enter");
+  setTimeout(() => notification.classList.add("notify-leave"));
+
+  notification.addEventListener("animationend", () => notification.remove());
+}
+
 // remove toast notification
 function removeNotification(e) {
   if (e.target?.classList.contains("notifications__dismiss")) { 
