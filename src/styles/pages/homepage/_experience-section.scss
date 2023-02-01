@@ -34,6 +34,7 @@
     }
 
     @media #{$max_991} {
+      width: 100%;
       padding: {
         left: var(--items-height);
         right: var(--items-height);

@@ -3,6 +3,7 @@ import { animStatisticsItems } from "./components/stats-section.js";
 import { animAboutImage } from "./components/about-section.js";
 import { animSkillsItems } from "./components/skills-section.js";
 import { animExperienceItemsTimeline } from "./components/experience-section.js";
+import { animTestimonialsSectionTitle, animTestimonialsItems } from "./components/testimonials-section.js";
 
 // initialize animation effects
 export function initAnimation() {
@@ -27,10 +28,10 @@ export function initAnimation() {
   animExperienceItemsTimeline();
 
   /* testimonials section title */
-  // animTestimonialsSectionTitle();
+  animTestimonialsSectionTitle();
 
   /* testimonials items */
-  // animTestimonialsItems();
+  animTestimonialsItems();
 
   /* contact info */
   // animContactInfo();
@@ -59,42 +60,6 @@ function animSectionTextBox() {
       .from(box.querySelectorAll("h2 ~ *"), { autoAlpha: 0, y: 50, stagger: 0.2 }, "-=0.2");
   });
 }
-
-// testimonials section title
-// function animTestimonialsSectionTitle() {
-//   if (!this.$refs.testimonialsSection) { return; }
-
-//   gsap.timeline({
-//     scrollTrigger: {
-//       trigger: ".testimonials-section .section-title",
-//       start: "top 90%",
-//       end: "top 40%",
-//       scrub: 0.3,
-//     }
-//   })
-//     .from(".testimonials-section .section-title .subtitle", { autoAlpha: 0, top: 50 })
-//     .from(".testimonials-section .section-title .title", { autoAlpha: 0, y: 50 }, "< +=0.2");
-// }
-
-// testimonials items
-// function animTestimonialsItems() {
-//   if (!this.$refs.testimonialsSection) { return; }
-
-//   const testimonialsItems = gsap.utils.toArray(".testimonials-section .testimonials-item");
-//   const testimonialsItemsTL = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: ".testimonials-section .testimonials-items",
-//       start: "top 75%",
-//       end: "top 25%",
-//       scrub: 0.3,
-//     }
-//   });
-
-//   testimonialsItems.forEach((el, i) => {
-//     const pos = i === 0 ? "" : "< +=0.2";
-//     testimonialsItemsTL.from(el, { autoAlpha: 0 }, pos).from(el, { scale: 0.2, }, "<");
-//   });
-// }
 
 // contact info
 // function animContactInfo() {

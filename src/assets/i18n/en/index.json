@@ -152,6 +152,104 @@
     }
   },
 
+  "testimonialsSection": {
+    "subtitle": "testimonials",
+    "title1": "Check What's My Clients",
+    "title2": "Say About Me",
+    "items": {
+      "i1": {
+        "quote": "Nafie simply provides amazing web development service. Their team is extremely professional and the easiest to meet I have ever worked with. I would recommend Nafie to anyone.",
+        "author": "Terrell Grimes",
+        "job": "Photographer"
+      },
+      "i2": {
+        "quote": "Excellent Team to work with. Always positive to find the most appropriate solution. Nafie is one of the professional web development agency that provides awesome services.",
+        "author": "Lonny Corkery",
+        "job": "Project Manager"
+      },
+      "i3": {
+        "quote": "Nafie team is very professional, always delivers high quality results, and is always there to help. Look forward to working with Nafie in other projects.",
+        "author": "Max Schmidt DDS",
+        "job": "CEO, Designer"
+      },
+      "i4": {
+        "quote": "Nafie worked on a handful of projects for us and has always exceeded our expectations. Nafie team is dedicated, talented and a delight to work with.",
+        "author": "Amir Stoltenberg",
+        "job": "Sales Manager"
+      },
+      "i5": {
+        "quote": "I know I can count on your service if I need my project done fast and with the best possible result. I am a regular customer and hope to continue our work!",
+        "author": "Kenton Marquardt",
+        "job": "Art Director"
+      },
+      "i6": {
+        "quote": "Muhammad was a real pleasure to work with and we look forward to working with him again. He’s definitely the kind of developer you can trust with a project from start to finish.",
+        "author": "Reyna Hammes",
+        "job": "Motion Graphic Animator"
+      },
+      "i7": {
+        "quote": "Muhammad was a real pleasure to work with and we look forward to working with him again. He’s definitely the kind of developer you can trust with a project from start to finish.",
+        "author": "Jovan Parisian",
+        "job": "Motion Graphic Animator"
+      },
+      "i8": {
+        "quote": "I know I can count on your service if I need my project done fast and with the best possible result. I am a regular customer and hope to continue our work!",
+        "author": "Pasquale Deckow",
+        "job": "Art Director"
+      },
+      "i9": {
+        "quote": "Nafie worked on a handful of projects for us and has always exceeded our expectations. Nafie team is dedicated, talented and a delight to work with.",
+        "author": "Rosa Ferry",
+        "job": "Sales Manager"
+      },
+      "i10": {
+        "quote": "Nafie team is very professional, always delivers high quality results, and is always there to help. Look forward to working with Nafie in other projects.",
+        "author": "Keshaun Robel",
+        "job": "CEO, Designer"
+      },
+      "i11": {
+        "quote": "Excellent Team to work with. Always positive to find the most appropriate solution. Nafie is one of the professional web development agency that provides awesome services.",
+        "author": "Casper Paucek",
+        "job": "Project Manager"
+      },
+      "i12": {
+        "quote": "Nafie simply provides amazing web development service. Their team is extremely professional and the easiest to meet I have ever worked with. I would recommend Nafie to anyone.",
+        "author": "Archibald Fadel",
+        "job": "Photographer"
+      },
+      "i13": {
+        "quote": "Nafie simply provides amazing web development service. Their team is extremely professional and the easiest to meet I have ever worked with. I would recommend Nafie to anyone.",
+        "author": "Tabitha Denesik",
+        "job": "Photographer"
+      },
+      "i14": {
+        "quote": "Excellent Team to work with. Always positive to find the most appropriate solution. Nafie is one of the professional web development agency that provides awesome services.",
+        "author": "Javon Bogan",
+        "job": "Project Manager"
+      },
+      "i15": {
+        "quote": "Nafie team is very professional, always delivers high quality results, and is always there to help. Look forward to working with Nafie in other projects.",
+        "author": "Duncan Kemmer",
+        "job": "CEO, Designer"
+      },
+      "i16": {
+        "quote": "Nafie worked on a handful of projects for us and has always exceeded our expectations. Nafie team is dedicated, talented and a delight to work with.",
+        "author": "Coy Johns",
+        "job": "Sales Manager"
+      },
+      "i17": {
+        "quote": "I know I can count on your service if I need my project done fast and with the best possible result. I am a regular customer and hope to continue our work!",
+        "author": "Murphy Roberts",
+        "job": "Art Director"
+      },
+      "i18": {
+        "quote": "Muhammad was a real pleasure to work with and we look forward to working with him again. He’s definitely the kind of developer you can trust with a project from start to finish.",
+        "author": "Dimitri Lockman",
+        "job": "Motion Graphic Animator"
+      }
+    }
+  },
+
   "toastNotifications": {
     "formsValidation": {
       "isRequired": "is required",
