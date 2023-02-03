@@ -8,6 +8,10 @@ let startMinimizingHeaderAt = 100;
 // header scroll effects
 export function headerScrollEffects() {
   const header = document.querySelector(".header");
+
+  // return if disabled
+  if (!header) { return; }
+
   const scrollPosition = window.pageYOffset;
   let isHeaderExpanded = !(scrollPosition >= startMinimizingHeaderAt);
   let isHeaderMinimized = scrollPosition > startMinimizingHeaderAt && scrollPosition > lastScrollPosition;

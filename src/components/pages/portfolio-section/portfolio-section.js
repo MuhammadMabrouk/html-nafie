@@ -5,7 +5,7 @@ import { addNotification, dismissNotification } from "./notifications.js";
 /*------------------------------------------------------------------------------------------*/
 
 const portfolioItems = document.querySelector(".portfolio-section .portfolio__items");
-const portfolioItemEls = portfolioItems.querySelectorAll(".portfolio__item");
+const portfolioItemEls = portfolioItems?.querySelectorAll(".portfolio__item");
 const itemsPerPage = 7;
 
 // initialize VanillaTilt library in portfolio section
@@ -82,6 +82,9 @@ function fixPortfolioLayout() {
 
 // initialize **DEMO** portfolio items (this function can be safely removed, it's for demonstration)
 export function init_DEMO_portfolio_items() {
+
+  // return if disabled
+  if (!portfolioItems) { return; }
 
   // show the first page items and hide the rest
   [...portfolioItemEls].slice(itemsPerPage).forEach(item => {

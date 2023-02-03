@@ -32,6 +32,10 @@ export function getAppMode() {
 
 // set the app mode
 function setAppMode(mode = "light") {
+
+  // return if disabled
+  if (!modeSwitcher) { return; }
+
   // use the mode
   document.documentElement.dataset.mode = mode;
   modeSwitcher.dataset.mode = mode;
@@ -42,6 +46,10 @@ function setAppMode(mode = "light") {
 
 // toggle the app mode
 export function toggleAppMode() {
+
+  // return if disabled
+  if (!modeSwitcher) { return; }
+
   const mode = modeSwitcher.dataset.mode === "light" ? "dark" : "light";
   setAppMode(mode);
 }
