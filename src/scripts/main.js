@@ -57,6 +57,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // scroll to top
   window._scrollToTop = scrollToTop;
 
+  // initialize glightbox plugin
+  const lightbox = new GLightbox({ autoplayVideos: false });
+
   // initialize simple tooltip elements
   initSimpleTooltips();
 
