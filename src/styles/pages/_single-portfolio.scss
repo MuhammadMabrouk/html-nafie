@@ -1,46 +1,51 @@
 /* 2. Single Portfolio Page Styles */
 /*---------------------------------*/
-.portfolio-page {
-  .portfolio-items {
-    .work-tools {
-      @include flexbox(flex, "", center, "", "", wrap);
-      padding: {
-        left: 0.25rem;
-        right: 0.25rem;
+.portfolio {
+  &-page {
+  }
+
+  &__tools {
+    @include flexbox(flex, "", center, "", "", wrap);
+    gap: 0.3125rem;
+    padding: {
+      left: 0.25rem;
+      right: 0.25rem;
+    }
+
+    @media #{$max_576} {
+      justify-content: center;
+    }
+
+    &__link {
+      display: block;
+      background-color: hsl(var(--main-color-one));
+      color: hsl(var(--light-color));
+      line-height: 1.125rem;
+      font-size: 0.75rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: var(--radius-size);
+
+      &:hover {
+        background-color: hsl(var(--bg-color-reverse));
+        color: hsl(var(--bg-color-one));
       }
-      margin-bottom: -0.3125rem;
 
-      @media #{$max_576} {
-        justify-content: center;
+      &:focus {
+        @include focusStyle();
       }
+    }
+  }
 
-      li {
-        margin-bottom: 0.3125rem;
+  &__livePreview {
+    width: calc(100% - 1rem);
+    margin: 0 0.5rem;
 
-        &:not(:last-of-type) {
-          @include appDir() {
-            margin-#{dirs(right, left)}: 0.3125rem;
-          }
-        }
+    &::after {
+      background-color: hsl(var(--main-color-one));
+    }
 
-        a {
-          display: block;
-          background-color: hsl(var(--main-color-one));
-          color: hsl(var(--light-color));
-          font-size: 0.75rem;
-          padding: 0.25rem 0.5rem;
-          border-radius: var(--radius-size);
-
-          &:hover {
-            background-color: hsl(var(--bg-color-reverse));
-            color: hsl(var(--bg-color-one));
-          }
-
-          &:focus {
-            @include focusStyle();
-          }
-        }
-      }
+    &:hover {
+      color: hsl(var(--light-color));
     }
   }
 }
