@@ -152,6 +152,19 @@
     }
   },
 
+  "portfolioSection": {
+    "subtitle": "my works",
+    "title1": "See My Works Which",
+    "title2": "Will Amaze You!",
+    "paragraph": "We develop the best quality website that serves for the long-term. Well-documented, clean, easy and elegant interface helps any non-technical clients.",
+    "noWorksMsg": "No works to load",
+    "loadMoreWorks": "Load more works",
+    "items": {
+      "title": "Lorem Ipsum Dolor",
+      "date": "February 2023"
+    }
+  },
+
   "testimonialsSection": {
     "subtitle": "testimonials",
     "title1": "Check What's My Clients",
@@ -274,6 +287,11 @@
       "messagePlaceholder": "Write message...",
       "submitBtn": "Send"
     }
+  },
+
+  "portfolioPage": {
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "caption": "caption"
   },
 
   "toastNotifications": {

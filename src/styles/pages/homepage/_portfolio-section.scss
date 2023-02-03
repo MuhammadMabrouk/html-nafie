@@ -1,207 +1,200 @@
-@use "sass:math";
-
 /* 6. Portfolio Section Styles */
 /*-----------------------------*/
-.portfolio-section {
-  .section-content {
-    .portfolio-items {
-      $gap_size: 1.5rem;
-
-      &.has-works {
-        column-gap: $gap_size;
-
-        @media #{$min_992} {
-          column-count: 3;
-        }
-
+.portfolio {
+  &-section {
+    &:not(.archive-page) {
+      .portfolio__text {
         @media #{$max_991} {
-          column-count: 2;
-        }
-
-        @media #{$max_576} {
-          column-count: 1;
-        }
-
-        > li {
-          margin-bottom: $gap_size;
-
-          &:first-of-type {
-            @media #{$min_992} {
-              break-inside: avoid;
-              overflow: hidden;
-            }
-          }
-        }
-      }
-
-      &:not(.has-works) {
-        margin-bottom: -($gap_size * 2);
-
-        > li {
-          margin-bottom: $gap_size * 2;
-        }
-      }
-
-      .works-filter {
-        @include flexbox(flex, "", center, "", "", wrap);
-
-        @media #{$max_576} {
-          justify-content: center;
-        }
-
-        li {
-          &:not(:last-of-type) {
-            @include appDir() {
-              margin-#{dirs(right, left)}: 0.5rem;
-            }
-
-            &::after {
-              @include appDir() {
-                content: dirs("\002F", "\005C");
-                margin-#{dirs(left, right)}: 0.5rem;
-              }
-            }
-          }
-
-          button {
-            &.active,
-            &:hover {
-              color: hsl(var(--main-color-one));
-            }
-
-            &:focus {
-              @include focusStyle();
-            }
-          }
-        }
-      }
-
-      > li {
-        &.portfolio-item {
-          border-radius: var(--radius-size);
-          overflow: hidden;
-          filter: var(--drop-shadow);
-          animation: zoomIn 0.2s ease-in-out;
-          will-change: transform;
-
-          a {
-            display: block;
-            position: relative;
-            height: 100%;
-            width: 100%;
-
-            &:hover {
-              .item-details {
-                transition: 0.3s;
-                visibility: visible;
-                opacity: 1;
-
-                .title,
-                .date {
-                  transform: translateY(0);
-                  opacity: 1;
-                }
-
-                .title {
-                  transition: 0.2s linear 0.1s;
-                }
-
-                .date {
-                  transition: 0.2s linear 0.2s;
-                }
-              }
-            }
-          }
-
-          &:focus-within {
-            @include focusStyle();
-          }
-        }
-
-        [class*="text-box"] {
-          @media #{$min_992} {
-            margin-top: $gap_size + math.div($gap_size, 2);
-            padding-bottom: $gap_size;
-          }
-
-          @media #{$max_991} {
-            position: relative;
-            column-span: all;
-            padding-bottom: $gap_size + math.div($gap_size, 2);
-          }
-        }
-
-        .more {
-          display: block;
-          width: 100%;
-          color: hsl(var(--main-color-one));
-          text-align: center;
-          font-size: 1.4rem;
-          text-decoration: underline;
-          border-radius: var(--radius-size);
-
-          &:focus {
-            @include focusStyle();
-          }
-        }
-
-        .item-img {
-          img {
-            display: block;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-          }
-        }
-
-        .item-details {
-          position: absolute;
-          z-index: 1;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          padding: 1.25rem;
-          visibility: hidden;
-          opacity: 0;
-          transition: 0.3s 0.2s;
-
-          .title,
-          .date {
-            width: fit-content;
-            background-color: hsl(var(--bg-color-one));
-            color: hsl(var(--bg-color-reverse));
-            padding: 0.375rem 0.75rem;
-            transform: translateY(2rem);
-            box-shadow: var(--card-shadow);
-            opacity: 0;
-          }
-
-          .title {
-            max-width: 100%;
-            font-size: 1rem;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
-            transition: 0.2s linear 0.1s;
-          }
-
-          .date {
-            font-size: 0.8rem;
-            transition: 0.2s linear;
-          }
+          margin-bottom: 0;
         }
       }
     }
   }
 
-  &:not(.archive-page) {
-    .portfolio-items {
+  &__items {
+    --gap-size: 1.5rem;
+
+    &.has-works {
+      column-gap: var(--gap-size);
+
+      @media #{$min_992} {
+        column-count: 3;
+      }
+
+      @media #{$max_991} {
+        column-count: 2;
+      }
+
+      @media #{$max_576} {
+        column-count: 1;
+      }
+
       > li {
-        &:first-of-type {
-          @media #{$max_991} {
-            margin-bottom: 0;
+        margin-bottom: var(--gap-size);
+      }
+
+      .portfolio__text {
+        @media #{$min_992} {
+          break-inside: avoid;
+          overflow: hidden;
+        }
+      }
+    }
+
+    &:not(.has-works) {
+      margin-bottom: calc(var(--gap-size) * -2);
+
+      > li {
+        margin-bottom: calc(var(--gap-size) * 2);
+      }
+    }
+  }
+
+  &__text {
+    [class*="text-box"] {
+      @media #{$min_992} {
+        margin-top: calc(var(--gap-size) + (var(--gap-size) * 0.5));
+        padding-bottom: var(--gap-size);
+      }
+
+      @media #{$max_991} {
+        position: relative;
+        column-span: all;
+        padding-bottom: calc(var(--gap-size) + (var(--gap-size) * 0.5));
+      }
+    }
+  }
+
+  &__filters {
+    @include flexbox(flex, "", center, "", "", wrap);
+    gap: 0.5rem;
+
+    @media #{$max_576} {
+      justify-content: center;
+    }
+
+    &__item {
+      &:not(:last-of-type) {
+        &::after {
+          @include appDir() {
+            content: dirs("\002F", "\005C");
+            margin-#{dirs(left, right)}: 0.5rem;
           }
         }
+      }
+    }
+
+    &__btn {
+      &.active,
+      &:hover {
+        color: hsl(var(--main-color-one));
+      }
+
+      &:focus {
+        @include focusStyle();
+      }
+    }
+  }
+
+  &__item {
+    border-radius: var(--radius-size);
+    overflow: hidden;
+    filter: var(--drop-shadow);
+    animation: zoomIn 0.2s ease-in-out;
+    will-change: transform;
+
+    &:focus-within {
+      @include focusStyle();
+    }
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    &:hover {
+      .portfolio__details {
+        transition: 0.3s;
+        visibility: visible;
+        opacity: 1;
+
+        .portfolio__details__title,
+        .portfolio__details__date {
+          transform: translateY(0);
+          opacity: 1;
+        }
+
+        .portfolio__details__title {
+          transition: 0.2s linear 0.1s;
+        }
+
+        .portfolio__details__date {
+          transition: 0.2s linear 0.2s;
+        }
+      }
+    }
+  }
+
+  &__imgWrapper {
+    &__img {
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__details {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1.25rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s 0.2s;
+
+    &__title,
+    &__date {
+      width: fit-content;
+      background-color: hsl(var(--bg-color-one));
+      color: hsl(var(--bg-color-reverse));
+      padding: 0.375rem 0.75rem;
+      transform: translateY(2rem);
+      box-shadow: var(--card-shadow);
+      opacity: 0;
+    }
+
+    &__title {
+      max-width: 100%;
+      font-size: 1rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      transition: 0.2s linear 0.1s;
+    }
+
+    &__date {
+      font-size: 0.8rem;
+      transition: 0.2s linear;
+    }
+  }
+
+  &__loadMore {
+    &__btn {
+      display: block;
+      width: 100%;
+      color: hsl(var(--main-color-one));
+      text-align: center;
+      font-size: 1.4rem;
+      text-decoration: underline;
+      border-radius: var(--radius-size);
+
+      &:focus {
+        @include focusStyle();
       }
     }
   }

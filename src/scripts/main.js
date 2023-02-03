@@ -8,6 +8,7 @@ import { scrollToTop } from "./components/scroll-to-top.js";
 import { initSimpleTooltips, initUltimateTooltips } from "./components/tooltip.js";
 import { initHeroImgPanEffect } from "./components/hero-section.js";
 import { switchSkillsItemsGroups } from "./components/skills-section.js";
+import { initializePortfolioTilt, filterPortfolioItems, loadMorePortfolioItems, init_DEMO_portfolio_items } from "./components/portfolio-section.js";
 import { contactFormValidation } from "./components/contact-section.js";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -21,6 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // initialize hero image pan effect
     initHeroImgPanEffect();
+
+    // initialize VanillaTilt library in portfolio section
+    initializePortfolioTilt();
   }
 
   // manage elements focus style
@@ -64,6 +68,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // switch between skills item groups
   switchSkillsItemsGroups();
+
+  // filter portfolio items
+  window._filterPortfolioItems = filterPortfolioItems;
+
+  // load more portfolio items
+  window._loadMorePortfolioItems = loadMorePortfolioItems;
+
+  // initialize **DEMO** portfolio items (this function can be safely removed, it's for demonstration)
+  init_DEMO_portfolio_items();
 
   // contact form validation
   window._contactFormValidation = contactFormValidation;
