@@ -11,7 +11,8 @@
   "main": "main.js",
   "scripts": {
     "serve": "gulp",
-    "build": "gulp build"
+    "build": "gulp build",
+    "themeforest": "gulp themeforest_build"
   },
   "devDependencies": {
     "del": "^6.0.0",

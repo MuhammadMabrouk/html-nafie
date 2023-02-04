@@ -12,6 +12,7 @@ const { assetsFontAwesome }     = require("./assetsFontAwesome");
 const { assetsNpm }             = require("./assetsNpm");
 const { phpFiles }              = require("./phpFiles");
 const { removePlaceholderImgs } = require("./removePlaceholderImgs");
+const { deleteUnlicensedImgs }  = require("./deleteUnlicensedImgs");
 const { setPlaceholderImgs }    = require("./setPlaceholderImgs");
 const { cleanup }               = require("./cleanup");
 const { zipper }                = require("./zipper");
@@ -42,6 +43,7 @@ const build = series(
 const themeforest_build = series(
   cleanup,
   commonTasks,
+  deleteUnlicensedImgs,
   setPlaceholderImgs,
   zipper
 );
