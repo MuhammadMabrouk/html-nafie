@@ -295,6 +295,11 @@
     "livePreview": "Live Preview"
   },
 
+  "archivePage": {
+    "title": "The latest projects in",
+    "taxonomy": "taxonomy"
+  },
+
   "toastNotifications": {
     "formsValidation": {
       "isRequired": "is required",

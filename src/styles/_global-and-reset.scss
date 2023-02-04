@@ -57,6 +57,10 @@ html {
   clear: both;
 }
 
+.unicode-bidi-plaintext {
+  unicode-bidi: plaintext;
+}
+
 .ltr-dir {
   direction: ltr;
   display: inline-block;

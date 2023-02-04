@@ -1,0 +1,84 @@
+<div class="contact__formHolder">
+  <form class="contact__form form-styled"
+    data-url="contact_form.php"
+    data-success-msg="${{ index.toastNotifications.messageSent }}$"
+    data-err-msg="${{ index.toastNotifications.oopsSomethingWrong }}$">
+
+    <!-- name control -->
+    <div class="group">
+      <label>${{ index.contactSection.form.nameLabel }}$</label>
+      <div class="control has-prefix-icon">
+        <input type="text"
+          name="name"
+          placeholder="${{ index.contactSection.form.namePlaceholder }}$"
+          minlength="3"
+          required>
+        <i class="fa-solid fa-circle-user prefix-icon"></i>
+
+        <!-- validation errors messages -->
+        <div class="errors-msgs">
+          <input class="required" type="hidden" value="${{ index.contactSection.form.nameLabel }}$ ${{ index.toastNotifications.formsValidation.isRequired }}$">
+          <input class="minLength" type="hidden" value="${{ index.contactSection.form.nameLabel }}$ ${{ index.toastNotifications.formsValidation.mustBeAtLeast }}$ ${{ index.numbers.3 }}$ ${{ index.toastNotifications.formsValidation.characters }}$">
+        </div>
+      </div>
+    </div>
+
+    <!-- email control -->
+    <div class="group">
+      <label>${{ index.contactSection.form.emailLabel }}$</label>
+      <div class="control has-prefix-icon">
+        <input class="ltr-dir"
+          type="email"
+          inputmode="email"
+          name="email"
+          placeholder="${{ index.contactSection.form.emailPlaceholder }}$"
+          required>
+        <i class="fa-solid fa-envelope prefix-icon"></i>
+
+        <!-- validation errors messages -->
+        <div class="errors-msgs">
+          <input class="required" type="hidden" value="${{ index.contactSection.form.emailLabel }}$ ${{ index.toastNotifications.formsValidation.isRequired }}$">
+          <input class="invalid" type="hidden" value="${{ index.toastNotifications.formsValidation.enterValidEmail }}$">
+        </div>
+      </div>
+    </div>
+
+    <!-- phone control -->
+    <div class="group phone-number">
+      <label>${{ index.contactSection.form.phoneLabel }}$ <span class="optional">${{ index.global.optional }}$</span></label>
+      <div class="control has-prefix-icon">
+        <input type="tel"
+          inputmode="tel"
+          name="phone"
+          placeholder="${{ index.contactSection.form.phonePlaceholder }}$">
+        <i class="fa-solid fa-phone prefix-icon"></i>
+
+        <!-- validation errors messages -->
+        <div class="errors-msgs">
+          <input class="invalid" type="hidden" value="${{ index.toastNotifications.formsValidation.enterValidPhone }}$">
+        </div>
+      </div>
+    </div>
+
+    <!-- message control -->
+    <div class="group">
+      <label>${{ index.contactSection.form.messageLabel }}$</label>
+      <div class="control has-prefix-icon">
+        <textarea name="message" placeholder="${{ index.contactSection.form.messagePlaceholder }}$" required></textarea>
+        <i class="fa-solid fa-comments prefix-icon"></i>
+
+        <!-- validation errors messages -->
+        <div class="errors-msgs">
+          <input class="required" type="hidden" value="${{ index.contactSection.form.messageLabel }}$ ${{ index.toastNotifications.formsValidation.isRequired }}$">
+        </div>
+      </div>
+    </div>
+
+    <!-- submit button -->
+    <div class="group">
+      <div class="control">
+        <button class="submit-btn w-btn w-btn--s2 w-btn--dark" type="button" onclick="window._contactFormValidation(this)">${{ index.contactSection.form.submitBtn }}$</button>
+      </div>
+    </div>
+  </form>
+</div>
