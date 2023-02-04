@@ -295,6 +295,11 @@
     "livePreview": "معاينة مباشرة"
   },
 
+  "archivePage": {
+    "title": "أحدث المشاريع المضافة",
+    "taxonomy": "في تصنيف"
+  },
+
   "toastNotifications": {
     "formsValidation": {
       "isRequired": "مطلوب",

@@ -1,0 +1,28 @@
+<div id="contact" class="contact-section section" tabindex="-1">
+  <div class="container">
+    <div class="section-content">
+
+      <!-- contact text -->
+      <div class="contact__text">
+        <div class="text-box-inline">
+          <span class="subtitle">${{ index.contactSection.subtitle }}$</span>
+          <h2>
+            ${{ index.contactSection.title1 }}$
+            <br>
+            ${{ index.contactSection.title2 }}$
+          </h2>
+          <p>${{ index.contactSection.paragraph }}$</p>
+        </div>
+
+        <!-- contact info -->
+        @@include('./components/pages/homepage/contact-section/contact-info/contact-info.template.html')
+
+        <!-- social links -->
+        @@include('./components/pages/homepage/contact-section/contact-social/contact-social.template.html')
+      </div>
+
+      <!-- contact form -->
+      @@include('./components/pages/homepage/contact-section/contact-form/contact-form.template.html')
+    </div>
+  </div>
+</div>

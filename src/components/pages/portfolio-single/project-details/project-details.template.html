@@ -1,0 +1,21 @@
+<li class="portfolio__text">
+  <div class="text-box-block">
+
+    <!-- project category link -->
+    <span class="subtitle">
+      <a href="${{ index.prefix }}$portfolio-archive.html">Angular</a>
+    </span>
+
+    <!-- project title -->
+    <h2>${{ index.portfolioSection.items.title }}$ 1</h2>
+
+    <!-- project description -->
+    <p>${{ index.portfolioPage.description }}$</p>
+
+    <!-- project tools -->
+    @@include('./components/pages/portfolio-single/project-tools/project-tools.template.html')
+
+    <!-- project live preview link -->
+    <a href="#" class="portfolio__livePreview w-btn w-btn--s2 w-btn--dark">${{ index.portfolioPage.livePreview }}$</a>
+  </div>
+</li>

@@ -1,0 +1,33 @@
+<div id="portfolio" class="portfolio-section section" tabindex="-1">
+  <div class="container">
+    <div class="section-content">
+
+      <!-- portfolio items -->
+      <ul class="portfolio__items has-works">
+
+        <!-- portfolio text -->
+        <li class="portfolio__text">
+          <div class="text-box-inline">
+            <span class="subtitle">${{ index.portfolioSection.subtitle }}$</span>
+            <h2>
+              ${{ index.portfolioSection.title1 }}$
+              <br>
+              ${{ index.portfolioSection.title2 }}$
+            </h2>
+            <p>${{ index.portfolioSection.paragraph }}$</p>
+
+            <!-- projects filter -->
+            @@include('./components/pages/homepage/portfolio-section/projects-filter.template.html')
+          </div>
+        </li>
+
+        <!-- start items list -->
+        @@include('./components/pages/homepage/portfolio-section/projects-list.template.html', { hasFilter: true })
+        <!-- end items list -->
+
+        <!-- load more button -->
+        @@include('./components/pages/homepage/portfolio-section/load-more-btn.template.html')
+      </ul>
+    </div>
+  </div>
+</div>
