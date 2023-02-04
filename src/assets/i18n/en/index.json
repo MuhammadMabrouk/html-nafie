@@ -300,6 +300,12 @@
     "taxonomy": "taxonomy"
   },
 
+  "errorPage": {
+    "title": "This page is missing",
+    "desc": "We're sorry, we couldn't find the page you requested.",
+    "homeLink": "Back to Home"
+  },
+
   "toastNotifications": {
     "formsValidation": {
       "isRequired": "is required",

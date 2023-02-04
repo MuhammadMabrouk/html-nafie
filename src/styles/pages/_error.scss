@@ -1,0 +1,42 @@
+/* 4. Error Page Styles */
+/*----------------------*/
+.error {
+  &-page {
+    text-align: center;
+    flex-grow: 1;
+    @include flexbox(flex, "", center, center, "", "");
+
+    #app-inner:has(&) {
+      @include flexbox(flex, "", "", "", column, "");
+    }
+  }
+
+  &__imgWrapper {
+    color: hsl(var(--primary-color));
+    margin-bottom: 3rem;
+
+    &__svg {
+      display: block;
+      max-width: 90%;
+      margin: auto;
+    }
+  }
+
+  &__code {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__desc {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+
+  &__homeLink {
+  }
+}

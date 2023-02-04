@@ -300,6 +300,12 @@
     "taxonomy": "في تصنيف"
   },
 
+  "errorPage": {
+    "title": "الصفحة غير موجودة",
+    "desc": "عذراً! لم نتمكن من العثور على الصفحة التي طلبتها.",
+    "homeLink": "العودة إلى الصفحة الرئيسية"
+  },
+
   "toastNotifications": {
     "formsValidation": {
       "isRequired": "مطلوب",

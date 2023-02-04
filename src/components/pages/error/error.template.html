@@ -1,0 +1,23 @@
+<div class="error-page page">
+  <div class="error-content">
+    <div class="container">
+
+      <!-- error image -->
+      <div class="error__imgWrapper">
+        <svg class="error__imgWrapper__svg" width="280" height="250"><use href="#error"/></svg>
+      </div>
+
+      <!-- error code -->
+      <h2 class="error__code">404</h2>
+
+      <!-- error title -->
+      <h3 class="error__title">${{ index.errorPage.title }}$</h3>
+
+      <!-- error description -->
+      <p class="error__desc">${{ index.errorPage.desc }}$</p>
+
+      <!-- homepage link -->
+      <a class="error__homeLink w-btn w-btn--s1 w-btn--primary" href="${{ index.prefix }}$index.html">${{ index.errorPage.homeLink }}$</a>
+    </div>
+  </div>
+</div>
