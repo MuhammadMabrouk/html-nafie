@@ -32,7 +32,8 @@
 
       &__icon {
         width: 1.5rem;
-        filter: var(--filter-invert-false);
+        color: hsl(var(--t-color-one));
+        transition: color var(--global-transition);
 
         @include appDir() {
           margin-#{dirs(right, left)}: 1.125rem;

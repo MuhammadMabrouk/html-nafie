@@ -4,19 +4,19 @@
       <ul class="stats__items">
         @@include('./components/pages/homepage/stats-section/stats-item/stats-item.template.html', {
           targetId: "#experience",
-          icon: "assets/images/icons/emblem.png",
+          iconId: "#emblem",
           num: "12+",
           title: "${{ index.statsSection.stat1 }}$"
         })
         @@include('./components/pages/homepage/stats-section/stats-item/stats-item.template.html', {
           targetId: "#portfolio",
-          icon: "assets/images/icons/check-mark.png",
+          iconId: "#check-mark",
           num: "230+",
           title: "${{ index.statsSection.stat2 }}$"
         })
         @@include('./components/pages/homepage/stats-section/stats-item/stats-item.template.html', {
           targetId: "#testimonials",
-          icon: "assets/images/icons/happy.png",
+          iconId: "#rating",
           num: "95+",
           title: "${{ index.statsSection.stat3 }}$"
         })
