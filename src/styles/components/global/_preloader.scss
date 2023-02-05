@@ -20,12 +20,9 @@
     text-align: center;
     margin-bottom: 1.5rem;
 
-    svg {
+    &__img {
       width: 2.25rem;
-
-      path {
-        fill: hsl(var(--bg-color-reverse));
-      }
+      filter: var(--filter-invert-false);
     }
   }
 
