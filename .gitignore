@@ -1,10 +1,10 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/dist
+/html-nafie/dist
 
 # dependencies
-/node_modules
+/html-nafie/node_modules
 
 # IDE - VSCode
 .vscode/*
@@ -19,4 +19,4 @@
 Thumbs.db
 
 # My Ignored Files
-html-nafie.code-workspace
+/html-nafie/html-nafie.code-workspace
