@@ -26,35 +26,23 @@
     visibility: hidden;
 
     &:nth-of-type(1) {
-      .stats__icon {
+      .stats__iconWrapper {
         background-color: hsl(var(--bg-color-reverse));
         color: hsl(var(--bg-color-one));
-
-        &__img {
-          filter: var(--filter-invert-true);
-        }
       }
     }
 
     &:nth-of-type(2) {
-      .stats__icon {
+      .stats__iconWrapper {
         background-color: hsl(var(--main-color-one));
         color: hsl(var(--light-color));
-
-        &__img {
-          filter: invert(1);
-        }
       }
     }
 
     &:nth-of-type(3) {
-      .stats__icon {
+      .stats__iconWrapper {
         background-color: hsl(var(--bg-color-one));
         color: hsl(var(--bg-color-reverse));
-
-        &__img {
-          filter: var(--filter-invert-false);
-        }
       }
     }
 
@@ -82,15 +70,13 @@
     }
   }
 
-  &__icon {
+  &__iconWrapper {
     @include flexbox(flex, "", center, center, "", "");
     height: var(--icon-size);
     width: var(--icon-size);
     border-radius: 50%;
-
-    &__img {
-      width: 2.5rem;
-    }
+    transition-property: background-color, color;
+    transition: var(--global-transition);
   }
 
   &__text {
