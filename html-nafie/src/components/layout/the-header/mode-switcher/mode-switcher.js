@@ -33,12 +33,9 @@ export function getAppMode() {
 // set the app mode
 function setAppMode(mode = "light") {
 
-  // return if disabled
-  if (!modeSwitcher) { return; }
-
   // use the mode
   document.documentElement.dataset.mode = mode;
-  modeSwitcher.dataset.mode = mode;
+  modeSwitcher && (modeSwitcher.dataset.mode = mode);
 
   // save the mode in localStorage
   localStorage.setItem("nafieSavedMode", mode);
