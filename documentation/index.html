@@ -1,0 +1,2104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nafie - Documentation</title>
+    <link rel="icon" href="assets/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Saira+Stencil+One&text=Nafie&display=swap"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="prettify/prettify.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+
+  <body>
+    <div class="page-content">
+      <!-- side menu -->
+      <aside>
+        <!-- template logo -->
+        <div class="logo" title="Nafie">
+          <h1>
+            <a href="https://nafie.webrouk.com/html/"
+              target="_blank"
+              rel="noreferrer"
+              title="Nafie - HTML Portfolio Template">Nafie</a>
+          </h1>
+        </div>
+
+        <!-- menu links -->
+        <ul class="side-menu">
+          <li><a class="active" href="#introduction">Introduction</a></li>
+          <li><a href="#get-started">Get Started</a></li>
+          <li><a href="#colors">Color Scheme</a></li>
+          <li><a href="#browser-tab-title">Browser Tab Title</a></li>
+          <li><a href="#favicon">Favicon</a></li>
+          <li><a href="#circle-cursor">Circle Cursor</a></li>
+          <li><a href="#preloader">Preloader</a></li>
+          <li><a href="#header">Header</a></li>
+          <li><a href="#hero">Hero Section</a></li>
+          <li><a href="#statistics">My Statistics</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">My Skills</a></li>
+          <li><a href="#experience">My Experience</a></li>
+          <li><a href="#portfolio">My Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+          <li><a href="#single-portfolio-page">Single Portfolio Page</a></li>
+          <li><a href="#error-page">Error Page</a></li>
+          <li><a href="#thank-you">Thank you</a></li>
+        </ul>
+      </aside>
+
+      <!-- main content -->
+      <main>
+        <!-- introduction section -->
+        <section id="introduction" class="section active">
+          <div class="section-content">
+            <h1>Nafie - HTML Portfolio Template</h1>
+            <h2>Documentation</h2>
+            <hr>
+            <ul>
+              <li><label>Created:</label> 02/2023</li>
+              <li>
+                <label>By:</label>
+                <a href="https://themeforest.net/user/webrouk/portfolio" target="_blank" rel="noreferrer">Webrouk</a>
+              </li>
+              <li>
+                <label>Email:</label>
+                <a href="mailto:webrouk.co@gmail.com">webrouk.co@gmail.com</a>
+              </li>
+            </ul>
+            <p>
+              Nafie is suitable as a resume website, personal CV, or creative Portfolio. It is ideal for professional persons. Perfect for showing your skills, experience, projects and expertise.
+              <br />
+              Nafie is very easy to set up and customize and comes with a well documented help file, which will assist you configure the template in minutes.
+            </p>
+          </div>
+        </section>
+
+        <!-- get-started section -->
+        <section id="get-started" class="section">
+          <div class="section-content">
+            <h2>Get Started</h2>
+            <hr>
+            <br>
+            <p>So you’ve just purchased our HTML template and now you have to customize it before you can put it online, but you’re not experienced with code so you’re not sure how to go about it. Well, rest easy, because in this help file we’re going to step you through the entire process. We’re going to be working off the assumption you’ve never seen a line of HTML before, let alone edited one, so no matter how new you are to working with code you’ll be shown exactly what to do every step of the way.</p>
+            <p>Let’s start at the very beginning.</p>
+            <br>
+            <h3>What is HTML?</h3>
+            <p>Technically speaking the answer to this question is “Hyper Text Markup Language”. However, for the purposes of customizing a template, you can consider HTML as a series of opening and closing tags like this:</p>
+<pre class="prettyprint lang-html linenums:1">
+&lt;h1&gt;  &lt;/h1&gt;
+</pre>
+            <p>Tags are indicated with <strong><mark>&lt;</mark></strong> and <strong><mark>&gt;</mark></strong> signs, and the closing tag always includes a <strong><mark>/</mark></strong>. Pairs of tags have content in between them like this:</p>
+<pre class="prettyprint lang-html linenums:1">
+&lt;h1&gt;John Smith, Front-End Developer&lt;/h1&gt;
+</pre>
+            <p>Sometimes, however, there are also stand alone tags, with no closing partner, like this:</p>
+<pre class="prettyprint lang-html linenums:1">
+&lt;img src="my-pic.jpg"&gt;
+</pre>
+            <p>Different HTML tags make different types of content appear on a web page. The above example of <strong><mark>&lt;h1&gt;&lt;/h1&gt;</mark></strong> tags would create a large heading reading “<strong>John Smith, Front-End Developer</strong>”, and the example <strong><mark>&lt;img&gt;</mark></strong> tag would make the image file “<strong>my-pic.jpg</strong>” appear on the page.</p>
+            <p>To edit an HTML template all you need to know is which tags represent the parts of the page you want to change, how to find them in the code, and how to edit them so they show what you want.</p>
+            <br>
+            <h3>Get Yourself a Code Editor:</h3>
+            <p>Yes, it’s completely possible to edit HTML in Notepad or a similar program, but things will go much more smoothly for you if you use a proper code editing app. One of the main reasons is you’ll get colored highlighting of your code, as you’ll see shortly, which will make it much easier to read and edit. There are several Text Editors like-</p>
+            <ol>
+              <li><a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">VS code</a></li>
+              <li><a href="https://www.sublimetext.com/" target="_blank" rel="noreferrer">Sublime</a></li>
+              <li><a href="https://notepad-plus-plus.org/" target="_blank" rel="noreferrer">Notepad++</a></li>
+            </ol>
+            <p>We are going to use <strong>VS code</strong>, which you can download it from <a href="https://code.visualstudio.com/Download/" target="_blank" rel="noreferrer">its official website</a>.</p>
+            <br>
+            <p><strong>Congratulations!</strong> Now you have everything you need to start customizing your template.</p>
+          </div>
+        </section>
+
+        <!-- colors section -->
+        <section id="colors" class="section">
+          <div class="section-content">
+            <h2>Color Scheme</h2>
+            <hr>
+            <ul>
+              <li>
+                <h4>This template contains 4 main colors shown below:</h4>
+                <ol>
+                  <li><span class="color-sample" style="background-color: hsl(24, 74%, 58%);"></span> Primary color</li>
+                  <li><span class="color-sample" style="background-color: hsl(13, 96%, 47%);"></span> Secondary color</li>
+                  <li><span class="color-sample" style="background-color: hsl(0, 0%, 100%);"></span> Light color</li>
+                  <li><span class="color-sample" style="background-color: hsl(0, 0%, 12%);"></span> Dark color</li>
+                </ol>
+                <br>
+              </li>
+              <li>
+                <h4>To change any of these colors, you need to go through two steps:</h4>
+                <ol>
+                  <li>
+                    Use the <strong>Color Picker</strong> to choose a new color. Then copy the three values <strong>Hue</strong>, <strong>Saturation</strong> and <strong>lightness</strong>.
+                    <br>
+                    <br>
+
+                    <!-- start HSL Color Picker -->
+                    <p class="codepen" data-height="393" data-default-tab="result" data-slug-hash="RwBdBeo" data-user="muhammad_mabrouk" style="height: 393px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                      <span>See the Pen <a href="https://codepen.io/muhammad_mabrouk/pen/RwBdBeo">
+                      HSL Color Picker</a> by Muhammad Mabrouk (<a href="https://codepen.io/muhammad_mabrouk">@muhammad_mabrouk</a>)
+                      on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                    <!-- end HSL Color Picker -->
+                    <br>
+                    <br>
+                  </li>
+                  <li>
+                    Suppose we want to change the <strong>Primary</strong> color, to do this open the <strong>styles/main.css</strong> file, go to the <strong>Color Codes</strong> section and replace the old values highlighted in yellow with the new values from the <strong>Color Picker</strong>.
+                  </li>
+                </ol>
+              </li>
+            </ul>
+
+<pre class="prettyprint lang-css linenums:69">
+/*-----------------------------------------------------------------------------------------*/
+/* 1. Color Codes */
+/*-----------------------------------------------------------------------------------------*/
+:root {
+  /* primary color */
+  --primary-h: <span class="yellow-highlight">24</span>;
+  --primary-s: <span class="yellow-highlight">74</span>%;
+  --primary-l: <span class="yellow-highlight">58</span>%;
+  --primary-color: var(--primary-h), var(--primary-s), var(--primary-l);
+  /* secondary color */
+  --secondary-h: 13;
+  --secondary-s: 96%;
+  --secondary-l: 47%;
+  --secondary-color: var(--secondary-h), var(--secondary-s), var(--secondary-l);
+  /* light color */
+  --light-h: 0;
+  --light-s: 0%;
+  --light-l: 100%;
+  --light-color: var(--light-h), var(--light-s), var(--light-l);
+  /* dark color */
+  --dark-h: 0;
+  --dark-s: 0%;
+  --dark-l: 12%;
+  --dark-color: var(--dark-h), var(--dark-s), var(--dark-l);
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+          </div>
+        </section>
+
+        <!-- browser tab title section -->
+        <section id="browser-tab-title" class="section">
+          <div class="section-content">
+            <h2>Browser Tab Title</h2>
+            <hr>
+            <ul>
+              <li>
+                To change the page title of the browser tab Open the <strong>index.html</strong> file, find the following code and replace the yellow highlighted text with new text.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:11">
+&lt;!-- title of the browser tab--&gt;
+&lt;title&gt;<span class="yellow-highlight">Nafie - HTML Portfolio Template</span>&lt;/title&gt;
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+          </div>
+        </section>
+
+        <!-- favicon section -->
+        <section id="favicon" class="section">
+          <div class="section-content">
+            <h2>Change Favicon</h2>
+            <hr>
+            <ul>
+              <li>
+                To change the Favicon open the <strong>index.html</strong> file, find the following code and replace the blue highlighted text with your own favicon <strong>Path/URL</strong> or just replace the favicon image located in <strong>'assets/favicon.ico'</strong> with new image.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:14">
+&lt;!-- favicon --&gt;
+&lt;link rel="icon" href="<span class="blue-highlight">assets/favicon.ico</span>" media="(prefers-color-scheme: light)"&gt;
+&lt;link rel="icon" href="<span class="blue-highlight">assets/favicon-dark-mode.ico</span>" media="(prefers-color-scheme: dark)"&gt;
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+          </div>
+        </section>
+
+        <!-- circle cursor section -->
+        <section id="circle-cursor" class="section">
+          <div class="section-content">
+            <h2>Disable Circle Cursor</h2>
+            <hr>
+            <ul>
+              <li>
+                In case you want to disable the <strong>Circle Cursor</strong>, open the <strong>index.html</strong> file using your text editor, find the following code and remove it.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:34">
+&lt;!-- start circle cursor --&gt;
+&lt;div class="circle-cursor circle-cursor-outer"&gt;&lt;/div&gt;
+&lt;div class="circle-cursor circle-cursor-inner"&gt;&lt;/div&gt;
+&lt;!-- end circle cursor --&gt;
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+          </div>
+        </section>
+
+        <!-- preloader section -->
+        <section id="preloader" class="section">
+          <div class="section-content">
+            <h2>Preloader Screen</h2>
+            <hr><br>
+            <h3>Turn Off Preloader</h3>
+            <ul>
+              <li>
+                In case you want to turn off the preloader screen, open the <strong>index.html</strong> file using your text editor, find the following code and remove it.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:39">
+&lt;!-- start preloader--&gt;
+&lt;div class="preloader"&gt;
+  &lt;div class="preloader__content"&gt;
+
+    &lt;!-- brand logo--&gt;
+    &lt;div class="preloader__logo"&gt;
+      &lt;img class="preloader__logo__img" src="assets/images/preloader-logo.svg" alt="Nafie" loading="lazy"&gt;
+    &lt;/div&gt;
+
+    &lt;!-- loading bar--&gt;
+    &lt;div class="preloader__loadingBar"&gt;
+      &lt;span class="preloader__loadingProgress"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end preloader--&gt;
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+            <hr><br>
+            <h3>Change Logo Icon</h3>
+            <ul>
+              <li>
+                To change the <strong>Logo Icon</strong> in the preloader screen, find the following code and replace the blue highlighted text with your own icon <strong>Path/URL</strong> or just replace the icon image located in <strong>'assets/images/preloader-logo.svg'</strong> with new image.
+              </li>
+              <li>
+                Change the yellow highlighted text with your website title.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:42">
+<span class="more">...</span>
+&lt;!-- brand logo--&gt;
+&lt;div class="preloader__logo"&gt;
+  &lt;img class="preloader__logo__img" src="<span class="blue-highlight">assets/images/preloader-logo.svg</span>" alt="<span class="yellow-highlight">Nafie</span>" loading="lazy"&gt;
+&lt;/div&gt;
+<span class="more">...</span>
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+          </div>
+        </section>
+
+        <!-- header section -->
+        <section id="header" class="section">
+          <div class="section-content">
+            <h2>Header</h2>
+            <hr><br>
+            <h3>Site Logo</h3>
+            <ul>
+              <li>To change the logo open the <strong>index.html</strong> file using your text editor, find the following code and replace the yellow highlighted text with your website title.</li>
+            </ul>
+<pre class="prettyprint lang-html linenums:18">
+&lt;!-- fonts --&gt;
+&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Saira+Stencil+One&text=<span class="yellow-highlight">Nafie</span>&display=swap"&gt;
+</pre>
+<pre class="prettyprint lang-html linenums:60">
+&lt;!-- brand logo --&gt;
+&lt;div class="brandLogo"&gt;
+  &lt;h2 class="brandLogo__title" title="<span class="yellow-highlight">Nafie</span>"&gt;
+    &lt;a class="brandLogo__link" href="index.html"&gt;<span class="yellow-highlight">Nafie</span>&lt;/a&gt;
+  &lt;/h2&gt;
+&lt;/div&gt;
+</pre>
+<pre class="prettyprint lang-html linenums:1301">
+&lt;!-- start of footer --&gt;
+&lt;footer class="footer"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="footer__content"&gt;
+
+      &lt;!-- brand logo --&gt;
+      &lt;div class="brandLogo"&gt;
+        &lt;h2 class="brandLogo__title" title="<span class="yellow-highlight">Nafie</span>"&gt;
+          &lt;a class="brandLogo__link" href="index.html"&gt;<span class="yellow-highlight">Nafie</span>&lt;/a&gt;
+        &lt;/h2&gt;
+      &lt;/div&gt;
+      <span class="more">...</span>
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+            <hr><br>
+            <h3>Navigation Links</h3>
+            <ul>
+              <li>
+                To change the <strong>Navbar Links</strong> open the <strong>index.html</strong> file using your text editor, find the following code and replace the yellow highlighted text with new text.
+              </li>
+              <li>
+                Replace the red highlighted text with new <strong>URLs</strong> or section <strong>IDs</strong> as shown below:
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:70">
+&lt;!-- navbar links --&gt;
+&lt;ul class="navbar__links"&gt;
+  &lt;li class="navbar__links__item"&gt;
+    &lt;a class="navbar__links__link" href="<span class="red-highlight">index.html#hero</span>" onclick="window._offCanvasMenuClose(this)"&gt;<span class="yellow-highlight">Home</span>&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="navbar__links__item"&gt;
+    &lt;a class="navbar__links__link" href="<span class="red-highlight">index.html#about</span>" onclick="window._offCanvasMenuClose(this)"&gt;<span class="yellow-highlight">About</span>&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="navbar__links__item"&gt;
+    &lt;a class="navbar__links__link" href="<span class="red-highlight">index.html#skills</span>" onclick="window._offCanvasMenuClose(this)"&gt;<span class="yellow-highlight">Skills</span>&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="navbar__links__item"&gt;
+    &lt;a class="navbar__links__link" href="<span class="red-highlight">index.html#portfolio</span>" onclick="window._offCanvasMenuClose(this)"&gt;<span class="yellow-highlight">Portfolio</span>&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="navbar__links__item"&gt;
+    &lt;a class="navbar__links__link" href="<span class="red-highlight">index.html#contact</span>" onclick="window._offCanvasMenuClose(this)"&gt;<span class="yellow-highlight">Contact</span>&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+            <hr><br>
+            <h3>Side Menu</h3>
+            <ul>
+              <li>
+                To change the text in <strong>Side Menu</strong>, open the <strong>index.html</strong> file, find the following code and replace the yellow highlighted text with new text.
+              </li>
+              <li>
+                Replace the red highlighted text with your email addresses and phone numbers in a valid format.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:89">
+&lt;!-- menu content in big devices (hidden in mobile/tablet) --&gt;
+&lt;div class="offCanvasMenu" tabindex="-1"&gt;
+  &lt;div class="container"&gt;
+
+    &lt;!-- about me --&gt;
+    &lt;div class="offCanvasMenu__about"&gt;
+      &lt;p class="block-subTitle"&gt;<span class="yellow-highlight">I love making things simple, intuitive and expertly crafted!</span>&lt;/p&gt;
+      &lt;h4 class="block-title"&gt;<span class="yellow-highlight">Product is the vital essence of what i do, truly great product is born of meticulous planning and process. This is where i specialized!</span>&lt;/h4&gt;
+    &lt;/div&gt;
+
+    &lt;!-- contact info --&gt;
+    &lt;ul class="offCanvasMenu__contact"&gt;
+      &lt;li class="offCanvasMenu__contact__block"&gt;
+        &lt;h4 class="block-title"&gt;<span class="yellow-highlight">Email</span>&lt;/h4&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="mailto:<span class="red-highlight">info@nafie.com</span>"&gt;<span class="yellow-highlight">info@nafie.com</span>&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="mailto:<span class="red-highlight">support@nafie.com</span>"&gt;<span class="yellow-highlight">support@nafie.com</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li class="offCanvasMenu__contact__block"&gt;
+        &lt;h4 class="block-title"&gt;<span class="yellow-highlight">Address</span>&lt;/h4&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            <span class="yellow-highlight">941 saqrqorish Road, alandalos,</span>
+            &lt;br&gt;
+            <span class="yellow-highlight">grnata, wa 47122-4194</span>
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li class="offCanvasMenu__contact__block"&gt;
+        &lt;h4 class="block-title"&gt;<span class="yellow-highlight">Phone</span>&lt;/h4&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="tel:<span class="red-highlight">02966202290</span>"&gt;<span class="yellow-highlight">(02) 966 202 290</span>&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="tel:<span class="red-highlight">02966202291</span>"&gt;<span class="yellow-highlight">(02) 966 202 291</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+          </div>
+        </section>
+
+        <!-- hero section -->
+        <section id="hero" class="section">
+          <div class="section-content">
+            <h2>Hero Section</h2>
+            <hr><br>
+            <h3>Hero Image</h3>
+            <ul>
+              <li>
+                To change the <strong>Hero Image</strong>, open the <strong>index.html</strong> file, find the following code and replace the path highlighted in blue with the <strong>Path/URL</strong> of the new image.
+              </li>
+              <li>
+                Replace the yellow highlighted text with your name.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:167">
+&lt;!-- start of hero section --&gt;
+&lt;div id="hero" class="hero-section hide-in-preloading" data-pan-effect&gt;
+
+  &lt;!-- hero image --&gt;
+  &lt;div class="hero__imgWrapper"&gt;
+    &lt;div class="hero__imgLayer"&gt;
+      &lt;img class="hero__imgLayer__img" src="<span class="blue-highlight">assets/images/hero-img.png</span>" alt="<span class="yellow-highlight">User Name</span>" loading="lazy"&gt;
+    &lt;/div&gt;
+    &lt;div class="hero__imgLayer"&gt;
+      &lt;img class="hero__imgLayer__img" src="<span class="blue-highlight">assets/images/hero-img.png</span>" alt="<span class="yellow-highlight">User Name</span>" loading="lazy"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  <span class="more">...</span>
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+            <hr><br>
+            <h3>Hero Text</h3>
+            <ul>
+              <li>
+                To change the text in <strong>Hero Section</strong>, open the <strong>index.html</strong> file, find the following code and replace the yellow highlighted text with new text.
+              </li>
+              <li>
+                Replace the red highlighted text with the <strong>URL</strong> of the button.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:179">
+<span class="more">...</span>
+&lt;!-- hero text --&gt;
+&lt;div class="hero__text"&gt;
+  &lt;h2 class="hero__text__title"&gt;
+    <span class="yellow-highlight">We Design & Build</span>
+    &lt;br&gt;
+    <span class="yellow-highlight">Creative Products</span>
+  &lt;/h2&gt;
+  &lt;a href="<span class="red-highlight">#contact</span>" class="hero__text__btn w-btn w-btn--s2 w-btn--outline-light"&gt;<span class="yellow-highlight">Get In Touch</span>&lt;/a&gt;
+&lt;/div&gt;
+<span class="more">...</span>
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+            <hr><br>
+            <h3>Social Icons</h3>
+            <ul>
+              <li>
+                To change the social networks titles open the <strong>index.html</strong> file, find the following code and replace the yellow highlighted text with new titles.
+              </li>
+              <li>
+                To change icons for social networks, go to <a href="https://fontawesome.com/search?m=free&o=r" target="_blank" rel="noreferrer">this page</a>, choose the icon you want and copy its class. Then replace the blue highlighted text with the new class.
+              </li>
+              <li>
+                Replace the red highlighted text with the <strong>URLs</strong> for social icons.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:189">
+<span class="more">...</span>
+&lt;!-- social icons --&gt;
+&lt;div class="hero__social"&gt;
+  &lt;ul class="hero__social__list"&gt;
+    &lt;li class="hero__social__item"&gt;
+      &lt;a href="<span class="red-highlight">#</span>" target="_blank" rel="noreferrer" data-tooltip='{ "text": "<span class="yellow-highlight">Facebook</span>", "dir": "right" }'&gt;
+        &lt;i class="<span class="blue-highlight">fa-brands fa-facebook-f</span>"&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="hero__social__item"&gt;
+      &lt;a href="<span class="red-highlight">#</span>" target="_blank" rel="noreferrer" data-tooltip='{ "text": "<span class="yellow-highlight">Twitter</span>", "dir": "right" }'&gt;
+        &lt;i class="<span class="blue-highlight">fa-brands fa-twitter</span>"&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="hero__social__item"&gt;
+      &lt;a href="<span class="red-highlight">#</span>" target="_blank" rel="noreferrer" data-tooltip='{ "text": "<span class="yellow-highlight">LinkedIn</span>", "dir": "right" }'&gt;
+        &lt;i class="<span class="blue-highlight">fa-brands fa-linkedin-in</span>"&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+<span class="more">...</span>
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+          </div>
+        </section>
+
+        <!-- statistics section -->
+        <section id="statistics" class="section">
+          <div class="section-content">
+            <h2>My Statistics</h2>
+            <hr>
+            <ul>
+              <li>
+                To change the text in <strong>My Statistics</strong> section, open the <strong>index.html</strong> file, find the following code and replace the yellow highlighted text with new text.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:218">
+&lt;!-- start of statistics section --&gt;
+&lt;div id="stats" class="stats-section section hide-in-preloading"&gt;
+  &lt;div class="section-content"&gt;
+    &lt;div class="container"&gt;
+      &lt;ul class="stats__items"&gt;
+        &lt;li class="stats__item"&gt;
+          &lt;a class="stats__link" href="#experience"&gt;
+
+            &lt;!-- statistics icon --&gt;
+            &lt;div class="stats__iconWrapper"&gt;
+              &lt;svg class="stats__iconWrapper__icon" width="40" height="40"&gt;
+                &lt;use href="#emblem" /&gt;
+              &lt;/svg&gt;
+            &lt;/div&gt;
+
+            &lt;!-- statistics text --&gt;
+            &lt;div class="stats__text"&gt;
+              &lt;h3 class="stats__text__num"&gt;<span class="yellow-highlight">12+</span>&lt;/h3&gt;
+              &lt;strong class="stats__text__title"&gt;<span class="yellow-highlight">Years of Experience</span>&lt;/strong&gt;
+            &lt;/div&gt;
+
+            &lt;i class="stats__arrow fa-solid fa-angle-right"&gt;&lt;/i&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="stats__item"&gt;
+          &lt;a class="stats__link" href="#portfolio"&gt;
+
+            &lt;!-- statistics icon --&gt;
+            &lt;div class="stats__iconWrapper"&gt;
+              &lt;svg class="stats__iconWrapper__icon" width="40" height="40"&gt;
+                &lt;use href="#check-mark" /&gt;
+              &lt;/svg&gt;
+            &lt;/div&gt;
+
+            &lt;!-- statistics text --&gt;
+            &lt;div class="stats__text"&gt;
+              &lt;h3 class="stats__text__num"&gt;<span class="yellow-highlight">230+</span>&lt;/h3&gt;
+              &lt;strong class="stats__text__title"&gt;<span class="yellow-highlight">Completed Projects</span>&lt;/strong&gt;
+            &lt;/div&gt;
+
+            &lt;i class="stats__arrow fa-solid fa-angle-right"&gt;&lt;/i&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="stats__item"&gt;
+          &lt;a class="stats__link" href="#testimonials"&gt;
+
+            &lt;!-- statistics icon --&gt;
+            &lt;div class="stats__iconWrapper"&gt;
+              &lt;svg class="stats__iconWrapper__icon" width="40" height="40"&gt;
+                &lt;use href="#rating" /&gt;
+              &lt;/svg&gt;
+            &lt;/div&gt;
+
+            &lt;!-- statistics text --&gt;
+            &lt;div class="stats__text"&gt;
+              &lt;h3 class="stats__text__num"&gt;<span class="yellow-highlight">95+</span>&lt;/h3&gt;
+              &lt;strong class="stats__text__title"&gt;<span class="yellow-highlight">Happy Clients</span>&lt;/strong&gt;
+            &lt;/div&gt;
+
+            &lt;i class="stats__arrow fa-solid fa-angle-right"&gt;&lt;/i&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end of statistics section --&gt;
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+          </div>
+        </section>
+
+        <!-- about section -->
+        <section id="about" class="section">
+          <div class="section-content">
+            <h2>About Me</h2>
+            <hr><br>
+            <h3>About Image</h3>
+            <ul>
+              <li>
+                To change the <strong>About Image</strong>, open the <strong>index.html</strong> file, find the following code and replace the path highlighted in blue with the <strong>Path/URL</strong> of the new image.
+              </li>
+              <li>
+                Replace the yellow highlighted text with your name.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:286">
+&lt;!-- start of about section --&gt;
+&lt;div id="about" class="about-section section hide-in-preloading" tabindex="-1"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="section-content"&gt;
+
+      &lt;!-- about image --&gt;
+      &lt;div class="about__imgWrapper"&gt;
+        &lt;div class="about__imgLayer"&gt;
+          &lt;img class="about__imgLayer__img" src="<span class="blue-highlight">assets/images/about-img.png</span>" alt="<span class="yellow-highlight">User Name</span>" loading="lazy"&gt;
+        &lt;/div&gt;
+        &lt;div class="about__imgLayer"&gt;
+          &lt;img class="about__imgLayer__img" src="<span class="blue-highlight">assets/images/about-img.png</span>" alt="<span class="yellow-highlight">User Name</span>" loading="lazy"&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      <span class="more">...</span>
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+            <hr><br>
+            <h3>Title & Description</h3>
+            <ul>
+              <li>
+                To change the title and description of the <strong>About Me</strong> section, open the <strong>index.html</strong> file, find the following code and replace the yellow highlighted text with new text.
+              </li>
+              <li>
+                Replace the red highlighted text with the <strong>URLs</strong> for the buttons.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:300">
+      <span class="more">...</span>
+      &lt;!-- about text --&gt;
+      &lt;div class="about__text"&gt;
+        &lt;div class="text-box-inline"&gt;
+          &lt;span class="subtitle"&gt;<span class="yellow-highlight">about me</span>&lt;/span&gt;
+          &lt;h2&gt;
+            <span class="yellow-highlight">Need a Creative Product?</span>
+            &lt;br&gt;
+            <span class="yellow-highlight">I can Help You!</span>
+          &lt;/h2&gt;
+          &lt;p&gt;<span class="yellow-highlight">Hi! I’m Muhammad Mabrouk, and I’m a developer who has passion for building clean web applications with intuitive functionality. I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have worked with creative teams, which involves daily stand-ups and communications, source control, and project management.</span>&lt;/p&gt;
+          &lt;div class="btns-container"&gt;
+            &lt;a href="<span class="red-highlight">#contact</span>" class="w-btn w-btn--s1 w-btn--primary"&gt;<span class="yellow-highlight">Hire Me</span>&lt;/a&gt;
+            &lt;a download href="<span class="red-highlight">#</span>" class="w-btn w-btn--s1 w-btn--outline-dark"&gt;<span class="yellow-highlight">Download CV</span>&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end of about section --&gt;
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+          </div>
+        </section>
+
+        <!-- skills section -->
+        <section id="skills" class="section">
+          <div class="section-content">
+            <h2>My Skills</h2>
+            <hr><br>
+            <h3>Title & Description</h3>
+            <ul>
+              <li>
+                To change the title and description of the <strong>My Skills</strong> section, open the <strong>index.html</strong> file, find the following code and replace the yellow highlighted text with new text.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:322">
+&lt;!-- start of skills section --&gt;
+&lt;div id="skills" class="skills-section section hide-in-preloading" tabindex="-1"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="section-content"&gt;
+
+      &lt;!-- skills text --&gt;
+      &lt;div class="skills__text"&gt;
+        &lt;div class="text-box-inline"&gt;
+          &lt;span class="subtitle"&gt;<span class="yellow-highlight">my skills</span>&lt;/span&gt;
+          &lt;h2&gt;
+            <span class="yellow-highlight">What My Programming</span>
+            &lt;br&gt;
+            <span class="yellow-highlight">Skills Included?</span>
+          &lt;/h2&gt;
+          &lt;p&gt;<span class="yellow-highlight">I develop simple, intuitive and responsive user interface that helps users get things done with less effort and time with those technologies.</span>&lt;/p&gt;
+
+          &lt;!-- switcher button --&gt;
+          &lt;div class="skills__text__switcher toggle-switch-btn"&gt;
+            &lt;input id="skills-list" type="radio" name="items_type" value="skills" checked&gt;
+            &lt;label for="skills-list" class="link-hover"&gt;<span class="yellow-highlight">Skills</span>&lt;/label&gt;
+
+            &lt;input id="tools-list" type="radio" name="items_type" value="tools"&gt;
+            &lt;label for="tools-list" class="link-hover"&gt;<span class="yellow-highlight">Tools</span>&lt;/label&gt;
+
+            &lt;span class="switcher-toggle" style="width: calc((100% - 0.5rem) / 2);"&gt;&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      <span class="more">...</span>
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+            <hr><br>
+            <h3>Skills & Tools</h3>
+            <ul>
+              <li>
+                To change the <strong>Skills & Tools</strong> items, open the <strong>index.html</strong> file, find the following code, replace the yellow highlighted text with the skill/tool name and replace the blue highlighted text with the <strong>Path/URL</strong> of the new image.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:350">
+      <span class="more">...</span>
+      &lt;!-- skills items --&gt;
+      &lt;div class="skills__wrapper"&gt;
+
+        &lt;!-- skills list --&gt;
+        &lt;ul class="skills__items" data-stagger-delay="50" data-type="skills"&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">HTML5</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/html5.png</span>" alt="<span class="yellow-highlight">HTML5</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">CSS3</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/css3.png</span>" alt="<span class="yellow-highlight">CSS3</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">JavaScript</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/javascript.png</span>" alt="<span class="yellow-highlight">JavaScript</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">TypeScript</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/typescript.png</span>" alt="<span class="yellow-highlight">TypeScript</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">jQuery</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/jquery.png</span>" alt="<span class="yellow-highlight">jQuery</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">Bootstrap</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/bootstrap.png</span>" alt="<span class="yellow-highlight">Bootstrap</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">Angular</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/angular.png</span>" alt="<span class="yellow-highlight">Angular</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">React</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/react.png</span>" alt="<span class="yellow-highlight">React</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">Vue</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/vue.png</span>" alt="<span class="yellow-highlight">Vue</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">Firebase</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/firebase.png</span>" alt="<span class="yellow-highlight">Firebase</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">PugJS</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/pugjs.png</span>" alt="<span class="yellow-highlight">PugJS</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">SASS</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/sass.png</span>" alt="<span class="yellow-highlight">SASS</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;!-- tools list --&gt;
+        &lt;ul class="skills__items" data-stagger-delay="50" data-type="tools" style="display: none;"&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">Ajax</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/ajax.png</span>" alt="<span class="yellow-highlight">Ajax</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">Gulp</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/gulp.png</span>" alt="<span class="yellow-highlight">Gulp</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">Webpack</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/webpack.png</span>" alt="<span class="yellow-highlight">Webpack</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">Git (Github)</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/git.png</span>" alt="<span class="yellow-highlight">Git (Github)</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">Npm</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/npm.png</span>" alt="<span class="yellow-highlight">Npm</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">Command Line</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/command.png</span>" alt="<span class="yellow-highlight">Command Line</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">VS Code</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/vs-code.png</span>" alt="<span class="yellow-highlight">VS Code</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">Trello</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/trello.png</span>" alt="<span class="yellow-highlight">Trello</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">ClickUp</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/clickup.png</span>" alt="<span class="yellow-highlight">ClickUp</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">Slack</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/slack.png</span>" alt="<span class="yellow-highlight">Slack</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">Photoshop</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/photoshop.png</span>" alt="<span class="yellow-highlight">Photoshop</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="skills__item" tabindex="0" data-tooltip='{ "text": "<span class="yellow-highlight">Adobe XD</span>", "dir": "top" }'&gt;
+            &lt;div class="skills__item__icon"&gt;
+              &lt;img class="skills__item__img" src="<span class="blue-highlight">assets/images/skills/adobe-xd.png</span>" alt="<span class="yellow-highlight">Adobe XD</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end of skills section --&gt;
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+          </div>
+        </section>
+
+        <!-- experience section -->
+        <section id="experience" class="section">
+          <div class="section-content">
+            <h2>My Experience</h2>
+            <hr><br>
+            <h3>Experience Timeline</h3>
+            <ul>
+              <li>
+                To change the <strong>Experience Timeline</strong>, open the <strong>index.html</strong> file, find the following code and replace the yellow highlighted text with new text.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:487">
+&lt;!-- start of experience section --&gt;
+&lt;div id="experience" class="experience-section section hide-in-preloading" tabindex="-1"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="section-content"&gt;
+
+      &lt;!-- experience timeline --&gt;
+      &lt;div class="experience__timeline"&gt;
+        &lt;div class="experience__timePath"&gt;&lt;/div&gt;
+
+        &lt;!-- experience items --&gt;
+        &lt;ul class="experience__timeline__items"&gt;
+          &lt;li class="experience__timeline__item has-ultimate-tooltip" tabindex="0"&gt;
+            &lt;h3&gt;<span class="yellow-highlight">2011</span>&lt;/h3&gt;
+            &lt;div class="ultimate-tooltip"&gt;
+              &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Google Inc.</span>&lt;/h4&gt;
+              &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">Front-End Developer</span>&lt;/h5&gt;
+              &lt;p&gt;<span class="yellow-highlight">Monitored technical aspects of the front-end delivery for projects.</span>&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="experience__timeline__item has-ultimate-tooltip" tabindex="0"&gt;
+            &lt;h3&gt;<span class="yellow-highlight">2013</span>&lt;/h3&gt;
+            &lt;div class="ultimate-tooltip"&gt;
+              &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Facebook Inc.</span>&lt;/h4&gt;
+              &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">Full Stack Developer</span>&lt;/h5&gt;
+              &lt;p&gt;<span class="yellow-highlight">Collaborate with creative and development teams on the execution of ideas.</span>&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="experience__timeline__item has-ultimate-tooltip" tabindex="0"&gt;
+            &lt;h3&gt;<span class="yellow-highlight">2015</span>&lt;/h3&gt;
+            &lt;div class="ultimate-tooltip"&gt;
+              &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Envato Inc.</span>&lt;/h4&gt;
+              &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">UI/UX Developer</span>&lt;/h5&gt;
+              &lt;p&gt;<span class="yellow-highlight">Converted Photoshop layouts to web pages using HTML, CSS, and JavaScript.</span>&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="experience__timeline__item has-ultimate-tooltip" tabindex="0"&gt;
+            &lt;h3&gt;<span class="yellow-highlight">2017</span>&lt;/h3&gt;
+            &lt;div class="ultimate-tooltip"&gt;
+              &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Google Inc.</span>&lt;/h4&gt;
+              &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">Front-End Developer</span>&lt;/h5&gt;
+              &lt;p&gt;<span class="yellow-highlight">Monitored technical aspects of the front-end delivery for projects.</span>&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="experience__timeline__item has-ultimate-tooltip" tabindex="0"&gt;
+            &lt;h3&gt;<span class="yellow-highlight">2019</span>&lt;/h3&gt;
+            &lt;div class="ultimate-tooltip"&gt;
+              &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Facebook Inc.</span>&lt;/h4&gt;
+              &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">Full Stack Developer</span>&lt;/h5&gt;
+              &lt;p&gt;<span class="yellow-highlight">Collaborate with creative and development teams on the execution of ideas.</span>&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="experience__timeline__item has-ultimate-tooltip" tabindex="0"&gt;
+            &lt;h3&gt;<span class="yellow-highlight">2021</span>&lt;/h3&gt;
+            &lt;div class="ultimate-tooltip"&gt;
+              &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Google Inc.</span>&lt;/h4&gt;
+              &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">Front-End Developer</span>&lt;/h5&gt;
+              &lt;p&gt;<span class="yellow-highlight">Monitored technical aspects of the front-end delivery for projects.</span>&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="experience__timeline__item has-ultimate-tooltip" tabindex="0"&gt;
+            &lt;h3&gt;<span class="yellow-highlight">2023</span>&lt;/h3&gt;
+            &lt;div class="ultimate-tooltip"&gt;
+              &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Facebook Inc.</span>&lt;/h4&gt;
+              &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">Full Stack Developer</span>&lt;/h5&gt;
+              &lt;p&gt;<span class="yellow-highlight">Collaborate with creative and development teams on the execution of ideas.</span>&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class="experience__timeline__item has-ultimate-tooltip" tabindex="0"&gt;&lt;/li&gt;
+          &lt;li class="experience__timeline__item has-ultimate-tooltip" tabindex="0"&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+      <span class="more">...</span>
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+            <hr><br>
+            <h3>Title & Description</h3>
+            <ul>
+              <li>
+                To change the title and description of the <strong>My Experience</strong> section, open the <strong>index.html</strong> file, find the following code and replace the yellow highlighted text with new text.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:565">
+      <span class="more">...</span>
+      &lt;!-- experience text --&gt;
+      &lt;div class="experience__text"&gt;
+        &lt;div class="text-box-inline"&gt;
+          &lt;span class="subtitle"&gt;<span class="yellow-highlight">experience</span>&lt;/span&gt;
+          &lt;h2&gt;
+            <span class="yellow-highlight">12+ Years of Experience</span>
+            &lt;br&gt;
+            <span class="yellow-highlight">With Many Awards!</span>
+          &lt;/h2&gt;
+          &lt;p&gt;<span class="yellow-highlight">I have been developing sites and apps for 12 years and i know for sure the main trends and directions of modern design, I have been a visionary and a reliable software engineering partner for world-class brands. You will get a decent result as you expect.</span>&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end of experience section --&gt;
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+          </div>
+        </section>
+
+        <!-- portfolio section -->
+        <section id="portfolio" class="section">
+          <div class="section-content">
+            <h2>My Portfolio</h2>
+            <hr><br>
+            <h3>Title & Description</h3>
+            <ul>
+              <li>
+                To change the title and description of the <strong>My Portfolio</strong> section, open the <strong>index.html</strong> file, find the following code and replace the yellow highlighted text with new text.
+              </li>
+              <li>
+                Change the filters highlighted in blue to match the names of the portfolio items categories.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:583">
+&lt;!-- start of portfolio section --&gt;
+&lt;div id="portfolio" class="portfolio-section section hide-in-preloading" tabindex="-1"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="section-content"&gt;
+
+      &lt;!-- portfolio items --&gt;
+      &lt;ul class="portfolio__items has-works"&gt;
+
+        &lt;!-- portfolio text --&gt;
+        &lt;li class="portfolio__text"&gt;
+          &lt;div class="text-box-inline"&gt;
+            &lt;span class="subtitle"&gt;<span class="yellow-highlight">my works</span>&lt;/span&gt;
+            &lt;h2&gt;
+              <span class="yellow-highlight">See My Works Which</span>
+              &lt;br&gt;
+              <span class="yellow-highlight">Will Amaze You!</span>
+            &lt;/h2&gt;
+            &lt;p&gt;<span class="yellow-highlight">We develop the best quality website that serves for the long-term. Well-documented, clean, easy and elegant interface helps any non-technical clients.</span>&lt;/p&gt;
+
+            &lt;!-- projects filter --&gt;
+            &lt;ul class="portfolio__filters"&gt;
+              &lt;li class="portfolio__filters__item"&gt;
+                &lt;button class="portfolio__filters__btn active" onclick="window._filterPortfolioItems(this)"&gt;<span class="blue-highlight">All</span>&lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li class="portfolio__filters__item"&gt;
+                &lt;button class="portfolio__filters__btn" onclick="window._filterPortfolioItems(this)"&gt;<span class="blue-highlight">HTML</span>&lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li class="portfolio__filters__item"&gt;
+                &lt;button class="portfolio__filters__btn" onclick="window._filterPortfolioItems(this)"&gt;<span class="blue-highlight">Angular</span>&lt;/button&gt;
+              &lt;/li&gt;
+              &lt;li class="portfolio__filters__item"&gt;
+                &lt;button class="portfolio__filters__btn" onclick="window._filterPortfolioItems(this)"&gt;<span class="blue-highlight">Vue</span>&lt;/button&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/li&gt;
+        <span class="more">...</span>
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+            <hr><br>
+            <h3>Portfolio Items</h3>
+            <ul>
+              <li>
+                To change the list of <strong>Portfolio Items</strong>, open the <strong>index.html</strong> file, find the following code, replace the yellow highlighted text with your project data, replace the blue highlighted text with the <strong>Path/URL</strong> of the project image, and replace the red highlighted text with your project <strong>category</strong> name.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:619">
+<span class="more">...</span>
+&lt;!-- start items list --&gt;
+&lt;li class="portfolio__item" data-filter="<span class="red-highlight">html</span>"&gt;
+  &lt;a class="portfolio__link" href="portfolio-single.html"&gt;
+
+    &lt;!-- item image --&gt;
+    &lt;div class="portfolio__imgWrapper"&gt;
+      &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/portfolio/portfolio-1.png</span>" alt="<span class="yellow-highlight">Lorem Ipsum Dolor 1</span>" loading="lazy"&gt;
+    &lt;/div&gt;
+
+    &lt;!-- item details --&gt;
+    &lt;div class="portfolio__details"&gt;
+      &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 1</span>&lt;/h3&gt;
+      &lt;div class="portfolio__details__date"&gt;<span class="yellow-highlight">February 2023</span>&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="portfolio__item" data-filter="<span class="red-highlight">angular</span>"&gt;
+  &lt;a class="portfolio__link" href="portfolio-single.html"&gt;
+
+    &lt;!-- item image --&gt;
+    &lt;div class="portfolio__imgWrapper"&gt;
+      &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/portfolio/portfolio-2.png</span>" alt="<span class="yellow-highlight">Lorem Ipsum Dolor 2</span>" loading="lazy"&gt;
+    &lt;/div&gt;
+
+    &lt;!-- item details --&gt;
+    &lt;div class="portfolio__details"&gt;
+      &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 2</span>&lt;/h3&gt;
+      &lt;div class="portfolio__details__date"&gt;<span class="yellow-highlight">February 2023</span>&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="portfolio__item" data-filter="<span class="red-highlight">vue</span>"&gt;
+  &lt;a class="portfolio__link" href="portfolio-single.html"&gt;
+
+    &lt;!-- item image --&gt;
+    &lt;div class="portfolio__imgWrapper"&gt;
+      &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/portfolio/portfolio-3.png</span>" alt="<span class="yellow-highlight">Lorem Ipsum Dolor 3</span>" loading="lazy"&gt;
+    &lt;/div&gt;
+
+    &lt;!-- item details --&gt;
+    &lt;div class="portfolio__details"&gt;
+      &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 3</span>&lt;/h3&gt;
+      &lt;div class="portfolio__details__date"&gt;<span class="yellow-highlight">February 2023</span>&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="portfolio__item" data-filter="<span class="red-highlight">html</span>"&gt;
+  &lt;a class="portfolio__link" href="portfolio-single.html"&gt;
+
+    &lt;!-- item image --&gt;
+    &lt;div class="portfolio__imgWrapper"&gt;
+      &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/portfolio/portfolio-4.png</span>" alt="<span class="yellow-highlight">Lorem Ipsum Dolor 4</span>" loading="lazy"&gt;
+    &lt;/div&gt;
+
+    &lt;!-- item details --&gt;
+    &lt;div class="portfolio__details"&gt;
+      &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 4</span>&lt;/h3&gt;
+      &lt;div class="portfolio__details__date"&gt;<span class="yellow-highlight">February 2023</span>&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="portfolio__item" data-filter="<span class="red-highlight">angular</span>"&gt;
+  &lt;a class="portfolio__link" href="portfolio-single.html"&gt;
+
+    &lt;!-- item image --&gt;
+    &lt;div class="portfolio__imgWrapper"&gt;
+      &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/portfolio/portfolio-5.png</span>" alt="<span class="yellow-highlight">Lorem Ipsum Dolor 5</span>" loading="lazy"&gt;
+    &lt;/div&gt;
+
+    &lt;!-- item details --&gt;
+    &lt;div class="portfolio__details"&gt;
+      &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 5</span>&lt;/h3&gt;
+      &lt;div class="portfolio__details__date"&gt;<span class="yellow-highlight">February 2023</span>&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="portfolio__item" data-filter="<span class="red-highlight">vue</span>"&gt;
+  &lt;a class="portfolio__link" href="portfolio-single.html"&gt;
+
+    &lt;!-- item image --&gt;
+    &lt;div class="portfolio__imgWrapper"&gt;
+      &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/portfolio/portfolio-6.png</span>" alt="<span class="yellow-highlight">Lorem Ipsum Dolor 6</span>" loading="lazy"&gt;
+    &lt;/div&gt;
+
+    &lt;!-- item details --&gt;
+    &lt;div class="portfolio__details"&gt;
+      &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 6</span>&lt;/h3&gt;
+      &lt;div class="portfolio__details__date"&gt;<span class="yellow-highlight">February 2023</span>&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="portfolio__item" data-filter="<span class="red-highlight">html</span>"&gt;
+  &lt;a class="portfolio__link" href="portfolio-single.html"&gt;
+
+    &lt;!-- item image --&gt;
+    &lt;div class="portfolio__imgWrapper"&gt;
+      &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/portfolio/portfolio-7.png</span>" alt="<span class="yellow-highlight">Lorem Ipsum Dolor 7</span>" loading="lazy"&gt;
+    &lt;/div&gt;
+
+    &lt;!-- item details --&gt;
+    &lt;div class="portfolio__details"&gt;
+      &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 7</span>&lt;/h3&gt;
+      &lt;div class="portfolio__details__date"&gt;<span class="yellow-highlight">February 2023</span>&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="portfolio__item" data-filter="<span class="red-highlight">vue</span>"&gt;
+  &lt;a class="portfolio__link" href="portfolio-single.html"&gt;
+
+    &lt;!-- item image --&gt;
+    &lt;div class="portfolio__imgWrapper"&gt;
+      &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/portfolio/portfolio-8.png</span>" alt="<span class="yellow-highlight">Lorem Ipsum Dolor 8</span>" loading="lazy"&gt;
+    &lt;/div&gt;
+
+    &lt;!-- item details --&gt;
+    &lt;div class="portfolio__details"&gt;
+      &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 8</span>&lt;/h3&gt;
+      &lt;div class="portfolio__details__date"&gt;<span class="yellow-highlight">February 2023</span>&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="portfolio__item" data-filter="<span class="red-highlight">angular</span>"&gt;
+  &lt;a class="portfolio__link" href="portfolio-single.html"&gt;
+
+    &lt;!-- item image --&gt;
+    &lt;div class="portfolio__imgWrapper"&gt;
+      &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/portfolio/portfolio-9.png</span>" alt="<span class="yellow-highlight">Lorem Ipsum Dolor 9</span>" loading="lazy"&gt;
+    &lt;/div&gt;
+
+    &lt;!-- item details --&gt;
+    &lt;div class="portfolio__details"&gt;
+      &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 9</span>&lt;/h3&gt;
+      &lt;div class="portfolio__details__date"&gt;<span class="yellow-highlight">February 2023</span>&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="portfolio__item" data-filter="<span class="red-highlight">html</span>"&gt;
+  &lt;a class="portfolio__link" href="portfolio-single.html"&gt;
+
+    &lt;!-- item image --&gt;
+    &lt;div class="portfolio__imgWrapper"&gt;
+      &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/portfolio/portfolio-10.png</span>" alt="<span class="yellow-highlight">Lorem Ipsum Dolor 10</span>" loading="lazy"&gt;
+    &lt;/div&gt;
+
+    &lt;!-- item details --&gt;
+    &lt;div class="portfolio__details"&gt;
+      &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 10</span>&lt;/h3&gt;
+      &lt;div class="portfolio__details__date"&gt;<span class="yellow-highlight">February 2023</span>&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="portfolio__item" data-filter="<span class="red-highlight">vue</span>"&gt;
+  &lt;a class="portfolio__link" href="portfolio-single.html"&gt;
+
+    &lt;!-- item image --&gt;
+    &lt;div class="portfolio__imgWrapper"&gt;
+      &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/portfolio/portfolio-11.png</span>" alt="<span class="yellow-highlight">Lorem Ipsum Dolor 11</span>" loading="lazy"&gt;
+    &lt;/div&gt;
+
+    &lt;!-- item details --&gt;
+    &lt;div class="portfolio__details"&gt;
+      &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 11</span>&lt;/h3&gt;
+      &lt;div class="portfolio__details__date"&gt;<span class="yellow-highlight">February 2023</span>&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="portfolio__item" data-filter="<span class="red-highlight">angular</span>"&gt;
+  &lt;a class="portfolio__link" href="portfolio-single.html"&gt;
+
+    &lt;!-- item image --&gt;
+    &lt;div class="portfolio__imgWrapper"&gt;
+      &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/portfolio/portfolio-12.png</span>" alt="<span class="yellow-highlight">Lorem Ipsum Dolor 12</span>" loading="lazy"&gt;
+    &lt;/div&gt;
+
+    &lt;!-- item details --&gt;
+    &lt;div class="portfolio__details"&gt;
+      &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 12</span>&lt;/h3&gt;
+      &lt;div class="portfolio__details__date"&gt;<span class="yellow-highlight">February 2023</span>&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="portfolio__item" data-filter="<span class="red-highlight">html</span>"&gt;
+  &lt;a class="portfolio__link" href="portfolio-single.html"&gt;
+
+    &lt;!-- item image --&gt;
+    &lt;div class="portfolio__imgWrapper"&gt;
+      &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/portfolio/portfolio-13.png</span>" alt="<span class="yellow-highlight">Lorem Ipsum Dolor 13</span>" loading="lazy"&gt;
+    &lt;/div&gt;
+
+    &lt;!-- item details --&gt;
+    &lt;div class="portfolio__details"&gt;
+      &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 13</span>&lt;/h3&gt;
+      &lt;div class="portfolio__details__date"&gt;<span class="yellow-highlight">February 2023</span>&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="portfolio__item" data-filter="<span class="red-highlight">angular</span>"&gt;
+  &lt;a class="portfolio__link" href="portfolio-single.html"&gt;
+
+    &lt;!-- item image --&gt;
+    &lt;div class="portfolio__imgWrapper"&gt;
+      &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/portfolio/portfolio-14.png</span>" alt="<span class="yellow-highlight">Lorem Ipsum Dolor 14</span>" loading="lazy"&gt;
+    &lt;/div&gt;
+
+    &lt;!-- item details --&gt;
+    &lt;div class="portfolio__details"&gt;
+      &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 14</span>&lt;/h3&gt;
+      &lt;div class="portfolio__details__date"&gt;<span class="yellow-highlight">February 2023</span>&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="portfolio__item" data-filter="<span class="red-highlight">vue</span>"&gt;
+  &lt;a class="portfolio__link" href="portfolio-single.html"&gt;
+
+    &lt;!-- item image --&gt;
+    &lt;div class="portfolio__imgWrapper"&gt;
+      &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/portfolio/portfolio-15.png</span>" alt="<span class="yellow-highlight">Lorem Ipsum Dolor 15</span>" loading="lazy"&gt;
+    &lt;/div&gt;
+
+    &lt;!-- item details --&gt;
+    &lt;div class="portfolio__details"&gt;
+      &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 15</span>&lt;/h3&gt;
+      &lt;div class="portfolio__details__date"&gt;<span class="yellow-highlight">February 2023</span>&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="portfolio__item" data-filter="<span class="red-highlight">html</span>"&gt;
+  &lt;a class="portfolio__link" href="portfolio-single.html"&gt;
+
+    &lt;!-- item image --&gt;
+    &lt;div class="portfolio__imgWrapper"&gt;
+      &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/portfolio/portfolio-16.png</span>" alt="<span class="yellow-highlight">Lorem Ipsum Dolor 16</span>" loading="lazy"&gt;
+    &lt;/div&gt;
+
+    &lt;!-- item details --&gt;
+    &lt;div class="portfolio__details"&gt;
+      &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 16</span>&lt;/h3&gt;
+      &lt;div class="portfolio__details__date"&gt;<span class="yellow-highlight">February 2023</span>&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="portfolio__item" data-filter="<span class="red-highlight">angular</span>"&gt;
+  &lt;a class="portfolio__link" href="portfolio-single.html"&gt;
+
+    &lt;!-- item image --&gt;
+    &lt;div class="portfolio__imgWrapper"&gt;
+      &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/portfolio/portfolio-17.png</span>" alt="<span class="yellow-highlight">Lorem Ipsum Dolor 17</span>" loading="lazy"&gt;
+    &lt;/div&gt;
+
+    &lt;!-- item details --&gt;
+    &lt;div class="portfolio__details"&gt;
+      &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 17</span>&lt;/h3&gt;
+      &lt;div class="portfolio__details__date"&gt;<span class="yellow-highlight">February 2023</span>&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="portfolio__item" data-filter="<span class="red-highlight">vue</span>"&gt;
+  &lt;a class="portfolio__link" href="portfolio-single.html"&gt;
+
+    &lt;!-- item image --&gt;
+    &lt;div class="portfolio__imgWrapper"&gt;
+      &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/portfolio/portfolio-18.png</span>" alt="<span class="yellow-highlight">Lorem Ipsum Dolor 18</span>" loading="lazy"&gt;
+    &lt;/div&gt;
+
+    &lt;!-- item details --&gt;
+    &lt;div class="portfolio__details"&gt;
+      &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 18</span>&lt;/h3&gt;
+      &lt;div class="portfolio__details__date"&gt;<span class="yellow-highlight">February 2023</span>&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/li&gt;
+&lt;!-- end items list --&gt;
+<span class="more">...</span>
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+          </div>
+        </section>
+
+        <!-- testimonials section -->
+        <section id="testimonials" class="section">
+          <div class="section-content">
+            <h2>Testimonials</h2>
+            <hr><br>
+            <h3>Title & Description</h3>
+            <ul>
+              <li>
+                To change the title and description of the <strong>Testimonials</strong> section, open the <strong>index.html</strong> file, find the following code and replace the yellow highlighted text with new text.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:905">
+&lt;!-- start of testimonials section --&gt;
+&lt;div id="testimonials" class="testimonials-section section hide-in-preloading" tabindex="-1"&gt;
+
+  &lt;!-- testimonials title --&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="section-title"&gt;
+      &lt;span class="subtitle"&gt;<span class="yellow-highlight">testimonials</span>&lt;/span&gt;
+      &lt;h2 class="title"&gt;
+        <span class="yellow-highlight">Check What's My Clients</span>
+        &lt;br&gt;
+        <span class="yellow-highlight">Say About Me</span>
+      &lt;/h2&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  <span class="more">...</span>
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+            <hr><br>
+            <h3>Clients Reviews</h3>
+            <ul>
+              <li>
+                To change the <strong>Clients Reviews</strong>, open the <strong>index.html</strong> file, find the following code, replace the yellow highlighted text with new text and replace the blue highlighted text with the <strong>Path/URL</strong> of the client image.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:919">
+  <span class="more">...</span>
+  &lt;!-- testimonials items --&gt;
+  &lt;div class="section-content"&gt;
+    &lt;ul class="testimonials__items" data-stagger-delay="500"&gt;
+      &lt;li class="has-ultimate-tooltip" tabindex="0"&gt;
+        &lt;div class="testimonials__item"&gt;
+          &lt;div class="testimonials__item__avatar"&gt;
+            &lt;img class="testimonials__item__img" src="<span class="blue-highlight">assets/images/testimonials/testimonials-1.jpg</span>" alt="<span class="yellow-highlight">Terrell Grimes</span>" loading="lazy"&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip"&gt;
+            &lt;p&gt;<span class="yellow-highlight">Nafie simply provides amazing web development service. Their team is extremely professional and the easiest to meet I have ever worked with. I would recommend Nafie to anyone.</span>&lt;/p&gt;
+            &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Terrell Grimes</span>&lt;/h4&gt;
+            &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">Photographer</span>&lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="has-ultimate-tooltip" tabindex="0"&gt;
+        &lt;div class="testimonials__item"&gt;
+          &lt;div class="testimonials__item__avatar"&gt;
+            &lt;img class="testimonials__item__img" src="<span class="blue-highlight">assets/images/testimonials/testimonials-2.jpg</span>" alt="<span class="yellow-highlight">Lonny Corkery</span>" loading="lazy"&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip"&gt;
+            &lt;p&gt;<span class="yellow-highlight">Excellent Team to work with. Always positive to find the most appropriate solution. Nafie is one of the professional web development agency that provides awesome services.</span>&lt;/p&gt;
+            &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Lonny Corkery</span>&lt;/h4&gt;
+            &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">Project Manager</span>&lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="has-ultimate-tooltip" tabindex="0"&gt;
+        &lt;div class="testimonials__item"&gt;
+          &lt;div class="testimonials__item__avatar"&gt;
+            &lt;img class="testimonials__item__img" src="<span class="blue-highlight">assets/images/testimonials/testimonials-3.jpg</span>" alt="<span class="yellow-highlight">Max Schmidt DDS</span>" loading="lazy"&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip"&gt;
+            &lt;p&gt;<span class="yellow-highlight">Nafie team is very professional, always delivers high quality results, and is always there to help. Look forward to working with Nafie in other projects.</span>&lt;/p&gt;
+            &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Max Schmidt DDS</span>&lt;/h4&gt;
+            &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">CEO, Designer</span>&lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="has-ultimate-tooltip" tabindex="0"&gt;
+        &lt;div class="testimonials__item"&gt;
+          &lt;div class="testimonials__item__avatar"&gt;
+            &lt;img class="testimonials__item__img" src="<span class="blue-highlight">assets/images/testimonials/testimonials-4.jpg</span>" alt="<span class="yellow-highlight">Amir Stoltenberg</span>" loading="lazy"&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip"&gt;
+            &lt;p&gt;<span class="yellow-highlight">Nafie worked on a handful of projects for us and has always exceeded our expectations. Nafie team is dedicated, talented and a delight to work with.</span>&lt;/p&gt;
+            &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Amir Stoltenberg</span>&lt;/h4&gt;
+            &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">Sales Manager</span>&lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="has-ultimate-tooltip" tabindex="0"&gt;
+        &lt;div class="testimonials__item"&gt;
+          &lt;div class="testimonials__item__avatar"&gt;
+            &lt;img class="testimonials__item__img" src="<span class="blue-highlight">assets/images/testimonials/testimonials-5.jpg</span>" alt="<span class="yellow-highlight">Kenton Marquardt</span>" loading="lazy"&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip"&gt;
+            &lt;p&gt;<span class="yellow-highlight">I know I can count on your service if I need my project done fast and with the best possible result. I am a regular customer and hope to continue our work!</span>&lt;/p&gt;
+            &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Kenton Marquardt</span>&lt;/h4&gt;
+            &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">Art Director</span>&lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="has-ultimate-tooltip" tabindex="0"&gt;
+        &lt;div class="testimonials__item"&gt;
+          &lt;div class="testimonials__item__avatar"&gt;
+            &lt;img class="testimonials__item__img" src="<span class="blue-highlight">assets/images/testimonials/testimonials-6.jpg</span>" alt="<span class="yellow-highlight">Reyna Hammes</span>" loading="lazy"&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip"&gt;
+            &lt;p&gt;<span class="yellow-highlight">Muhammad was a real pleasure to work with and we look forward to working with him again. He’s definitely the kind of developer you can trust with a project from start to finish.</span>&lt;/p&gt;
+            &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Reyna Hammes</span>&lt;/h4&gt;
+            &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">Motion Graphic Animator</span>&lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="has-ultimate-tooltip" tabindex="0"&gt;
+        &lt;div class="testimonials__item"&gt;
+          &lt;div class="testimonials__item__avatar"&gt;
+            &lt;img class="testimonials__item__img" src="<span class="blue-highlight">assets/images/testimonials/testimonials-7.jpg</span>" alt="<span class="yellow-highlight">Jovan Parisian</span>" loading="lazy"&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip"&gt;
+            &lt;p&gt;<span class="yellow-highlight">Muhammad was a real pleasure to work with and we look forward to working with him again. He’s definitely the kind of developer you can trust with a project from start to finish.</span>&lt;/p&gt;
+            &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Jovan Parisian</span>&lt;/h4&gt;
+            &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">Motion Graphic Animator</span>&lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="has-ultimate-tooltip" tabindex="0"&gt;
+        &lt;div class="testimonials__item"&gt;
+          &lt;div class="testimonials__item__avatar"&gt;
+            &lt;img class="testimonials__item__img" src="<span class="blue-highlight">assets/images/testimonials/testimonials-8.jpg</span>" alt="<span class="yellow-highlight">Pasquale Deckow</span>" loading="lazy"&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip"&gt;
+            &lt;p&gt;<span class="yellow-highlight">I know I can count on your service if I need my project done fast and with the best possible result. I am a regular customer and hope to continue our work!</span>&lt;/p&gt;
+            &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Pasquale Deckow</span>&lt;/h4&gt;
+            &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">Art Director</span>&lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="has-ultimate-tooltip" tabindex="0"&gt;
+        &lt;div class="testimonials__item"&gt;
+          &lt;div class="testimonials__item__avatar"&gt;
+            &lt;img class="testimonials__item__img" src="<span class="blue-highlight">assets/images/testimonials/testimonials-9.jpg</span>" alt="<span class="yellow-highlight">Rosa Ferry</span>" loading="lazy"&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip"&gt;
+            &lt;p&gt;<span class="yellow-highlight">Nafie worked on a handful of projects for us and has always exceeded our expectations. Nafie team is dedicated, talented and a delight to work with.</span>&lt;/p&gt;
+            &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Rosa Ferry</span>&lt;/h4&gt;
+            &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">Sales Manager</span>&lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="has-ultimate-tooltip" tabindex="0"&gt;
+        &lt;div class="testimonials__item"&gt;
+          &lt;div class="testimonials__item__avatar"&gt;
+            &lt;img class="testimonials__item__img" src="<span class="blue-highlight">assets/images/testimonials/testimonials-10.jpg</span>" alt="<span class="yellow-highlight">Keshaun Robel</span>" loading="lazy"&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip"&gt;
+            &lt;p&gt;<span class="yellow-highlight">Nafie team is very professional, always delivers high quality results, and is always there to help. Look forward to working with Nafie in other projects.</span>&lt;/p&gt;
+            &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Keshaun Robel</span>&lt;/h4&gt;
+            &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">CEO, Designer</span>&lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="has-ultimate-tooltip" tabindex="0"&gt;
+        &lt;div class="testimonials__item"&gt;
+          &lt;div class="testimonials__item__avatar"&gt;
+            &lt;img class="testimonials__item__img" src="<span class="blue-highlight">assets/images/testimonials/testimonials-11.jpg</span>" alt="<span class="yellow-highlight">Casper Paucek</span>" loading="lazy"&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip"&gt;
+            &lt;p&gt;<span class="yellow-highlight">Excellent Team to work with. Always positive to find the most appropriate solution. Nafie is one of the professional web development agency that provides awesome services.</span>&lt;/p&gt;
+            &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Casper Paucek</span>&lt;/h4&gt;
+            &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">Project Manager</span>&lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="has-ultimate-tooltip" tabindex="0"&gt;
+        &lt;div class="testimonials__item"&gt;
+          &lt;div class="testimonials__item__avatar"&gt;
+            &lt;img class="testimonials__item__img" src="<span class="blue-highlight">assets/images/testimonials/testimonials-12.jpg</span>" alt="<span class="yellow-highlight">Archibald Fadel</span>" loading="lazy"&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip"&gt;
+            &lt;p&gt;<span class="yellow-highlight">Nafie simply provides amazing web development service. Their team is extremely professional and the easiest to meet I have ever worked with. I would recommend Nafie to anyone.</span>&lt;/p&gt;
+            &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Archibald Fadel</span>&lt;/h4&gt;
+            &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">Photographer</span>&lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="has-ultimate-tooltip" tabindex="0"&gt;
+        &lt;div class="testimonials__item"&gt;
+          &lt;div class="testimonials__item__avatar"&gt;
+            &lt;img class="testimonials__item__img" src="<span class="blue-highlight">assets/images/testimonials/testimonials-13.jpg</span>" alt="<span class="yellow-highlight">Tabitha Denesik</span>" loading="lazy"&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip"&gt;
+            &lt;p&gt;<span class="yellow-highlight">Nafie simply provides amazing web development service. Their team is extremely professional and the easiest to meet I have ever worked with. I would recommend Nafie to anyone.</span>&lt;/p&gt;
+            &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Tabitha Denesik</span>&lt;/h4&gt;
+            &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">Photographer</span>&lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="has-ultimate-tooltip" tabindex="0"&gt;
+        &lt;div class="testimonials__item"&gt;
+          &lt;div class="testimonials__item__avatar"&gt;
+            &lt;img class="testimonials__item__img" src="<span class="blue-highlight">assets/images/testimonials/testimonials-14.jpg</span>" alt="<span class="yellow-highlight">Javon Bogan</span>" loading="lazy"&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip"&gt;
+            &lt;p&gt;<span class="yellow-highlight">Excellent Team to work with. Always positive to find the most appropriate solution. Nafie is one of the professional web development agency that provides awesome services.</span>&lt;/p&gt;
+            &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Javon Bogan</span>&lt;/h4&gt;
+            &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">Project Manager</span>&lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="has-ultimate-tooltip" tabindex="0"&gt;
+        &lt;div class="testimonials__item"&gt;
+          &lt;div class="testimonials__item__avatar"&gt;
+            &lt;img class="testimonials__item__img" src="<span class="blue-highlight">assets/images/testimonials/testimonials-15.jpg</span>" alt="<span class="yellow-highlight">Duncan Kemmer</span>" loading="lazy"&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip"&gt;
+            &lt;p&gt;<span class="yellow-highlight">Nafie team is very professional, always delivers high quality results, and is always there to help. Look forward to working with Nafie in other projects.</span>&lt;/p&gt;
+            &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Duncan Kemmer</span>&lt;/h4&gt;
+            &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">CEO, Designer</span>&lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="has-ultimate-tooltip" tabindex="0"&gt;
+        &lt;div class="testimonials__item"&gt;
+          &lt;div class="testimonials__item__avatar"&gt;
+            &lt;img class="testimonials__item__img" src="<span class="blue-highlight">assets/images/testimonials/testimonials-16.jpg</span>" alt="<span class="yellow-highlight">Coy Johns</span>" loading="lazy"&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip"&gt;
+            &lt;p&gt;<span class="yellow-highlight">Nafie worked on a handful of projects for us and has always exceeded our expectations. Nafie team is dedicated, talented and a delight to work with.</span>&lt;/p&gt;
+            &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Coy Johns</span>&lt;/h4&gt;
+            &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">Sales Manager</span>&lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="has-ultimate-tooltip" tabindex="0"&gt;
+        &lt;div class="testimonials__item"&gt;
+          &lt;div class="testimonials__item__avatar"&gt;
+            &lt;img class="testimonials__item__img" src="<span class="blue-highlight">assets/images/testimonials/testimonials-17.jpg</span>" alt="<span class="yellow-highlight">Murphy Roberts</span>" loading="lazy"&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip"&gt;
+            &lt;p&gt;<span class="yellow-highlight">I know I can count on your service if I need my project done fast and with the best possible result. I am a regular customer and hope to continue our work!</span>&lt;/p&gt;
+            &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Murphy Roberts</span>&lt;/h4&gt;
+            &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">Art Director</span>&lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="has-ultimate-tooltip" tabindex="0"&gt;
+        &lt;div class="testimonials__item"&gt;
+          &lt;div class="testimonials__item__avatar"&gt;
+            &lt;img class="testimonials__item__img" src="<span class="blue-highlight">assets/images/testimonials/testimonials-18.jpg</span>" alt="<span class="yellow-highlight">Dimitri Lockman</span>" loading="lazy"&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip"&gt;
+            &lt;p&gt;<span class="yellow-highlight">Muhammad was a real pleasure to work with and we look forward to working with him again. He’s definitely the kind of developer you can trust with a project from start to finish.</span>&lt;/p&gt;
+            &lt;h4 class="ultimate-tooltip-title"&gt;<span class="yellow-highlight">Dimitri Lockman</span>&lt;/h4&gt;
+            &lt;h5 class="ultimate-tooltip-subtitle"&gt;<span class="yellow-highlight">Motion Graphic Animator</span>&lt;/h5&gt;
+          &lt;/div&gt;
+          &lt;div class="ultimate-tooltip-arrow"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end of testimonials section --&gt;
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+          </div>
+        </section>
+
+        <!-- contact section -->
+        <section id="contact" class="section">
+          <div class="section-content">
+            <h2>Contact Me</h2>
+            <hr><br>
+            <h3>Title & Description</h3>
+            <ul>
+              <li>
+                To change the title and description of the <strong>Contact Me</strong> section, open the <strong>index.html</strong> file, find the following code and replace the yellow highlighted text with new text.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:1162">
+&lt;!-- start of contact section --&gt;
+&lt;div id="contact" class="contact-section section hide-in-preloading" tabindex="-1"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="section-content"&gt;
+
+      &lt;!-- contact text --&gt;
+      &lt;div class="contact__text"&gt;
+        &lt;div class="text-box-inline"&gt;
+          &lt;span class="subtitle"&gt;<span class="yellow-highlight">contact</span>&lt;/span&gt;
+          &lt;h2&gt;
+            <span class="yellow-highlight">Have You Any Project?</span>
+            &lt;br&gt;
+            <span class="yellow-highlight">Please Drop a Message</span>
+          &lt;/h2&gt;
+          &lt;p&gt;<span class="yellow-highlight">Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.</span>&lt;/p&gt;
+        &lt;/div&gt;
+        <span class="more">...</span>
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+            <hr><br>
+            <h3>Contact Info</h3>
+            <ul>
+              <li>
+                To change the <strong>Contact Info</strong> text, open the <strong>index.html</strong> file, find the following code and replace the yellow highlighted text with new text.
+              </li>
+              <li>
+                Replace the red highlighted text with your email addresses and phone numbers in a valid format.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:1178">
+<span class="more">...</span>
+&lt;!-- contact info --&gt;
+&lt;ul class="contact__info"&gt;
+  &lt;li class="contact__info__item"&gt;
+    &lt;svg class="contact__info__item__icon" width="24" height="24"&gt;
+      &lt;use href="#location" /&gt;
+    &lt;/svg&gt;
+    &lt;div class="contact__info__item__text"&gt;
+      &lt;strong&gt;<span class="yellow-highlight">Address:</span>&lt;/strong&gt;
+      <span class="yellow-highlight">941 Saqrqorish Road, alandalos, grnata, wa 47122-4194</span>
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class="contact__info__item"&gt;
+    &lt;svg class="contact__info__item__icon" width="24" height="24"&gt;
+      &lt;use href="#phone" /&gt;
+    &lt;/svg&gt;
+    &lt;div class="contact__info__item__text"&gt;
+      &lt;strong&gt;<span class="yellow-highlight">Phone:</span>&lt;/strong&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="tel:<span class="red-highlight">02966202290</span>" class="ltr-dir"&gt;<span class="yellow-highlight">(02) 966 202 290</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="tel:<span class="red-highlight">02966202291</span>" class="ltr-dir"&gt;<span class="yellow-highlight">(02) 966 202 291</span>&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class="contact__info__item"&gt;
+    &lt;svg class="contact__info__item__icon" width="24" height="24"&gt;
+      &lt;use href="#envelope" /&gt;
+    &lt;/svg&gt;
+    &lt;div class="contact__info__item__text"&gt;
+      &lt;strong&gt;<span class="yellow-highlight">Email:</span>&lt;/strong&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="mailto:<span class="red-highlight">info@nafie.com</span>"&gt;<span class="yellow-highlight">info@nafie.com</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="mailto:<span class="red-highlight">support@nafie.com</span>"&gt;<span class="yellow-highlight">support@nafie.com</span>&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+<span class="more">...</span>
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+            <hr><br>
+            <h3>Social Icons</h3>
+            <ul>
+              <li>
+                To change the social networks titles open the <strong>index.html</strong> file, find the following code and replace the yellow highlighted text with new titles.
+              </li>
+              <li>
+                To change icons for social networks, go to <a href="https://fontawesome.com/search?m=free&o=r" target="_blank" rel="noreferrer">this page</a>, choose the icon you want and copy its class. Then replace the blue highlighted text with the new class.
+              </li>
+              <li>
+                Replace the red highlighted text with the <strong>URLs</strong> for social icons.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:1215">
+  <span class="more">...</span>
+  &lt;!-- social links --&gt;
+  &lt;ul class="contact__social"&gt;
+    &lt;li class="contact__social__item"&gt;
+      &lt;a class="contact__social__link" href="<span class="red-highlight">#</span>" target="_blank" rel="noreferrer" data-tooltip='{ "text": "<span class="yellow-highlight">Facebook</span>", "dir": "top" }'&gt;
+        &lt;i class="<span class="blue-highlight">fa-brands fa-facebook-f</span>"&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="contact__social__item"&gt;
+      &lt;a class="contact__social__link" href="<span class="red-highlight">#</span>" target="_blank" rel="noreferrer" data-tooltip='{ "text": "<span class="yellow-highlight">Twitter</span>", "dir": "top" }'&gt;
+        &lt;i class="<span class="blue-highlight">fa-brands fa-twitter</span>"&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="contact__social__item"&gt;
+      &lt;a class="contact__social__link" href="<span class="red-highlight">#</span>" target="_blank" rel="noreferrer" data-tooltip='{ "text": "<span class="yellow-highlight">LinkedIn</span>", "dir": "top" }'&gt;
+        &lt;i class="<span class="blue-highlight">fa-brands fa-linkedin-in</span>"&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="contact__social__item"&gt;
+      &lt;a class="contact__social__link" href="<span class="red-highlight">#</span>" target="_blank" rel="noreferrer" data-tooltip='{ "text": "<span class="yellow-highlight">YouTube</span>", "dir": "top" }'&gt;
+        &lt;i class="<span class="blue-highlight">fa-brands fa-youtube</span>"&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+<span class="more">...</span>
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+            <hr><br>
+            <h3>Send Message</h3>
+            <br>
+            <h4>1- Contact Form:</h4>
+            <ul>
+              <li>
+                To change the text in <strong>Contact Form</strong>, replace the yellow highlighted text with new text.
+              </li>
+              <li>
+                To change the minimum number of characters required in the <strong>Name field</strong>, replace the text highlighted in red with new numbers.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:1240">
+      <span class="more">...</span>
+      &lt;!-- contact form --&gt;
+      &lt;div class="contact__formHolder"&gt;
+        &lt;form class="contact__form form-styled" data-url="contact_form.php" data-success-msg="<span class="yellow-highlight">Message sent successfully!</span>" data-err-msg="<span class="yellow-highlight">Oops! something went wrong, please try again.</span>"&gt;
+
+          &lt;!-- name control --&gt;
+          &lt;div class="group"&gt;
+            &lt;label&gt;<span class="yellow-highlight">Name</span>&lt;/label&gt;
+            &lt;div class="control has-prefix-icon"&gt;
+              &lt;input type="text" name="name" placeholder="<span class="yellow-highlight">e.g. John Doe</span>" minlength="<span class="red-highlight">3</span>" required&gt;
+              &lt;i class="fa-solid fa-circle-user prefix-icon"&gt;&lt;/i&gt;
+
+              &lt;!-- validation errors messages --&gt;
+              &lt;div class="errors-msgs"&gt;
+                &lt;input class="required" type="hidden" value="<span class="yellow-highlight">Name is required</span>"&gt;
+                &lt;input class="minLength" type="hidden" value="<span class="yellow-highlight">Name must be at least 3 characters</span>"&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;!-- email control --&gt;
+          &lt;div class="group"&gt;
+            &lt;label&gt;<span class="yellow-highlight">Email</span>&lt;/label&gt;
+            &lt;div class="control has-prefix-icon"&gt;
+              &lt;input class="ltr-dir" type="email" inputmode="email" name="email" placeholder="<span class="yellow-highlight">e.g. john.doe@gmail.com</span>" required&gt;
+              &lt;i class="fa-solid fa-envelope prefix-icon"&gt;&lt;/i&gt;
+
+              &lt;!-- validation errors messages --&gt;
+              &lt;div class="errors-msgs"&gt;
+                &lt;input class="required" type="hidden" value="<span class="yellow-highlight">Email is required</span>"&gt;
+                &lt;input class="invalid" type="hidden" value="<span class="yellow-highlight">Please enter a valid email address</span>"&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;!-- phone control --&gt;
+          &lt;div class="group phone-number"&gt;
+            &lt;label&gt;<span class="yellow-highlight">Phone</span> &lt;span class="optional"&gt;(Optional)&lt;/span&gt;&lt;/label&gt;
+            &lt;div class="control has-prefix-icon"&gt;
+              &lt;input type="tel" inputmode="tel" name="phone" placeholder="<span class="yellow-highlight">Phone Number</span>"&gt;
+              &lt;i class="fa-solid fa-phone prefix-icon"&gt;&lt;/i&gt;
+
+              &lt;!-- validation errors messages --&gt;
+              &lt;div class="errors-msgs"&gt;
+                &lt;input class="invalid" type="hidden" value="<span class="yellow-highlight">Please enter a valid Phone Number</span>"&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;!-- message control --&gt;
+          &lt;div class="group"&gt;
+            &lt;label&gt;<span class="yellow-highlight">Message</span>&lt;/label&gt;
+            &lt;div class="control has-prefix-icon"&gt;
+              &lt;textarea name="message" placeholder="<span class="yellow-highlight">Write message...</span>" required&gt;&lt;/textarea&gt;
+              &lt;i class="fa-solid fa-comments prefix-icon"&gt;&lt;/i&gt;
+
+              &lt;!-- validation errors messages --&gt;
+              &lt;div class="errors-msgs"&gt;
+                &lt;input class="required" type="hidden" value="<span class="yellow-highlight">Message is required</span>"&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;!-- submit button --&gt;
+          &lt;div class="group"&gt;
+            &lt;div class="control"&gt;
+              &lt;button class="submit-btn w-btn w-btn--s2 w-btn--dark" type="button" onclick="window._contactFormValidation(this)"&gt;<span class="yellow-highlight">Send</span>&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end of contact section --&gt;
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+            <br>
+            <h4>2- Contact Email:</h4>
+            <ul>
+              <li>
+                Open the <strong>contact_form.php</strong> file and replace the red highlighted text with your <strong>email address</strong> to receive the messages on it.
+              </li>
+            </ul>
+<pre class="prettyprint lang-php linenums:3">
+$mail_to  = "<span class="red-highlight">youremail@email.com</span>";  // replace it with your email
+</pre>
+          </div>
+        </section>
+
+        <!-- single portfolio page -->
+        <section id="single-portfolio-page" class="section">
+          <div class="section-content">
+            <h2>Single Portfolio Page</h2>
+            <hr><br>
+            <h3>Title & Description</h3>
+            <ul>
+              <li>
+                To change the project title and description in <strong>Single Portfolio</strong> page, open the <strong>portfolio-single.html</strong> file, find the following code and replace the yellow highlighted text with new text.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:167">
+&lt;!-- start of portfolio single page --&gt;
+&lt;div class="portfolio-page portfolio-section section page hide-in-preloading"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="section-content"&gt;
+
+      &lt;!-- portfolio items --&gt;
+      &lt;ul class="portfolio__items has-works"&gt;
+
+        &lt;!-- project details --&gt;
+        &lt;li class="portfolio__text"&gt;
+          &lt;div class="text-box-block"&gt;
+
+            &lt;!-- project category link --&gt;
+            &lt;span class="subtitle"&gt;
+              &lt;a href="portfolio-archive.html"&gt;<span class="yellow-highlight">Angular</span>&lt;/a&gt;
+            &lt;/span&gt;
+
+            &lt;!-- project title --&gt;
+            &lt;h2&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 1</span>&lt;/h2&gt;
+
+            &lt;!-- project description --&gt;
+            &lt;p&gt;<span class="yellow-highlight">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>&lt;/p&gt;
+            <span class="more">...</span>
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+            <hr><br>
+            <h3>Project Tools</h3>
+            <ul>
+              <li>
+                To change the project tools, find the following code and replace the yellow highlighted text with new text.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:189">
+<span class="more">...</span>
+&lt;!-- project tools --&gt;
+&lt;ul class="portfolio__tools"&gt;
+  &lt;li class="portfolio__tools__item"&gt;
+    &lt;a class="portfolio__tools__link" href="portfolio-archive.html"&gt;<span class="yellow-highlight">HTML</span>&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="portfolio__tools__item"&gt;
+    &lt;a class="portfolio__tools__link" href="portfolio-archive.html"&gt;<span class="yellow-highlight">PugJS</span>&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="portfolio__tools__item"&gt;
+    &lt;a class="portfolio__tools__link" href="portfolio-archive.html"&gt;<span class="yellow-highlight">CSS</span>&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="portfolio__tools__item"&gt;
+    &lt;a class="portfolio__tools__link" href="portfolio-archive.html"&gt;<span class="yellow-highlight">SCSS</span>&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="portfolio__tools__item"&gt;
+    &lt;a class="portfolio__tools__link" href="portfolio-archive.html"&gt;<span class="yellow-highlight">JavaScript</span>&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="portfolio__tools__item"&gt;
+    &lt;a class="portfolio__tools__link" href="portfolio-archive.html"&gt;<span class="yellow-highlight">TypeScript</span>&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="portfolio__tools__item"&gt;
+    &lt;a class="portfolio__tools__link" href="portfolio-archive.html"&gt;<span class="yellow-highlight">TailwindCSS</span>&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="portfolio__tools__item"&gt;
+    &lt;a class="portfolio__tools__link" href="portfolio-archive.html"&gt;<span class="yellow-highlight">AJAX</span>&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="portfolio__tools__item"&gt;
+    &lt;a class="portfolio__tools__link" href="portfolio-archive.html"&gt;<span class="yellow-highlight">Angular</span>&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="portfolio__tools__item"&gt;
+    &lt;a class="portfolio__tools__link" href="portfolio-archive.html"&gt;<span class="yellow-highlight">NodeJs</span>&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="portfolio__tools__item"&gt;
+    &lt;a class="portfolio__tools__link" href="portfolio-archive.html"&gt;<span class="yellow-highlight">MongoDB</span>&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+<span class="more">...</span>
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+            <hr><br>
+            <h3>Live Preview Button</h3>
+            <ul>
+              <li>
+                To change the project live preview link, find the following code and replace the red highlighted text with the project link.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:226">
+    <span class="more">...</span>
+    &lt;!-- project live preview link --&gt;
+    &lt;a href="<span class="red-highlight">#</span>" class="portfolio__livePreview w-btn w-btn--s2 w-btn--dark"&gt;Live Preview&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+<span class="more">...</span>
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+            <hr><br>
+            <h3>Project Screenshots</h3>
+            <ul>
+              <li>
+                To change the project screenshots, find the following code and replace the yellow highlighted text with the image <strong>Title</strong> and <strong>Caption</strong>.
+              </li>
+              <li>
+                Replace the blue highlighted text with the <strong>Path/URL</strong> of the <strong>Screenshot</strong>.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:231">
+        <span class="more">...</span>
+        &lt;!-- project screenshots --&gt;
+        &lt;li class="portfolio__item"&gt;
+          &lt;!-- href points to the fully sized image --&gt;
+          &lt;a class="portfolio__link glightbox" href="<span class="blue-highlight">assets/images/single-portfolio/single-portfolio-1.png</span>" data-glightbox="type: image" data-gallery="gallery1" data-glightbox="title: <span class="yellow-highlight">caption 1</span>"&gt;
+
+            &lt;!-- item image thumbnails --&gt;
+            &lt;div class="portfolio__imgWrapper"&gt;
+              &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/single-portfolio/single-portfolio-1.png</span>" alt="<span class="yellow-highlight">caption 1</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+
+            &lt;!-- item details --&gt;
+            &lt;div class="portfolio__details"&gt;
+              &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 1</span>&lt;/h3&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="portfolio__item"&gt;
+          &lt;!-- href points to the fully sized image --&gt;
+          &lt;a class="portfolio__link glightbox" href="<span class="blue-highlight">assets/images/single-portfolio/single-portfolio-2.png</span>" data-glightbox="type: image" data-gallery="gallery1" data-glightbox="title: <span class="yellow-highlight">caption 2</span>"&gt;
+
+            &lt;!-- item image thumbnails --&gt;
+            &lt;div class="portfolio__imgWrapper"&gt;
+              &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/single-portfolio/single-portfolio-2.png</span>" alt="<span class="yellow-highlight">caption 2</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+
+            &lt;!-- item details --&gt;
+            &lt;div class="portfolio__details"&gt;
+              &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 2</span>&lt;/h3&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="portfolio__item"&gt;
+          &lt;!-- href points to the fully sized image --&gt;
+          &lt;a class="portfolio__link glightbox" href="<span class="blue-highlight">assets/images/single-portfolio/single-portfolio-3.png</span>" data-glightbox="type: image" data-gallery="gallery1" data-glightbox="title: <span class="yellow-highlight">caption 3</span>"&gt;
+
+            &lt;!-- item image thumbnails --&gt;
+            &lt;div class="portfolio__imgWrapper"&gt;
+              &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/single-portfolio/single-portfolio-3.png</span>" alt="<span class="yellow-highlight">caption 3</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+
+            &lt;!-- item details --&gt;
+            &lt;div class="portfolio__details"&gt;
+              &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 3</span>&lt;/h3&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="portfolio__item"&gt;
+          &lt;!-- href points to the fully sized image --&gt;
+          &lt;a class="portfolio__link glightbox" href="<span class="blue-highlight">assets/images/single-portfolio/single-portfolio-4.png</span>" data-glightbox="type: image" data-gallery="gallery1" data-glightbox="title: <span class="yellow-highlight">caption 4</span>"&gt;
+
+            &lt;!-- item image thumbnails --&gt;
+            &lt;div class="portfolio__imgWrapper"&gt;
+              &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/single-portfolio/single-portfolio-4.png</span>" alt="<span class="yellow-highlight">caption 4</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+
+            &lt;!-- item details --&gt;
+            &lt;div class="portfolio__details"&gt;
+              &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 4</span>&lt;/h3&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="portfolio__item"&gt;
+          &lt;!-- href points to the fully sized image --&gt;
+          &lt;a class="portfolio__link glightbox" href="<span class="blue-highlight">assets/images/single-portfolio/single-portfolio-5.png</span>" data-glightbox="type: image" data-gallery="gallery1" data-glightbox="title: <span class="yellow-highlight">caption 5</span>"&gt;
+
+            &lt;!-- item image thumbnails --&gt;
+            &lt;div class="portfolio__imgWrapper"&gt;
+              &lt;img class="portfolio__imgWrapper__img" src="<span class="blue-highlight">assets/images/single-portfolio/single-portfolio-5.png</span>" alt="<span class="yellow-highlight">caption 5</span>" loading="lazy"&gt;
+            &lt;/div&gt;
+
+            &lt;!-- item details --&gt;
+            &lt;div class="portfolio__details"&gt;
+              &lt;h3 class="portfolio__details__title"&gt;<span class="yellow-highlight">Lorem Ipsum Dolor 5</span>&lt;/h3&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end of portfolio single page --&gt;
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+          </div>
+        </section>
+
+        <!-- error page -->
+        <section id="error-page" class="section">
+          <div class="section-content">
+            <h2>Error Page</h2>
+            <hr>
+            <ul>
+              <li>
+                To change the <strong>Error Page</strong> text, open the <strong>error.html</strong> file, find the following code and replace the yellow highlighted text with new text.
+              </li>
+            </ul>
+<pre class="prettyprint lang-html linenums:167">
+&lt;!-- start of error page --&gt;>
+&lt;div class="error-page page hide-in-preloading"&gt;
+  &lt;div class="error-content"&gt;
+    &lt;div class="container"&gt;
+
+      &lt;!-- error image --&gt;
+      &lt;div class="error__imgWrapper"&gt;
+        &lt;svg class="error__imgWrapper__svg" width="280" height="250"&gt;
+          &lt;use href="#error" /&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+
+      &lt;!-- error code --&gt;
+      &lt;h2 class="error__code"&gt;<span class="yellow-highlight">404</span>&lt;/h2&gt;
+
+      &lt;!-- error title --&gt;
+      &lt;h3 class="error__title"&gt;<span class="yellow-highlight">This page is missing</span>&lt;/h3&gt;
+
+      &lt;!-- error description --&gt;
+      &lt;p class="error__desc"&gt;<span class="yellow-highlight">We're sorry, we couldn't find the page you requested.</span>&lt;/p&gt;
+
+      &lt;!-- homepage link --&gt;
+      &lt;a class="error__homeLink w-btn w-btn--s1 w-btn--primary" href="index.html"&gt;<span class="yellow-highlight">Back to Home</span>&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end of error page --&gt;
+</pre>
+            <p>Save the file and then refresh the template in your browser to see the changes result.</p>
+          </div>
+        </section>
+
+        <!-- thank you section -->
+        <section id="thank-you" class="section">
+          <div class="section-content">
+            <h2>Thank You</h2>
+            <hr>
+            <p>
+              Finally thank you very much for choosing this template. Please keep in mind that we are working very hard to providing better quality in coming days.
+            </p>
+            <p>
+              If you have any questions that are beyond the scope of this help file, please contact us via our <a href="https://themeforest.net/user/webrouk" target="_blank" rel="noreferrer">profile</a>.
+            </p>
+            <p>
+              For some extra help along the way, check out these great learning guide: <a href="https://webdesign.tutsplus.com/tutorials/how-to-customize-an-html-template--cms-25886" target="_blank" rel="noreferrer">How to Customize an HTML Template</a>.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="prettify/prettify.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
