@@ -51,26 +51,19 @@ export function initAnimation() {
 function animSectionTextBox() {
   const textBoxes = gsap.utils.toArray(".text-box-inline");
 
-  if (!textBoxes.length) {
-    return;
-  }
+  if (!textBoxes.length) { return; }
 
   textBoxes.forEach(box => {
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: box,
-          start: "top 85%",
-          end: "top 35%",
-          scrub: 0.3,
-        },
-      })
-      .from(box.querySelector(".subtitle"), { autoAlpha: 0, top: 50 })
-      .from(box.querySelector("h2"), { autoAlpha: 0, y: 50 }, "-=0.2")
-      .from(
-        box.querySelectorAll("h2 ~ *"),
-        { autoAlpha: 0, y: 50, stagger: 0.2 },
-        "-=0.2"
-      );
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: box,
+        start: "top 85%",
+        end: "top 35%",
+        scrub: 0.3,
+      },
+    })
+    .from(box.querySelector(".subtitle"), { autoAlpha: 0, top: 50 })
+    .from(box.querySelector("h2"), { autoAlpha: 0, y: 50 }, "-=0.2")
+    .from(box.querySelectorAll("h2 ~ *"), { autoAlpha: 0, y: 50, stagger: 0.2 }, "-=0.2");
   });
 }

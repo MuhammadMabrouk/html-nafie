@@ -24,6 +24,7 @@ import {
 import { contactFormValidation } from "../components/pages/homepage/contact-section/contact-section.js";
 
 document.addEventListener("DOMContentLoaded", () => {
+
   /* preloader screen animation */
   animPreloaderScreen();
 
@@ -114,10 +115,7 @@ function addStaggerDelay() {
     const value = JSON.parse(el.dataset.staggerDelay);
 
     [...el.children].forEach((child, i) => {
-      child.style.setProperty(
-        "animation-delay",
-        `${(i + 1) * (value || 100)}ms`
-      );
+      child.style.setProperty("animation-delay", `${(i + 1) * (value || 100)}ms`);
     });
   });
 }
