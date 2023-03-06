@@ -4,7 +4,7 @@ const { parallel, series } = require("gulp");
 const { htmlFiles }             = require("./htmlFiles");
 const { cssMain }               = require("./cssMain");
 const { cssLibraries }          = require("./cssLibraries");
-const { jsMain }                = require("./jsMain");
+const { jsBundle }              = require("./jsBundle");
 const { jsPlugins }             = require("./jsPlugins");
 const { assetsFiles }           = require("./assetsFiles");
 const { assetsImages }          = require("./assetsImages");
@@ -22,7 +22,7 @@ const commonTasks = parallel(
   htmlFiles.htmlFiles,
   cssMain.cssMain,
   cssLibraries.cssLibraries,
-  jsMain.jsMain,
+  jsBundle.jsBundle,
   jsPlugins.jsPlugins,
   assetsFiles.assetsFiles,
   assetsImages.assetsImages,

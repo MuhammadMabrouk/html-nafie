@@ -15,6 +15,10 @@
     "themeforest": "gulp themeforest_build"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "@babel/runtime": "^7.21.0",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -34,6 +38,8 @@
     "gulp-terser": "^2.1.0",
     "gulp-zip": "^5.1.0",
     "merge-stream": "^2.0.0",
+    "rollup": "^2.79.1",
+    "rollup-plugin-babel": "^4.4.0",
     "sass": "^1.57.1"
   },
   "dependencies": {

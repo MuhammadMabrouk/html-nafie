@@ -9,7 +9,7 @@ const connect = require("gulp-connect");
 const { htmlFiles }         = require("./gulp/tasks/htmlFiles");
 const { cssMain }           = require("./gulp/tasks/cssMain");
 const { cssLibraries }      = require("./gulp/tasks/cssLibraries");
-const { jsMain }            = require("./gulp/tasks/jsMain");
+const { jsBundle }          = require("./gulp/tasks/jsBundle");
 const { jsPlugins }         = require("./gulp/tasks/jsPlugins");
 const { assetsFiles }       = require("./gulp/tasks/assetsFiles");
 const { assetsImages }      = require("./gulp/tasks/assetsImages");
@@ -29,6 +29,7 @@ const watcher = (cb) => {
   connect.server({
     root: "./dist/",
     livereload: true,
+    port: 8888,
   });
 
   // html task
@@ -40,8 +41,8 @@ const watcher = (cb) => {
   // css libraries task
   watchTasks(cssLibraries);
 
-  // main js task
-  watchTasks(jsMain);
+  // js bundle task
+  watchTasks(jsBundle);
 
   // js plugins task
   watchTasks(jsPlugins);
@@ -69,7 +70,7 @@ module.exports = {
   htmlFiles: htmlFiles.htmlFiles,
   cssMain: cssMain.cssMain,
   cssLibraries: cssLibraries.cssLibraries,
-  jsMain: jsMain.jsMain,
+  jsBundle: jsBundle.jsBundle,
   jsPlugins: jsPlugins.jsPlugins,
   assetsImages: assetsImages.assetsImages,
   assetsFiles: assetsFiles.assetsFiles,
