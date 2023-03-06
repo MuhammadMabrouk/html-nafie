@@ -1,18 +1,29 @@
-import { animPreloaderScreen } from "./components/preloader.js";
+import { animPreloaderScreen } from "../components/global/preloader/preloader.js";
 import { initAnimation } from "./animations.js";
-import { initCircleCursor } from "./components/circle-cursor.js";
-import { headerScrollEffects } from "./components/the-header.js";
-import { getAppMode, toggleAppMode } from "./components/mode-switcher.js";
-import { offCanvasMenuToggle, offCanvasMenuClose, offCanvasMenuTabTrap } from "./components/navbar.js";
-import { scrollToTop } from "./components/scroll-to-top.js";
-import { initSimpleTooltips, initUltimateTooltips } from "./components/tooltip.js";
-import { initHeroImgPanEffect } from "./components/hero-section.js";
-import { switchSkillsItemsGroups } from "./components/skills-section.js";
-import { initializePortfolioTilt, filterPortfolioItems, loadMorePortfolioItems, init_DEMO_portfolio_items } from "./components/portfolio-section.js";
-import { contactFormValidation } from "./components/contact-section.js";
+import { initCircleCursor } from "../components/global/circle-cursor/circle-cursor.js";
+import { headerScrollEffects } from "../components/layout/the-header/the-header.js";
+import { getAppMode, toggleAppMode } from "../components/layout/the-header/mode-switcher/mode-switcher.js";
+import {
+  offCanvasMenuToggle,
+  offCanvasMenuClose,
+  offCanvasMenuTabTrap,
+} from "../components/layout/the-header/navbar/navbar.js";
+import { scrollToTop } from "../components/global/scroll-to-top/scroll-to-top.js";
+import {
+  initSimpleTooltips,
+  initUltimateTooltips,
+} from "../components/ui/tooltip/tooltip.js";
+import { initHeroImgPanEffect } from "../components/pages/homepage/hero-section/hero-section.js";
+import { switchSkillsItemsGroups } from "../components/pages/homepage/skills-section/skills-section.js";
+import {
+  initializePortfolioTilt,
+  filterPortfolioItems,
+  loadMorePortfolioItems,
+  init_DEMO_portfolio_items,
+} from "../components/pages/homepage/portfolio-section/portfolio-section.js";
+import { contactFormValidation } from "../components/pages/homepage/contact-section/contact-section.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-
   /* preloader screen animation */
   animPreloaderScreen();
 
@@ -86,13 +97,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 window.addEventListener("load", () => {
-
   // initialize animation effects
   initAnimation();
 });
 
 window.addEventListener("scroll", () => {
-
   // header scroll effects
   headerScrollEffects();
 });
@@ -105,7 +114,10 @@ function addStaggerDelay() {
     const value = JSON.parse(el.dataset.staggerDelay);
 
     [...el.children].forEach((child, i) => {
-      child.style.setProperty("animation-delay", `${(i + 1) * (value || 100)}ms`);
+      child.style.setProperty(
+        "animation-delay",
+        `${(i + 1) * (value || 100)}ms`
+      );
     });
   });
 }

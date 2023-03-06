@@ -1,5 +1,5 @@
-import { startAjaxLoading, stopAjaxLoading } from "./ajax-loader.js";
-import { addNotification, dismissNotification } from "./notifications.js";
+import { startAjaxLoading, stopAjaxLoading } from "../../../global/ajax-loader/ajax-loader.js";
+import { addNotification, dismissNotification } from "../../../global/notifications/notifications.js";
 /*------------------------------------------------------------------------------------------*/
 /* Portfolio Section Component */
 /*------------------------------------------------------------------------------------------*/
